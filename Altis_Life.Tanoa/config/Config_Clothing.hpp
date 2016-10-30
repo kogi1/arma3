@@ -35,7 +35,7 @@ class Clothing {
             { "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
             { "U_C_Man_casual_1_F", "Casual Wears", 5000, { "", "", -1 } },
             { "U_C_Man_casual_2_F", "Casual Wears", 5000, { "", "", -1 } }, //Apex DLC
-            { "U_C_Man_casual_3_F", "Casual Wears", 5000, { "", "", -1 } }, //Apex DLC
+            { "U_C_Man_casual_3_F", "Casual Wears", 5100, { "", "", -1 } }, //Apex DLC
             { "U_C_Man_casual_4_F", "Casual Wears", 5000, { "", "", -1 } }, //Apex DLC
             { "U_C_Man_casual_5_F", "Casual Wears", 5000, { "", "", -1 } }, //Apex DLC
             { "U_C_Man_casual_6_F", "Casual Wears", 5000, { "", "", -1 } }, //Apex DLC
