@@ -108,10 +108,10 @@ class CarShops {
         side = "cop";
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_SUV_01_F", { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 1 } },
-            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 2 } },
-            { "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 3 } }
+            { "C_SUV_01_F", { "", "", 2 } },
+            { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 3 } },
+            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 6 } },
+            { "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 6 } }
         };
     };
 
@@ -182,7 +182,11 @@ class LifeCfgVehicles {
         vItemSpace = 65;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 12500;
-        textures[] = {};
+        textures[] = {
+			{ "Polizei", "cop", {
+                "textures\fahrzeuge\cop\Pol_WD40.paa"
+            } }
+		};
     };
 
     // Apex DLC
@@ -388,8 +392,8 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Polizei", "cop", {
+                "textures\fahrzeuge\cop\Pol_offroad.paa"
             } }
         };
     };
@@ -560,7 +564,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
-            { "Police", "cop", {
+			{ "Polizei", "cop", {
+                "textures\fahrzeuge\cop\Pol_SUV.paa"
+            } },
+            { "SEK", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
             } },
         };

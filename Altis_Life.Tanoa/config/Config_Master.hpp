@@ -51,7 +51,7 @@ class Life_Settings {
     respawn_timer = 180; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
-    news_broadcast_cost = 150000; //Cost for a player to send a news station broadcast.
+    news_broadcast_cost = 1500000; //Cost for a player to send a news station broadcast.
     news_broadcast_cooldown = 20; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
     news_broadcast_header_length = 60; //Number of characters that a header can consist of. Anything over this may clip. This depends on the font size and various other factors. Adjust with caution.
 
@@ -74,13 +74,13 @@ class Life_Settings {
     fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
-    gang_price = 75000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
-    gang_upgradeBase = 10000; //The base cost for purchasing additional slots in a gang
+    gang_price = 750000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_upgradeBase = 800000; //The base cost for purchasing additional slots in a gang
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 5; //Maximum number of houses a player can own.
-    houseGarage_buyPrice = 1000000;
+    house_limit = 3; //Maximum number of houses a player can own.
+    houseGarage_buyPrice = 2000000;
     houseGarage_sellPrice = 350000;
 
     /* Hunting & Fishing System Configurations */
@@ -107,14 +107,14 @@ class Life_Settings {
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 7000; //Amount of cash in bank for new cops
-    bank_civ = 3000; //Amount of cash in bank for new civillians
+    bank_civ = 10000000; //Amount of cash in bank for new civillians
     bank_med = 6500; //Amount of cash in bank for new medics
 
     paycheck_cop = 2200; //Payment for cops
     paycheck_civ = 1200; //Payment for civillians
     paycheck_med = 1800; //Payment for medics
 
-    paycheck_period = 5; //Scaled in minutes
+    paycheck_period = 10; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
 
     /* Player Job System Configurations */

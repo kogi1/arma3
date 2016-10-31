@@ -134,10 +134,12 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
-            { "U_B_CombatUniform_mcam_tshirt", "", 350, { "life_coplevel", "SCALAR", 1 } },
-            { "U_B_CombatUniform_mcam_worn", "", 550, { "life_coplevel", "SCALAR", 2 } },
-            { "U_B_survival_uniform", "", 1250, { "life_coplevel", "SCALAR", 1 } }
+            { "U_Rangemaster", "Polizeianwärter", 25, { "", "", -1 } },
+            { "U_B_SpecopsUniform_sgg", "Beamten Uniform", 350, { "life_coplevel", "SCALAR", 3 } },
+            { "U_B_CombatUniform_mcam_vest", "", 550, { "life_coplevel", "SCALAR", 4 } },
+            { "U_B_Wetsuit", "Taucheranzug", 1250, { "life_coplevel", "SCALAR", 3 } },
+			{ "U_B_GhillieSuit","GhillieSuit", 1250, { "life_coplevel", "SCALAR", 6 } },
+			{ "U_B_CombatUniform_mcam","SEK-Uniform", 1250, { "life_coplevel", "SCALAR", 6 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
