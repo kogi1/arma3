@@ -54,6 +54,8 @@ if (life_container_active) then {
     true;
 };
 
+//EMP Konsole - K
+
 switch (_code) do {
     //Space key for Jumping
     case 57: {
@@ -78,6 +80,23 @@ switch (_code) do {
             _handled = true;
         };
     };
+	case 37:
+    {
+        if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["B_Heli_Light_01_F"])) then
+        {
+            [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
+        };
+    };
+	case 207:
+	{
+		switch (player getVariable["Earplugs",0]) do 
+		{
+			 case 0: {hint composeText [ image "icons\sound.paa"," 90% Leiser"]; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
+			 case 10: {hint composeText [ image "icons\sound.paa"," 60% Leiser"]; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
+			 case 40: {hint composeText [ image "icons\sound.paa"," 30% Leiser"]; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
+			 case 70: {hint composeText [ image "icons\sound_new.paa"," Normaler Sound"]; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
+		};
+	};
 	//Fesslen (Shift + b)
 	case 48: { //The number, 48, is the key that has to be pressed in order to zip tie someone currently "b"
 	if(_shift) then {_handled = true;}; //This makes it so they have to hold shift + key(48) to work. 

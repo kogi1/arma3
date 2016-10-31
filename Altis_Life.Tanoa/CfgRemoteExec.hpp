@@ -73,6 +73,8 @@ class CfgRemoteExec {
         F(TON_fnc_player_query,CLIENT)
 		F(TON_fnc_handleMessages,SERVER)
 		F(TON_fnc_msgRequest,SERVER)
+		F(life_fnc_vehicleEmpd,CLIENT)
+		F(life_fnc_vehicleWarned,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

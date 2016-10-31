@@ -11,6 +11,8 @@
 ****** Backend Variables *****
 *****************************
 */
+nn_last_vehicles = [];
+nn_empInUse = false;
 life_query_time = time;
 life_action_delay = time;
 life_trunk_vehicle = objNull;
