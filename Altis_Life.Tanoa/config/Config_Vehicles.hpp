@@ -78,10 +78,12 @@ class CarShops {
         vehicles[] = {
             { "B_Quadbike_01_F", { "", "", -1 } },
             { "B_G_Offroad_01_F", { "", "", -1 } },
-            { "O_MRAP_02_F", { "", "", -1 } },
+            { "O_T_MRAP_02_ghex_F", { "", "", -1 } },
             { "B_Heli_Light_01_stripped_F", { "", "", -1 } },
             { "B_G_Offroad_01_armed_F", { "", "", -1 } },
-            { "O_T_LSV_02_unarmed_F", { "", "", -1 } } //Apex DLC
+            { "O_T_LSV_02_unarmed_F", { "", "", -1 } }, //Apex DLC
+			{ "B_T_VTOL_01_vehicle_F", { "", "", -1 } }, //Apex DLC
+			{ "O_T_VTOL_02_vehicle_F", { "", "", -1 } } //Apex DLC
 
         };
     };
@@ -113,8 +115,9 @@ class CarShops {
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", 2 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 3 } },
-            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 6 } },
-            { "I_MRAP_03_F", { "life_coplevel", "SCALAR", 6 } }
+			{ "B_T_LSV_01_unarmed_F", { "life_coplevel", "SCALAR", 6 } },
+            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 7 } },
+            { "I_MRAP_03_F", { "life_coplevel", "SCALAR", 8 } }
         };
     };
 
@@ -219,6 +222,29 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
+	// Apex DLC
+    class B_T_VTOL_01_vehicle_F {
+        vItemSpace = 2000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 7500000;
+        textures[] = {};
+    };
+	
+	// Apex DLC
+    class O_T_VTOL_02_vehicle_F {
+        vItemSpace = 1000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 8000000;
+        textures[] = {};
+    };
+	
+	// Apex DLC
+    class B_T_LSV_01_unarmed_F {
+        vItemSpace = 100;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 620000;
+        textures[] = {};
+    };
 
     class I_Truck_02_medical_F {
         vItemSpace = 150;
@@ -441,15 +467,15 @@ class LifeCfgVehicles {
 		};
     };
 
-    class O_MRAP_02_F {
-        vItemSpace = 60;
+    class O_T_MRAP_02_ghex_F {
+        vItemSpace = 90;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 150000;
+        price = 1500000;
         textures[] = { };
     };
 
     class C_Offroad_01_F {
-        vItemSpace = 65;
+        vItemSpace = 90;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         price = 12500;
         textures[] = {
@@ -477,8 +503,23 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             } },
-            { "Taxi", "civ", {
-                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
+			{ "Camo", "civ", {
+                "textures\fahrzeuge\civ\car\civ_offroad_camo.jpg"
+            } },
+			{ "Dodge", "civ", {
+                "textures\fahrzeuge\civ\car\civ_offroad_dodge.jpg"
+            } },
+			{ "Rockstargelb", "civ", {
+                "textures\fahrzeuge\civ\car\civ_offroad_rockstargelb.jpg"
+            } },
+			{ "Rockstarlila", "civ", {
+                "textures\fahrzeuge\civ\car\civ_offroad_rockstarlila.jpg"
+            } },
+			{ "Weed", "civ", {
+                "textures\fahrzeuge\civ\car\civ_offroad_weed.jpg"
+            } },
+			{ "Monster Energy", "civ", {
+                "textures\fahrzeuge\civ\car\monsterenergy_off.jpg"
             } },
             { "Polizei", "cop", {
                 "textures\fahrzeuge\cop\Pol_offroad.paa"
@@ -533,6 +574,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
+            } },
+			{ "Ken Block", "civ", {
+                "textures\fahrzeuge\civ\car\hatchback_sport_ken_block.jpg"
             } },
 			{ "Polizei", "cop", {
                 "textures\fahrzeuge\cop\Pol_hatchback.paa"
@@ -661,6 +705,27 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
+			{ "Ferrari", "civ", {
+                "textures\fahrzeuge\civ\car\civ_suv_ferrari.jpg"
+            } },
+			{ "Batman", "civ", {
+                "textures\fahrzeuge\civ\car\batman_suv.jpg"
+            } },
+			{ "Camo", "civ", {
+                "textures\fahrzeuge\civ\car\camo_suv.jpg"
+            } },
+			{ "Carbon", "civ", {
+                "textures\fahrzeuge\civ\car\carbon_suv.jpg"
+            } },
+			{ "Monster", "civ", {
+                "textures\fahrzeuge\civ\car\civ_suv_monster.jpg"
+            } },
+			{ "Skull", "civ", {
+                "textures\fahrzeuge\civ\car\civ_suv_skull.jpg"
+            } },
+			{ "Hello Kitty", "civ", {
+                "textures\fahrzeuge\civ\car\kitty.jpg"
+            } },
 			{ "Polizei", "cop", {
                 "textures\fahrzeuge\cop\Pol_SUV.paa"
             } },
@@ -721,12 +786,18 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
      class B_Heli_Light_01_stripped_F {
-        vItemSpace = 90;
+        vItemSpace = 120;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 275000;
+        price = 375000;
         textures[] = {
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
+            } },
+			{ "Red Bull", "reb", {
+                "textures\fahrzeuge\civ\air\civ_hummingbird_redbull.jpg"
+            } },
+			{ "Hello Kitty", "reb", {
+                "textures\fahrzeuge\civ\air\civ_hummingbird_kitty.jpg"
             } }
         };
     };
