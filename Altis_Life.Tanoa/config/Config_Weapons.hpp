@@ -101,7 +101,7 @@ class WeaponShops {
 
     //Basic Shops
     class genstore {
-        name = "Altis General Store";
+        name = "Tanoa General Store";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
@@ -124,7 +124,7 @@ class WeaponShops {
     };
 
     class f_station_store {
-        name = "Altis Fuel Station Store";
+        name = "Tanoa Fuel Station Store";
         side = "";
         license = "";
         level[] = { "", "", -1, "" };
@@ -148,7 +148,7 @@ class WeaponShops {
 
     //Cop Shops
     class cop_basic {
-        name = "Altis Cop Shop";
+        name = "Tanoa Cop Shop";
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };

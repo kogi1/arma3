@@ -1,10 +1,10 @@
 waitUntil {!isServer && !isNull player && player isEqualTo player};
 if (player diarySubjectExists "controls") exitWith {};
 
-player createDiarySubject ["credits","Credits"];
+player createDiarySubject ["credits","-- Wichtig --"];
 player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverrules","General Rules"];
-player createDiarySubject ["policerules","Police Procedures/Rules"];
+//player createDiarySubject ["serverrules","General Rules"];
+//player createDiarySubject ["policerules","Police Procedures/Rules"];
 player createDiarySubject ["safezones","Safe Zones (No Killing)"];
 //player createDiarySubject ["civrules","Civilian Rules"];
 player createDiarySubject ["illegalitems","Illegal Activity"];
@@ -25,39 +25,26 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["credits",
         [
-            "AsYetUntitled",
+            "Regelwerk",
                 "
-AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+Alle aktuellen Regeln findest du im Forum(forum.pk-tanoa.ovh) oder auf unserm TS(ts.pk-tanoa.ovh) und<br/>
+sind strikt einzuhalten. Bei nicht beachten des Regelwerks kann es zum Spielausschluss kommen. Nicht Wissen<br/>
+schützt nicht vor Strafe!<br/><br/>
+Solltest du Fragen haben stehen wir gerne auch im Supportbereich auf unserem TS zu Verfügung!<br/><br/><br/>
+Geschwindigkeiten:<br/>
+Freilandstraßen: 100km/h<br/>
+In Städten mit Vorangsraße: 60km/h<br/>
+In Städten ohne Vorangsraße: 30km/h<br/><br/>
                 "
         ]
     ];
 
     player createDiaryRecord ["changelog",
         [
-            "Altis Life Changelog",
+            "PK Tanoa Life Changelog",
                 "
-The full changelog can be found on the AsYetUntitled/Framework repository on GitHub. https://github.com/AsYetUntitled/Framework/<br/><br/>
-v4.4 release 3!<br/>
-By: danielstuart14<br/>
-Date: 31. May 2016<br/><br/>
-v4.4 release 2!<br/>
-By: danielstuart14<br/>
-Date: 20. March 2016<br/><br/>
-v4.4 release 1!<br/>
-By: danielstuart14<br/>
-Date: 12. February 2016<br/><br/>
-v4.3 release 4!<br/>
-By: danielstuart14<br/>
-Date: 31. January 2016<br/><br/>
-v4.3 release 3!<br/>
-By: danielstuart14<br/>
-Date: Not released<br/><br/>
-v4.3 release 2!<br/>
-By: danielstuart14<br/>
-Date: 22. January 2016<br/><br/>
-v4.3 release 1!<br/>
-By: danielstuart14<br/>
-Date: 19. January 2016<br/><br/>
+Die kompletten Changelog findest du in unserem Forum.<br/><br/>
+
                 "
         ]
     ];
@@ -66,7 +53,7 @@ Date: 19. January 2016<br/><br/>
         [
             "Server Change Log",
                 "
-This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.<br/><br/>
+Die kompletten Changelog findest du in unserem Forum.<br/><br/>
                 "
         ]
     ];
@@ -89,11 +76,13 @@ These are considered exploits, and you will not be kicked, but banned.<br/><br/>
         [
             "Safe Zones",
                 "
-If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
-Any vehicle spawn (shop or garage)<br/>
-Any weapon shop<br/>
-All Police HQs<br/>
-Rebel Outposts<br/><br/>
+In den sogenannten Safezones darf keiner getötet, ausgeraubt, niedergschlagen, oder als Geisel genommen werden.<br/>
+Sollte eines der oben angeführten Vorgänge trotzdem passieren, ist das als RDM zu werten.<br/><br/>
+Safezones sind:<br/>
+- Alle Medic HQs(100m Umkreis)<br/>
+- Rebellen Posten(200m Umkreis)<br/>
+- Fahrzeugspawns(25m Umkreis)<br/>
+- Alle auf der Map grün markierten Kreise<br/>
                 "
         ]
     ];
@@ -198,13 +187,10 @@ These are all judged by admins on a case by case basis.<br/><br/>
         [
             "New Life Rule",
                 "
-The New Life Rule applies to police and civilians.<br/><br/>
-Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-1. If you are killed you must wait 15 minutes before returning to the scene of your death.<br/>
-2. If you die during roleplay your past crimes are forgotten, but you also cannot seek revenge.<br/>
-3. If you are RDM'd, it is not a new life.<br/>
-4. If you manually respawn, it is not a new life.<br/>
-5. If you purposefully kill yourself to avoid roleplay, it is not a new life.<br/><br/>
+Du darfst deinen Sterbeort für 20 Minuten im Umkreis von 1 km nicht<br/>
+mehr betreten. Für die Polizei ist der Sterbeort nur für 10 Minuten<br/>
+nicht betretbar und bei 5 Cops oder weniger wird die New Life Regel<br/>
+für die Polizei außer Kraft gesetzt.
                 "
         ]
     ];
@@ -331,13 +317,10 @@ Proper Checkpoint Procedure:<br/>
         [
             "Speeding",
                 "
-The following speeds are to be enforced by the Altis Police Force for the absolute safety of the citizens of Kavala and all travelling beyond the city.<br/><br/>
-Inside major cities:<br/>
-Small roads: 50km/h<br/>
-Main roads: 65km/h<br/>
-Outside major cities:<br/>
-Small roads: 80km/h<br/>
-Main roads: 110km/h<br/><br/>
+Die Geschwindigkeiten sind einzuhalten:<br/><br/>
+Freilandstraßen: 100km/h<br/>
+In Städten mit Vorangsraße: 60km/h<br/>
+In Städten ohne Vorangsraße: 30km/h<br/>
                 "
         ]
     ];
