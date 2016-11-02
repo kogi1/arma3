@@ -124,7 +124,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "evidencebag" };
     };
 };
 
@@ -864,4 +864,14 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ziptie.paa";
     };
+	class evidencebag {
+		variable = "evidencebag";
+		displayName = "STR_Item_evidencebag";
+		weight = 0;
+		buyPrice = 0;
+		sellPrice = -1;
+		illegal = false;
+		edible = 100;
+		icon = "";
+	};
 };

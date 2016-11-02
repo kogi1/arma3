@@ -1,0 +1,5 @@
+Bürgeramt, Personalausweis!
+this allowDamage false;
+this enableSimulation false;
+this addAction[format["%1 fuer $%2 abholen",localize (getText(missionConfigFile >> "Licenses" >> "einbuergerung" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "einbuergerung" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"einbuergerung",0,false,false,"",' !license_civ_einbuergerung && playerSide == civilian '];
+this addAction["Persoenliche Daten aendern (Kosten: $250.000)",fvs_fnc_aenderePerso,"",0,false,false,"",' license_civ_einbuergerung && playerSide == civilian '];

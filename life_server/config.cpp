@@ -27,6 +27,13 @@ class CfgFunctions {
             class mresString {};
             class updatePartial {};
         };
+		class perso
+		{
+			file = "\life_server\Functions\MySQL\perso";
+			class persoRequest {};
+			class persoInsert {};
+			class persoUpdate {};
+		};
     };
 
     class Life_System {
@@ -124,6 +131,11 @@ class CfgFunctions {
 			 file = "\life_server\Functions\Smartphone";
 			 class handleMessages {};
 			 class msgRequest {};
+		};
+		class Airdrop
+		{
+			file = "\life_server\Functions\airdrop";
+			class generateAirdrop {};
 		};
     };
 };

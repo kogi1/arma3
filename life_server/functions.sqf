@@ -217,12 +217,27 @@ compileFinal "
     ctrlShow[3021,true];
 ";
 
+TON_fnc_cell_polizeimsgall = //NEW
+compileFinal "
+ if(isServer) exitWith {};
+ if((call life_coplevel) < 10) exitWith {hint ""Du bist dazu nicht berechtigt!"";};
+ private[""_msg"",""_from""];
+ ctrlShow[3023,false];
+ _msg = ctrlText 3003;
+ if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3023,true];};
+ [_msg,name player,6] remoteExecCall [""TON_fnc_clientMessage"",-2];
+ [] call life_fnc_cellphone;
+ hint format[""gesendete Rundfunknachricht: %1"",_msg];
+ ctrlShow[3023,true];
+";
+
 publicVariable "TON_fnc_cell_textmsg";
 publicVariable "TON_fnc_cell_textcop";
 publicVariable "TON_fnc_cell_textadmin";
 publicVariable "TON_fnc_cell_adminmsg";
 publicVariable "TON_fnc_cell_adminmsgall";
 publicVariable "TON_fnc_cell_emsrequest";
+publicVariable "TON_fnc_cell_polizeimsgall";
 //Client Message
 /*
     0 = private message
@@ -307,6 +322,13 @@ compileFinal "
 
             [""TextMessage"",[format [""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
         };
+		case 6: {
+			private[""_message"",""_admin""];
+			_message = format[""POLIZEI RUNDFUNK: %1"",_msg];
+			hint parseText format [""<t color='#0000FF'><t size='2'><t align='center'>Polizei Rundfunk<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Bürger<br/><t color='#33CC33'>Von: <t color='#ffffff'>Polizei Altis<br/><br/><t color='#33CC33'>Mitteilung:<br/><t color='#ffffff'>%1"",_msg];
+			[""PolizeiRundfunk"",[""Neue Polizei Mitteilung""]] call bis_fnc_showNotification;
+			systemChat _message;
+		};
     };
 ";
 publicVariable "TON_fnc_clientMessage";

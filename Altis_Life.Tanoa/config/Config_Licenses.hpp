@@ -187,4 +187,11 @@ class Licenses {
         illegal = false;
         side = "med";
     };
+	class einbuergerung {
+		variable = "einbuergerung";
+		displayName = "STR_License_einb";
+		price = 2500;
+		illegal = false;
+		side = "civ";
+	};
 };

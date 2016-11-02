@@ -11,6 +11,9 @@ _cMessageList = _display displayCtrl 88882;
 _cMessageHeader = _display displayCtrl 88886;
 _cMessageHeader ctrlSetText format["Message's From:Players:"];
 ctrlEnable[887892,false];
+if(((call life_coplevel) < 2) || playerSide != west) then { //10 kann durch einen beliebigen Rang ersetzt werden, ab dem es verfügbar sein soll
+ ctrlShow[3023,false];
+};
 switch(_type) do{ 
 case 0: { lbClear _cPlayerList;
  {if(alive _x && _x != player) then { 

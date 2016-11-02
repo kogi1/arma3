@@ -11,6 +11,14 @@
 ****** Backend Variables *****
 *****************************
 */
+fvs_persoReady = false;
+fvs_hakenregeln = false;
+fvs_checking = false;
+fvs_hakenrichtig = false;
+fvs_namenInfo = false;
+fvs_checking_a = false;
+fvs_namen_a = false;
+fvs_hakendaten = false;
 nn_last_vehicles = [];
 nn_empInUse = false;
 life_query_time = time;

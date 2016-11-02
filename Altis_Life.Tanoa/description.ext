@@ -4,6 +4,7 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "config\Config_Perso.hpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -20,6 +21,7 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
 	#include "dialog\statusBar.hpp"
+	#include "dialog\uiPerso.hpp"
 };
 
 class CfgFunctions {
@@ -116,6 +118,51 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
+	 class falschprof
+	 {
+	 title = "Falscher Profilname";
+	 subTitle = "";
+	 description = "Dein aktuelles Profil (Name) stimmt nicht mit dem abgespeicherten Namen im Personalausweis überein! Bitte aendere dein Profil. Falls du deinen Namen nicht mehr kennst, melde dich bitte beim Support!";
+	 pictureBackground = "";
+	 picture = "";
+	 pictureColor[] = {0,0.3,0.6,1};
+	 };
+	 class fehlerprof
+	 {
+	 title = "Fehler im Personalausweis";
+	 subTitle = "";
+	 description = "Bitte melde dich im Support und gebe den Fehler mit an!";
+	 pictureBackground = "";
+	 picture = "";
+	 pictureColor[] = {0,0.3,0.6,1};
+	 };
+	 class persoA
+	 {
+	 title = "Personalausweis";
+	 subTitle = "";
+	 description = "Bitte aendere dein Profilnamen auf den Namen, den du vor 5 Minuten beim Buergeramt angegeben hast!";
+	 pictureBackground = "";
+	 picture = "";
+	 pictureColor[] = {0,0.3,0.6,1};
+	 };
+	 class fformatprof
+	 {
+	 title = "Format Personalausweis";
+	 subTitle = "";
+	 description = "Bitte melde dich im Support und gebe den Fehler mit an!";
+	 pictureBackground = "";
+	 picture = "";
+	 pictureColor[] = {0,0.3,0.6,1};
+	 };
+	 class dialogperso
+	 {
+	 title = "Personalausweisdialog geschlossen";
+	 subTitle = "";
+	 description = "Dialog des Personalausweises wurde geschlossen...";
+	 pictureBackground = "";
+	 picture = "";
+	 pictureColor[] = {0,0.3,0.6,1};
+	 };
 };
 
 class CfgNotifications {
@@ -182,4 +229,12 @@ class CfgNotifications {
         duration = 10;
         priority = 5;
     };
+	class PolizeiRundfunk
+	 {
+		 title = "Polizei Rundfunk";
+		 iconPicture = "icons\messagepolice.paa"; //Icon kann geändert werden, kein Icon = leere ""
+		 description = "%1";
+		 duration = 10;
+		 priority = 5;
+	 };
 };
