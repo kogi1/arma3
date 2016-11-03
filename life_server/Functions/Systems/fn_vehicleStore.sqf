@@ -45,7 +45,7 @@ if (_impound) exitWith {
             deleteVehicle _vehicle;
         };
     } else {    // no free repairs!
-        _query = format ["UPDATE vehicles SET active='0', fuel='%3', damage='%4' WHERE pid='%1' AND plate='%2'",_uid , _plate, _fuel, _damage];
+        _query = format ["UPDATE vehicles SET active='0', impound='0', fuel='%3', damage='%4' WHERE pid='%1' AND plate='%2'",_uid , _plate, _fuel, _damage];
         _thread = [_query,1] call DB_fnc_asyncCall;
 
         if (!isNil "_vehicle" && {!isNull _vehicle}) then {
@@ -140,7 +140,7 @@ _trunk = [_trunk] call DB_fnc_mresArray;
 _cargo = [_cargo] call DB_fnc_mresArray;
 
 // update
-_query = format ["UPDATE vehicles SET active='0', inventory='%3', gear='%4', fuel='%5', damage='%6' WHERE pid='%1' AND plate='%2'", _uid, _plate, _trunk, _cargo, _fuel, _damage];
+_query = format ["UPDATE vehicles SET active='0', impound='0', inventory='%3', gear='%4', fuel='%5', damage='%6' WHERE pid='%1' AND plate='%2'", _uid, _plate, _trunk, _cargo, _fuel, _damage];
 _thread = [_query,1] call DB_fnc_asyncCall;
 
 if (!isNil "_vehicle" && {!isNull _vehicle}) then {

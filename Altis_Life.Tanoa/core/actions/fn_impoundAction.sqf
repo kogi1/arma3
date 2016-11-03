@@ -52,11 +52,7 @@ if (count crew _vehicle isEqualTo 0) then {
 
     life_impound_inuse = true;
 
-    if (life_HC_isActive) then {
-        [_vehicle,true,player] remoteExec ["HC_fnc_vehicleStore",HC_Life];
-    } else {
-        [_vehicle,true,player] remoteExec ["TON_fnc_vehicleStore",RSERV];
-    };
+    [_vehicle,true,player] remoteExecCall ["TON_fnc_vehicleImpound",RSERV];
 
     waitUntil {!life_impound_inuse};
     if (playerSide isEqualTo west) then {

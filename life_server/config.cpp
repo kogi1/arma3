@@ -91,6 +91,9 @@ class CfgFunctions {
             class recupkeyforHC {};
             class handleBlastingCharge {};
             class terrainSort {};
+			class getImpoundedvehicles {};
+			class vehicleImpound {};
+			class insureCar {};
         };
 
         class Housing {

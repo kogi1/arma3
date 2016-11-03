@@ -3,3 +3,10 @@ this allowDamage false;
 this enableSimulation false;
 this addAction[format["%1 fuer $%2 abholen",localize (getText(missionConfigFile >> "Licenses" >> "einbuergerung" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "einbuergerung" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"einbuergerung",0,false,false,"",' !license_civ_einbuergerung && playerSide == civilian '];
 this addAction["Persoenliche Daten aendern (Kosten: $250.000)",fvs_fnc_aenderePerso,"",0,false,false,"",' license_civ_einbuergerung && playerSide == civilian '];
+
+
+Verwahrstelle:
+this addAction["Verwahrungsstelle KFZ", { [getPlayerUID player,playerSide,"Car",player] remoteExecCall ["TON_fnc_getimpoundedVehicles",2]; createDialog "Life_impounded_menu"; disableSerialization; ctrlSetText[28020,"Suche verwarte Fahrzeuge"]; life_garage_sp = "kfz_spawn_ver"; life_garage_type = "Car"; }];
+
+Fahrzeugspawn:
+kfz_spawn_ver

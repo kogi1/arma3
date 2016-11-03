@@ -513,6 +513,21 @@
             <German>Aus dem Fahrzeug austeigen</German>
             <French>Sortir du véhicule</French>
         </Key> 
+		<Key ID="STR_Garage_NoImpVehicles">
+		<Original>Keine beschlagnahmten Fahrzeuge gefunden.</Original>
+		</Key>
+		<Key ID="STR_GUI_ImpGarage">
+		<Original>Verwahrungsstelle</Original>
+		</Key>
+		<Key ID="STR_GUI_YourImpVeh">
+		<Original>Beschlagnahmte Fahrzeuge</Original>
+		</Key>
+		<Key ID="STR_GUI_VehInfo">
+		<Original>Und nun?!</Original>
+		</Key>
+		<Key ID="STR_Shop_IMPVEH">
+		<Original>Um dein Beschlagnahmtes Fahrzeug wieder zu bekommen verlangen wir eine Gebühr von</Original>
+		</Key>
     </Package>
     <Package name="Admin_Menu">
         <Key ID="STR_Admin_Title">
@@ -8232,6 +8247,17 @@
             <Portuguese>Vender Garagem</Portuguese>
             <Polish>Sprzedaj garaż</Polish>
         </Key>
+		<Key ID="STR_InsuranceApply"> 
+			 <Original>You just insure your vehicle you are now protected against explosions!</Original> 
+			 <Czech>Právě jste pojistit své vozidlo se nyní chráněna proti výbuchu!</Czech> 
+			 <Spanish>Usted acaba de asegurar su vehículo que ahora está protegido contra explosiones!</Spanish> 
+			 <Italian>Basta assicurare il vostro veicolo si sono ora protetti contro le esplosioni!</Italian> 
+			 <Polish>Po prostu ubezpieczyć swój pojazd jesteś teraz zabezpieczona przed wybuchem!</Polish> 
+			 <Russian>Вы просто застраховать свой автомобиль, вы теперь защищены от взрывов!</Russian> 
+			 <French>Vous venez d'assurer votre véhicule vous êtes maintenant protégé contre les explosions!</French> 
+			 <Portuguese>Você só segurar o seu veículo que você está actualmente protegida contra explosões!</Portuguese> 
+			 <German>Sie haben Ihr Fahrzeug gegen Explosionen versichert!</German> 
+		</Key>
         <Key ID="STR_pInAct_RemoveContainer">
             <Original>Remove Container</Original>
             <Czech>Nádobu</Czech>

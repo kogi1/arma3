@@ -129,6 +129,9 @@ class CfgRemoteExec {
 		F(DB_fnc_persoRequest,SERVER) // Perso
 		F(DB_fnc_persoInsert,SERVER) // Perso
 		F(DB_fnc_persoUpdate,SERVER) // Perso
+		F(TON_fnc_vehicleImpound,SERVER)
+		F(TON_fnc_getimpoundedvehicles,SERVER)
+		F(TON_fnc_insureCar,SERVER) 
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -163,6 +166,7 @@ class CfgRemoteExec {
         F(HC_fnc_wantedFetch,HC)
         F(HC_fnc_wantedProfUpdate,HC)
         F(HC_fnc_wantedRemove,HC)
+		F(HC_fnc_insureCar,HC)
 
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
