@@ -57,6 +57,38 @@ if (life_container_active) then {
 //EMP Konsole - K
 
 switch (_code) do {
+   case 79:
+	{
+		if(vehicle player isEqualTo player) then {
+			if(!life_action_inUse) then {
+				player playActionNow "gestureHi";
+			};
+		};
+	};
+	case 80:
+	{
+		if(vehicle player isEqualTo player) then {
+			if(!life_action_inUse) then {
+				player playActionNow "gestureHiC";
+			};
+		};
+	};
+	case 81:
+	{
+		if(vehicle player isEqualTo player) then {
+			if(!life_action_inUse) then {
+				player playActionNow "gestureHiB";
+			};
+		};
+	};
+	case 75:
+	{
+		if(vehicle player isEqualTo player) then {
+			if(!life_action_inUse) then {
+				player playActionNow "gesturenod";
+			};
+		};
+	};
     //Space key for Jumping
     case 57: {
         if (isNil "jumpActionTime") then {jumpActionTime = 0;};
