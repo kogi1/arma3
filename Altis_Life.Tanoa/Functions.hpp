@@ -386,8 +386,12 @@ class Life_Client_Core {
 		class empVehicle {};
 		class vehicleWarned {};
 		class vehicleEmpd {};
+		class fuel {};
+		class fuelCheck {};
 	};
-	class felixvonstudsinske
+	
+};
+class felixvonstudsinske
 	{
 	 tag = "fvs";
 	 class perso
@@ -415,4 +419,3 @@ class Life_Client_Core {
 		class aenderePerso {};
 	 };
 	};
-};

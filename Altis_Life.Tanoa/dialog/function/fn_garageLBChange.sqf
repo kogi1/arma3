@@ -6,8 +6,11 @@
     Description:
     Can't be bothered to answer it.. Already deleted it by accident..
 */
+
+
 disableSerialization;
 private["_control","_index","_className","_classNameLife","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_sellMultiplier","_insurance","_insuranceMultiplier","_price","_storageFee","_purchasePrice","_insurancePrice"];_control = _this select 0;
+_control = _this select 0;
 _index = _this select 1;
 
 //Fetch some information.
@@ -61,22 +64,21 @@ if (!(_sellPrice isEqualType 0) || _sellPrice < 1) then {_sellPrice = 500;};
 if (!(_retrievePrice isEqualType 0) || _retrievePrice < 1) then {_retrievePrice = 500;};
 if (!(_insurancePrice isEqualType 0) || _insurancePrice < 1) then {_insurancePrice = 500;};
 
-(CONTROL(2800,2803)) ctrlSetStructuredText parseText format [
-    (CONTROL(2800,2803)) ctrlSetStructuredText parseText format[
-	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
-	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>$%2</t><br/>
-	Versicherungspreis: <t color='#8cff9b'>$%9</t><br/>
-	Staatlichen Versicherung: %10<br/>
-	" +(localize "STR_Shop_Veh_UI_Color")+ " <t color='#8cff9b'>%8</t><br/>
-	" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " <t color='#8cff9b'>%3 km/h</t><br/>
-	" +(localize "STR_Shop_Veh_UI_HPower")+ " <t color='#8cff9b'>%4</t><br/>
-	" +(localize "STR_Shop_Veh_UI_PSeats")+ " <t color='#8cff9b'>%5</t><br/>
-	" +(localize "STR_Shop_Veh_UI_Trunk")+ " <t color='#8cff9b'>%6</t><br/>
-	" +(localize "STR_Shop_Veh_UI_Fuel")+ " <t color='#8cff9b'>%7</t>
-	",
+(CONTROL(2800,2803)) ctrlSetStructuredText parseText format[
+(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
+" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>$%2</t><br/>
+Versicherungspreis: <t color='#8cff9b'>$%9</t><br/>
+Staatlichen Versicherung: %10<br/>
+" +(localize "STR_Shop_Veh_UI_Color")+ " <t color='#8cff9b'>%8</t><br/>
+" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " <t color='#8cff9b'>%3 km/h</t><br/>
+" +(localize "STR_Shop_Veh_UI_HPower")+ " <t color='#8cff9b'>%4</t><br/>
+" +(localize "STR_Shop_Veh_UI_PSeats")+ " <t color='#8cff9b'>%5</t><br/>
+" +(localize "STR_Shop_Veh_UI_Trunk")+ " <t color='#8cff9b'>%6</t><br/>
+" +(localize "STR_Shop_Veh_UI_Fuel")+ " <t color='#8cff9b'>%7</t>
+",
 [_retrievePrice] call life_fnc_numberText,
 [_sellPrice] call life_fnc_numberText,
-(_vehicleInfo select 8),
+(_vehicleInfo select 8 ),
 (_vehicleInfo select 11),
 (_vehicleInfo select 10),
 if (_trunkSpace isEqualTo -1) then {"None"} else {_trunkSpace},
@@ -86,12 +88,12 @@ _vehicleColor,
 if(_insurance == 1) then {"<t color='#8cff9b'>Versicherung</t>"} else {"<t color='#FF0000'>Keine Versicherung</t>"},
 (_vehicleInfo select 9)
 ];
+
 if(_insurance == 1) then {
 ctrlShow [97480,False];
 }else{
 ctrlShow [97480,True];
 };
-];
 
 ctrlShow [2803,true];
 ctrlShow [2830,true];

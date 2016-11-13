@@ -48,12 +48,6 @@ class CfgFunctions {
             class wantedCrimes {};
             class wantedProfUpdate {};
         };
-		class scripts
-		{
-			file = "\life_server\Functions\Scripts";
-			class fuel {};
-			class fuelCheck {};
-		};
         class Jail_Sys {
             file = "\life_server\Functions\Jail";
             class jailSys {};

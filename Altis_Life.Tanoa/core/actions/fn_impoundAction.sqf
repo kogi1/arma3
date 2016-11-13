@@ -2,7 +2,6 @@
 /*
     File: fn_impoundAction.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Impounds the vehicle
 */
@@ -52,7 +51,11 @@ if (count crew _vehicle isEqualTo 0) then {
 
     life_impound_inuse = true;
 
-    [_vehicle,true,player] remoteExecCall ["TON_fnc_vehicleImpound",RSERV];
+    if (life_HC_isActive) then {
+        [_vehicle,true,player] remoteExec ["TON_fnc_vehicleImpound",HC_Life];
+    } else {
+        [_vehicle,true,player] remoteExec ["TON_fnc_vehicleImpound",RSERV];
+    };
 
     waitUntil {!life_impound_inuse};
     if (playerSide isEqualTo west) then {

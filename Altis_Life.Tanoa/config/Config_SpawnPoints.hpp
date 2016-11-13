@@ -138,7 +138,7 @@ class CfgSpawnPoints {
         class Civilian {
             class Georgetown {
                 displayName = "Georgetown";
-                spawnMarker = "civ_spawn_1";
+                spawnMarker = "civ_spawn_g";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "!license_civ_rebel";
             };
