@@ -5,6 +5,7 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "config\Config_Perso.hpp"
+#include "maverick\maverick_master.cpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -22,10 +23,12 @@ class RscTitles {
     #include "dialog\hud_stats.hpp"
 	#include "dialog\statusBar.hpp"
 	#include "dialog\uiPerso.hpp"
+	#include "maverick\tuning\dialogs\titles.hpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
+	#include "maverick\maverick_functions_master.cpp"
 };
 
 class CfgSounds {

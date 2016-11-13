@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5772;
+		nextID=5805;
 	};
 	class MarkerIDProvider
 	{
-		nextID=224;
+		nextID=225;
 	};
 	class Camera
 	{
-		pos[]={11545.09,52.955616,2606.5579};
-		dir[]={-0.42849544,-0.33500317,0.83916825};
-		up[]={-0.15235263,0.94221294,0.29836878};
-		aside[]={0.89063096,-6.6480425e-008,0.45476973};
+		pos[]={5836.2319,18.044159,10356.348};
+		dir[]={0.057720508,-0.35527992,0.93300843};
+		up[]={0.021938799,0.93475533,0.35461912};
+		aside[]={0.99812114,8.988718e-008,-0.061749361};
 	};
 };
 binarizationWanted=0;
@@ -88,7 +88,11 @@ addons[]=
 	"A3_Rocks_F_Sharp",
 	"A3_Structures_F_Exp_Military_Camonets",
 	"A3_Structures_F_Mil_Shelters",
-	"A3_Structures_F_Kart_Signs_Companies"
+	"A3_Structures_F_Kart_Signs_Companies",
+	"A3_Structures_F_Heli_Items_Electronics",
+	"A3_Structures_F_Ind_FuelStation",
+	"A3_Structures_F_Exp_Commercial_Market",
+	"A3_Structures_F_Items_Stationery"
 };
 class AddonsMetaData
 {
@@ -290,6 +294,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -304,24 +326,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -380,7 +384,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1133;
+		items=1156;
 		class Item0
 		{
 			dataType="Marker";
@@ -424,7 +428,7 @@ class Mission
 			position[]={5729.9951,5.6554198,10325.239};
 			name="civ_spawn_1";
 			type="Empty";
-			angle=107.95922;
+			angle=107.95921;
 			id=5;
 		};
 		class Item5
@@ -451,6 +455,7 @@ class Mission
 			type="Empty";
 			angle=13.856561;
 			id=8;
+			atlOffset=0.079476357;
 		};
 		class Item8
 		{
@@ -522,6 +527,7 @@ class Mission
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=16;
+			atlOffset=0.079496384;
 		};
 		class Item15
 		{
@@ -881,6 +887,7 @@ class Mission
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=53;
+			atlOffset=0.079496384;
 		};
 		class Item49
 		{
@@ -1889,7 +1896,7 @@ class Mission
 			position[]={7035.3618,132.60254,4087.9617};
 			name="reb_v_2";
 			type="Empty";
-			angle=179.70589;
+			angle=179.70587;
 			id=157;
 			atlOffset=132.72253;
 		};
@@ -2286,7 +2293,7 @@ class Mission
 			text="@STR_MAR_Hospital";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			angle=24.028091;
+			angle=24.02809;
 			id=197;
 		};
 		class Item183
@@ -2347,7 +2354,7 @@ class Mission
 			position[]={6849.2598,2.6600001,7437.4902};
 			name="kart_shop_1";
 			type="Empty";
-			angle=229.15735;
+			angle=229.15733;
 			id=203;
 		};
 		class Item189
@@ -8949,13 +8956,13 @@ class Mission
 				angles[]={0,1.5885869,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.45715857;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15018,7 +15025,7 @@ class Mission
 					};
 					id=960;
 					type="C_man_polo_3_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21840,7 +21847,6 @@ class Mission
 						angles[]={0,4.4320588,6.2272439};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -21848,7 +21854,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
-					atlOffset=2.3841858e-007;
+					atlOffset=0.5024755;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27326,7 +27332,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=257.53326;
 			id=2000;
-			atlOffset=0.004250288;
+			atlOffset=0.11424375;
 		};
 		class Item638
 		{
@@ -27345,7 +27351,7 @@ class Mission
 			};
 			id=2001;
 			type="Land_Atm_02_F";
-			atlOffset=2.1457672e-005;
+			atlOffset=0.11001492;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51648,6 +51654,569 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item1133
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5787.9849,8.4817886,10340.415};
+						angles[]={0,1.6732241,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; " \n "this enableSimulation false; " \n "this addAction[format[""%1 fuer $%2 abholen"",localize (getText(missionConfigFile >> ""Licenses"" >> ""einbuergerung"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""einbuergerung"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""einbuergerung"",0,false,false,"""",' !license_civ_einbuergerung && playerSide == civilian ']; " \n "this addAction[""Persoenliche Daten aendern (Kosten: $250.000)"",fvs_fnc_aenderePerso,"""",0,false,false,"""",' license_civ_einbuergerung && playerSide == civilian '];";
+						name="buergeramt";
+						isPlayer=1;
+					};
+					id=5773;
+					type="C_man_1_1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5772;
+		};
+		class Item1134
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5788.8784,8.886694,10340.38};
+				angles[]={0,4.8480358,6.282208};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5774;
+			type="Land_TableDesk_F";
+			atlOffset=0.00020980835;
+		};
+		class Item1135
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5788.9824,9.5571556,10341.117};
+				angles[]={6.2717357,1.6959364,0.00059341197};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5775;
+			type="Land_PCSet_01_case_F";
+			atlOffset=0.82079697;
+		};
+		class Item1136
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5789.1714,9.5559931,10340.634};
+				angles[]={0.0074351025,1.4440504,0.0049916417};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5776;
+			type="Land_PCSet_01_screen_F";
+			atlOffset=0.82219219;
+		};
+		class Item1137
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5788.8359,9.3273945,10340.36};
+				angles[]={0.0074351025,1.6048477,0.0049916417};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5777;
+			type="Land_PCSet_01_mouse_F";
+			atlOffset=1.335144e-005;
+		};
+		class Item1138
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5788.7871,9.3098373,10340.722};
+				angles[]={0.0074351025,1.2946329,0.0049916417};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5778;
+			type="Land_PCSet_01_keyboard_F";
+			atlOffset=0.0026674271;
+		};
+		class Item1139
+		{
+			dataType="Marker";
+			position[]={5788.5723,1.089768e+022,10338.995};
+			name="Gen_3_1_1435";
+			text="Bürgeramt";
+			type="c_unknown";
+			colorName="ColorGreen";
+			id=5780;
+			atlOffset=1.089768e+022;
+		};
+		class Item1140
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4962.9448,489.32562,9279.5752};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=5783;
+			type="Land_FuelStation_Shed_F";
+			atlOffset=435.20557;
+		};
+		class Item1141
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5807.1841,5.9893579,10645.268};
+				angles[]={0,3.0839794,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5784;
+			type="Land_MetalShelter_01_F";
+		};
+		class Item1142
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.7319,4.8370595,10640.84};
+				angles[]={0,4.6849194,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5785;
+			type="Land_TableDesk_F";
+		};
+		class Item1143
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.813,4.8370595,10643.979};
+				angles[]={0,4.686244,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5786;
+			type="Land_TableDesk_F";
+		};
+		class Item1144
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.5698,5.260067,10641.213};
+				angles[]={0.0063704518,6.2196379,0.0070860367};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5787;
+			type="Land_Notepad_F";
+			atlOffset=0.81899977;
+		};
+		class Item1145
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.5859,5.2571836,10641.09};
+				angles[]={0.0063704518,4.4134316,0.0071034902};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5788;
+			type="Land_PencilBlue_F";
+			atlOffset=0.0030255318;
+		};
+		class Item1146
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.5479,5.2574592,10640.449};
+				angles[]={0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5789;
+			type="Land_MobilePhone_smart_F";
+			atlOffset=0.00026035309;
+		};
+		class Item1147
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.6914,5.2632432,10644.331};
+				angles[]={0,4.8919797,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5792;
+			type="Land_PencilBlue_F";
+			atlOffset=0.0095696449;
+		};
+		class Item1148
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.6113,5.2596374,10644.486};
+				angles[]={0,6.2196379,0.0069225952};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5793;
+			type="Land_Notepad_F";
+		};
+		class Item1149
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5808.7231,5.2574596,10643.508};
+				angles[]={0,1.5707964,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; " \n "this enableSimulation false;";
+			};
+			id=5794;
+			type="Land_MobilePhone_smart_F";
+			atlOffset=0.00026035309;
+		};
+		class Item1150
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5808.1851,4.4314384,10640.795};
+						angles[]={0,1.4268415,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; " \n "this enableSimulation false;this addAction[""Verwahrungsstelle KFZ"", { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getimpoundedVehicles"",2]; createDialog ""Life_impounded_menu""; disableSerialization; ctrlSetText[28020,""Suche verwarte Fahrzeuge""]; life_garage_sp = ""kfz_spawn_ver""; life_garage_type = ""Car""; }];";
+						name="Kfzverw";
+					};
+					id=5796;
+					type="C_Man_casual_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5795;
+		};
+		class Item1151
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5808.2529,4.4314384,10643.97};
+						angles[]={0,1.4268415,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; " \n "this enableSimulation false;this addAction[""Verwahrungsstelle Helikopter"", { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getimpoundedVehicles"",2]; createDialog ""Life_impounded_menu""; disableSerialization; ctrlSetText[28020,""Suche verwarte Fahrzeuge""]; life_garage_sp = ""kfz_spawn_ver""; life_garage_type = ""Air""; }];";
+						name="Kfzverw_1";
+					};
+					id=5798;
+					type="C_Man_casual_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5797;
+		};
+		class Item1152
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5793.624,4.4314384,10644.49};
+						angles[]={0,1.4268415,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; " \n "this enableSimulation false;";
+						name="Kfzverw_2";
+					};
+					id=5800;
+					type="C_Man_casual_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5799;
+		};
+		class Item1153
+		{
+			dataType="Marker";
+			position[]={5814.749,-3.4354657e-032,10673.586};
+			name="kfz_spawn_ver";
+			type="Empty";
+			angle=175.99998;
+			id=5801;
+			atlOffset=-4.4299998;
+		};
+		class Item1154
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5837.7861,8.0414391,10374.207};
+						angles[]={0,3.1435473,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; " \n "this enableSimulation false;npc_tuning_1 = this; " \n "player addAction [""Tuning Shop"", {[vehicle player] spawn mav_tuning_fnc_start}];";
+						name="veh_tune";
+					};
+					id=5803;
+					type="C_man_sport_1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5802;
+		};
+		class Item1155
+		{
+			dataType="Marker";
+			position[]={5837.5151,0,10374.396};
+			name="veh_tuning_mark";
+			text="Tuning Shop";
+			type="mil_dot";
+			colorName="ColorKhaki";
+			id=5804;
+			atlOffset=-8.04;
 		};
 	};
 };

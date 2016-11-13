@@ -174,3 +174,4 @@ if ((_vInfo select 14) isEqualTo 1) then {
 [1,"Ihr Fahrzeug wurde bereitgestellt, ist aber nicht versichert!"] remoteExecCall ["life_fnc_broadcast",_unit];
 };
 serv_sv_use deleteAt _servIndex;
+[_vid, _vehicle, 3] spawn mav_tuning_fnc_getTuningFromDB;

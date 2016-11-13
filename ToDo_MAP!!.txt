@@ -7,6 +7,12 @@ this addAction["Persoenliche Daten aendern (Kosten: $250.000)",fvs_fnc_aenderePe
 
 Verwahrstelle:
 this addAction["Verwahrungsstelle KFZ", { [getPlayerUID player,playerSide,"Car",player] remoteExecCall ["TON_fnc_getimpoundedVehicles",2]; createDialog "Life_impounded_menu"; disableSerialization; ctrlSetText[28020,"Suche verwarte Fahrzeuge"]; life_garage_sp = "kfz_spawn_ver"; life_garage_type = "Car"; }];
-
+this addAction["Verwahrungsstelle Helikopter", { [getPlayerUID player,playerSide,"Air",player] remoteExecCall ["TON_fnc_getimpoundedVehicles",2]; createDialog "Life_impounded_menu"; disableSerialization; ctrlSetText[28020,"Suche verwarte Fahrzeuge"]; life_garage_sp = "kfz_spawn_ver"; life_garage_type = "Air"; }];
 Fahrzeugspawn:
 kfz_spawn_ver
+
+
+
+[vehicle player] spawn mav_tuning_fnc_start;
+To allow users to interact with an NPC simply add this line into the NPCs init-field
+npc_tuning_1 = this;
