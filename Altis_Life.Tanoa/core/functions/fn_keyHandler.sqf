@@ -148,6 +148,8 @@ switch (_code) do {
 
     //Map Key
     case _mapKey: {
+		[] spawn life_fnc_openMap;
+		 _handled = true;
         switch (playerSide) do {
             case west: {if (!visibleMap) then {[] spawn life_fnc_copMarkers;}};
             case independent: {if (!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
@@ -293,14 +295,7 @@ switch (_code) do {
 			[] call life_fnc_gater;
 		};
 	};
-	case _mapKey: {
-		 [] spawn life_fnc_openMap;
-		 _handled = true;
-		 //switch (playerSide) do {
-		 //case west: {if(!visibleMap) then {[] spawn AGUK_fnc_copMarkers;}};
-		 //case independent: {if(!visibleMap) then {[] spawn AGUK_fnc_medicMarkers;}};
-		 //};
-		 };
+
 
     //U Key
     case 22: {

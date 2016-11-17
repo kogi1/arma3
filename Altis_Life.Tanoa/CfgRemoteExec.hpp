@@ -76,6 +76,8 @@ class CfgRemoteExec {
 		F(TON_fnc_msgRequest,SERVER)
 		F(life_fnc_vehicleEmpd,CLIENT)
 		F(life_fnc_vehicleWarned,CLIENT)
+		F(life_fnc_mapMarkers,CLIENT)
+		F(life_fnc_openMap,CLIENT)
 		F(fvs_fnc_perso_laden,CLIENT) // Perso
 		F(fvs_fnc_persoBeantragen,CLIENT) // Perso
 		F(fvs_fnc_persoCheck,CLIENT) // Perso

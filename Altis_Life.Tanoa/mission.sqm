@@ -277,7 +277,7 @@ class AddonsMetaData
 randomSeed=2639488;
 class ScenarioData
 {
-	author="Tonic";
+	author="PK-Tanoa";
 	overViewPicture="textures\armalife.jpg";
 	overViewPictureLocked="textures\armalife.jpg";
 	loadScreen="textures\armalife.jpg";
@@ -372,8 +372,8 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Tanoa Life RPG v5.0.0";
-		overviewText="@STR_MISC_overviewText";
+		briefingName="PK-Tanoa Life 2.0";
+		overviewText="by Pk-Tanoa";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;

@@ -7,8 +7,8 @@ disableSerialization;
 if(!(createDialog "CHIMPmap")) exitWith {};
 _map = findDisplay 38500;
 _filterList = _map displayCtrl 1500; 
-
-_filterList lbAdd "All";
+disableserialization;
+_filterList lbAdd "Alle";
 _filterList lbSetValue[(lbSize _filterList)-1,-1];
 _filterList lbSetData[(lbSize _filterList)-1,"ALL"];
 
@@ -19,7 +19,7 @@ _filterList lbSetData[(lbSize _filterList)-1,"ALL"];
 } forEach getArray(missionConfigFile >> "mapAreas" >> "filters");
 
 if(playerSide == civilian && {count life_houses > 0}) then {
-	_filterList lbAdd "My Houses";
+	_filterList lbAdd "Meine Häuser";
 	_filterList lbSetValue[(lbSize _filterList)-1,-1];
 	_houseMkrs = [];
 	{

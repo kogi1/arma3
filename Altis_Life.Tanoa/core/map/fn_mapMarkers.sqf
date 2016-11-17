@@ -6,6 +6,7 @@
 */
 _map = findDisplay 38500;
 _filterList = _map displayCtrl 1500; 
+disableserialization;
 if(lbCurSel _filterList == -1) exitWith {};
 _currentMarkers = _filterList lbData (lbCurSel _filterList);
 _mapMarkers = [];
