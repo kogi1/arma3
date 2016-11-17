@@ -20,29 +20,29 @@ scriptName "fn_init";
 		if ((driver (vehicle player)) != player) exitWith {false};
 
 		// Check if its any key that actually does something in this script
-		if !((_this select 1) in [16,18,34]) exitWith {};
 
 		// Anti network spam measure
 		if (diag_tickTime - mav_indicator_lasttick < 1) exitWith {false};
 		mav_indicator_lasttick = diag_tickTime;
-
+/*
 		// Cases
-		if ((_this select 1) == 16) exitWith {
+		if ((_this select 1) == 16 || (_this select 1) in (ActionKeys "User1")) exitWith {
 			[vehicle player, "left"] remoteExec ["mav_indicator_fnc_enableIndicator"];
 		};
-		if ((_this select 1) == 18) exitWith {
+		if ((_this select 1) == 18 || (_this select 1) in (ActionKeys "User2")) exitWith {
 			[vehicle player, "right"] remoteExec ["mav_indicator_fnc_enableIndicator"];
 		};
-		if ((_this select 1) == 34) exitWith {
+		if ((_this select 1) == 34 || (_this select 1) in (ActionKeys "User3")) exitWith {
 			[vehicle player, "warn"] remoteExec ["mav_indicator_fnc_enableIndicator"];
 		};
-		if ((_this select 1) == ((actionKeys "User1") select 0)) exitWith {
+	*/	
+		if ((_this select 1) in (ActionKeys "User1")) exitWith {
 			[vehicle player, "left"] remoteExec ["mav_indicator_fnc_enableIndicator"];
 		};
-		if ((_this select 1) == ((actionKeys "User2") select 0)) exitWith {
+		if ((_this select 1) in (ActionKeys "User2")) exitWith {
 			[vehicle player, "right"] remoteExec ["mav_indicator_fnc_enableIndicator"];
 		};
-		if ((_this select 1) == ((actionKeys "User3") select 0)) exitWith {
+		if ((_this select 1) in (ActionKeys "User3")) exitWith {
 			[vehicle player, "warn"] remoteExec ["mav_indicator_fnc_enableIndicator"];
 		};
 	}];

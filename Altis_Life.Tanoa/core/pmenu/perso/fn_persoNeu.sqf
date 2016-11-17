@@ -60,7 +60,7 @@ _zeichen = _zeichen splitString "";
 	};
 } forEach _profname;
 
-_email = format["%1%2@citizen.altis",_name,round random 230];
+_email = format["%1%2@citizen.tanoa",_name,round random 230];
 _splitUID = (getPlayerUID player) splitString "";
 _handynr = str((round random(99))+700) + (_splitUID select 9) + (_splitUID select 10) + (_splitUID select 11) + (_splitUID select 12) + (_splitUID select 13) + (_splitUID select 14) + (_splitUID select 15) + (_splitUID select 16);
 fvs_handynr = _handynr;

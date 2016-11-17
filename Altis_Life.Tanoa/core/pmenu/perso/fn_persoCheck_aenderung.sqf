@@ -51,7 +51,7 @@ if(fvs_namen_a) then { // Ist die Checkbox aktiv, so wird auch das Eingabefeld f
 			};
 		};
 	} forEach _profname;
-	_email = format["%1%2@citizen.altis",_name,round random 230];
+	_email = format["%1%2@citizen.tanoa",_name,round random 230];
 	_anzeigeEmail ctrlSetStructuredText parseText format["%1",_email];
 } else {
 	_name = "";
@@ -68,7 +68,7 @@ if(fvs_namen_a) then { // Ist die Checkbox aktiv, so wird auch das Eingabefeld f
 			};
 		};
 	} forEach _profname;
-	_email = format["%1%2@citizen.altis",_name,round random 230];
+	_email = format["%1%2@citizen.tanoa",_name,round random 230];
 	_anzeigeEmail ctrlSetStructuredText parseText format["%1",_email];
 };
 

@@ -15,6 +15,7 @@
 			player removeAction Barrier7;
 			player removeAction Barrier8;
 			player removeAction Barrier9;
+			player removeAction Barrier10;
 			
 		BarrierOpen = 1;
 	
@@ -25,7 +26,7 @@
 		placeableClass = ((_this select 3)select 0);	
 		placeable = placeableClass createVehicle position player;
 		
-		if (placeableClass == "Land_BarGate_F") then { 
+		if (placeableClass == "Land_BarGate_F" || placeableClass == "Land_PortableLight_double_F" || placeableClass == "RoadCone_L_F" || placeableClass == "RoadBarrier_F") then { 
 			placeable attachTo [player, [0, 4, 4.3]];
 			placeable allowdammage false;
 		} else {
@@ -48,6 +49,8 @@
 		deleteVehicle (_barrier select 0);
 		_barrier = position player nearObjects ["Land_BarGate_F", 8];
 		deleteVehicle (_barrier select 0);	
+		_barrier = position player nearObjects ["Land_PortableLight_double_F", 8];
+		deleteVehicle (_barrier select 0);	
 	};
 	
 	
@@ -57,6 +60,7 @@
 		Barrier4 = player addaction [("<t color=""#00ced1"">" + ("Barricade") +"</t>"),{call placeBarriers;},["RoadBarrier_F"],0.1,false,true,"","vehicle player == player"];
 		Barrier5 = player addaction [("<t color=""#00ced1"">" + ("Small Barricade w/ Light") +"</t>"),{call placeBarriers;},["RoadBarrier_small_F"],0.1,false,true,"","vehicle player == player"];	
 		Barrier6 = player addaction [("<t color=""#00ced1"">" + ("Bargate") +"</t>"),{call placeBarriers;},["Land_BarGate_F"],0.1,false,true,"","vehicle player == player"];	
+		Barrier10 = player addaction [("<t color=""#00ced1"">" + ("Light") +"</t>"),{call placeBarriers;},["Land_PortableLight_double_F"],0.1,false,true,"","vehicle player == player"];	
 		Barrier8 = player addaction [("<t color=""#0066d1"">" + ("Drop") +"</t>"),{detach placeable; placeable setVectorUP (surfaceNormal [(getPosATL placeable) select 0,(getPosATL placeable) select 1]);},[""],0.1,false,true,"","vehicle player == player"];
 		Barrier9 = player addaction [("<t color=""#0066d1"">" + ("Remove") +"</t>"),{call removeBarriers},[""],0.1,false,true,"","vehicle player == player"];
 		Barrier7 = player addaction [("<t color=""#FF3300"">" + ("### Close ###") +"</t>"),{
@@ -70,6 +74,7 @@
 			player removeAction Barrier7;
 			player removeAction Barrier8;
 			player removeAction Barrier9;
+			player removeAction Barrier10;
 			
 			detach placeable;
 			placeable setVectorUP (surfaceNormal [(getPosATL placeable) select 0,(getPosATL placeable) select 1]);

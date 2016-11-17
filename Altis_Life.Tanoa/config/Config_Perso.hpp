@@ -25,225 +25,113 @@ class Personalausweis {
 	class persoOrt {
 		class 39071 {
 			id = 1;
-			name = "Abdera";
+			name = "Georgetown";
 			plz = 39071;
-			str[] = { {"Kleine Felswand", 5},{"Kleiner Felsbogen",3},{"Ruhender Platz",2} };
+			str[] = { {"Georgetown-Hauptstraße", 5},{"Hafenstraße",3},{"Meerweg",2} };
 		};	
 		class 34142 {
 			id = 2;
-			name = "Aggelochori";
+			name = "Tanuka";
 			plz = 34142;
-			str[] = { {"Strandmarsch",2},{"Kavalastrasse",12},{"Renergusstrasse",12},{"Meerblick",9},{"Zur Fabrik",12},{"Zum Sportplatz",13} };
+			str[] = { {"Tanuka-Hauptstraße",4},{"In den Busch",12},{"Krankenhausweg",12},{"Eisenstraße",9}};
 		};	
 		class 32892 {
 			id = 3;
-			name = "Agios Dionysios";
+			name = "La Rochelle";
 			plz = 32892;
-			str[] = {{"Hauptstrasse",30},{"Palmenarm",12},{"Zum Mischwalde",6}};
+			str[] = {{"La Rochelle-Hauptstrasse",30},{"Meerweg",12},{"Zum Urwald",6}};
 		};	
 		class 35557 {
 			id = 4;
-			name = "Alikampos";
+			name = "Nicolet";
 			plz = 35557;
-			str[] = {{"Schlesienstrasse",13},{"Muehlenberg",9}};
+			str[] = {{"Nicolet-Hauptstrasse",13},{"Meerweg",9},{"Tankstellenweg",2}};
 		};	
 		class 32449 {
 			id = 5;
-			name = "Anthrakia";
+			name = "Galili";
 			plz = 32449;
-			str[] = {{"Frickestrasse",12},{"An der Kirche",9},{"Zur Traenke",3}};
+			str[] = {{"Feldweg",3},{"Heroinecke",2}};
 		};	
 		class 39136 {
 			id = 6;
-			name = "Athira";
+			name = "Vagalala";
 			plz = 39136;
-			str[] = {{"Zum Sportplatz",12},{"Am Markt",9},{"Poststrasse",8},{"Zur Fabrik",3},{"Richtung Glauben",10}};
+			str[] = {{"Hauptstaße",6},{"Vagalala-Straße",9},{"Sommerwaldweg",8}};
 		};	
 		class 32632 {
 			id = 7;
-			name = "Chalkeia";
+			name = "Ouméré";
 			plz = 32632;
-			str[] = {{"Ueber den Huegel",8},{"Zur Urne",5},{"Friedensstrasse",2}};
+			str[] = {{"Hauptstaße",8},{"Schildkrötenweg",5},{"Waldsiedlung",2}};
 		};	
 		class 34949 {
 			id = 8;
-			name = "Charkia";
+			name = "Blue Pearl";
 			plz = 34949;
-			str[] = {{"Muehlenblick",5},{"Zweigstrasse",5},{"Am Industriepark",15}};
+			str[] = {{"Hauptstraße",5},{"Zum Hafen",5},{"Kupferweg",4}};
 		};	
 		class 31593 {
 			id = 9;
-			name = "Dorida";
+			name = "Lijnhaven";
 			plz = 31593;
-			str[] = {{"Zum Lichtschein",2},{"Zum Felde",6}};
+			str[] = {{"Hauptstraße",6},{"Airportstraße",6},{"Einkaufsmeile",6},{"Dealerstraße",6}};
 		};	
 		class 39895 {
 			id = 10;
-			name = "Feres";
+			name = "Moddergat";
 			plz = 39895;
-			str[] = {{"Ruinenstrasse",8},{"Industriehof",3}};
+			str[] = {{"Seitenstraße",8},{"Diamantenweg",3},{"Feldpassage",3}};
 		};	
 		class 38441 {
 			id = 11;
-			name = "Frini";
+			name = "Katkoula";
 			plz = 38441;
-			str[] = {{"Vom Walde",5}};
+			str[] = {{"Hafenstraße",5},{"Tankstellenweg",5},{"Seitensiedlung",5}};
 		};	
 		class 33300 {
 			id = 12;
-			name = "Galati";
+			name = "Balavu";
 			plz = 33300;
-			str[] = {{"Am Berg",12},{"Am Blumenbeet",4}};
+			str[] = {{"Zulassungsstraße",12},{"Nachrichtenweg",4}};
 		};	
 		class 30932 {
 			id = 13;
-			name = "Gravia";
+			name = "Tuvanaka";
 			plz = 30932;
-			str[] = {{"Halbstrasse",5},{"Zum Flugfeld",7},{"Vom Sportplatz",3}};
+			str[] = {{"Besenweg",5},{"Händlerweg",7},{"Marktweg",3}};
 		};	
 		class 35682 {
 			id = 14;
-			name = "Kalithea";
+			name = "Buawa";
 			plz = 35682;
-			str[] = {{"Meerblick",2},{"Fischerhafen",3}};
+			str[] = {{"Waldsiedlung",2},{"Tropenweg",3}};
 		};	
 		class 30352 {
 			id = 15;
-			name = "Kalochori";
+			name = "Lakatoro";
 			plz = 30352;
-			str[] = {{"Matschweg",10},{"Stettinerstrasse",3}};
+			str[] = {{"Gangstraße",10},{"Fiorteweg",3}};
 		};	
 		class 39159 {
 			id = 16;
-			name = "Katalaki";
+			name = "Luganville";
 			plz = 39159;
-			str[] = {{"Anglerpier",4},{"Ueber den Kies",3}};
+			str[] = {{"Hauptstaße",4},{"Meerblickweg",3},{"Freinsiedlung",3}};
 		};	
 		class 37690 {
 			id = 17;
-			name = "Kavala";
+			name = "Vutukoulo";
 			plz = 37690;
-			str[] = {{"Burgblick",4},{"Hauptstrasse",25},{"Am Krankenhaus",9},{"Palmenweg",8},{"Ruhrstrasse",6}};
+			str[] = {{"Burgblick",4},{"Treppenweg",25},{"Untertagestraße",9}};
 		};	
 		class 38212 {
 			id = 18;
-			name = "Kore";
+			name = "Nasua";
 			plz = 38212;
 			str[] = {{"Scharfer Blick",5},{"Huegelweg",3}};
 		};	
-		class 38023 {
-			id = 19;
-			name = "Lakka";
-			plz = 38023;
-			str[] = {{"Hauptstrasse",3},{"Fliegerwiese",4}};
-		};	
-		class 35026 {
-			id = 20;
-			name = "Molos";
-			plz = 35026;
-			str[] = {{"Zur Salzindustrie",8},{"Kreuzstrasse",8}};
-		};	
-		class 38319 {
-			id = 21;
-			name = "Negades";
-			plz = 38319;
-			str[] = {{"Am Hang",12},{"Zum Meer",2}};
-		};
-		class 30854 {
-			id = 22;
-			name = "Neochori";
-			plz = 30854;
-			str[] = {{"Am Walde",12},{"Am Markt",4},{"Hafenstrasse",3},{"Fischerweg",2},{"Gradestrasse",5},{"Feldstrasse",4}};
-		};	
-		class 39394 {
-			id = 23;
-			name = "Neri";
-			plz = 39394;
-			str[] = {{"Kirchenblick",4},{"Am Felsbruch",5},{"Mannsweg",5}};
-		};	
-		class 39399 {
-			id = 24;
-			name = "Oreokastro";
-			plz = 39399;
-			str[] = {{"Im Oberland",9},{"Burgstrasse",3}};
-		};	
-		class 37410 {
-			id = 25;
-			name = "Panagia";
-			plz = 37410;
-			str[] = {{"Mischweg",8},{"Kreuzstrasse",4}};
-		};	
-		class 35865 {
-			id = 26;
-			name = "Panochori";
-			plz = 35865;
-			str[] = {{"Kavalablick",9},{"Unter dem Hang",6}};
-		};	
-		class 37708 {
-			id = 27;
-			name = "Paros";
-			plz = 37708;
-			str[] = {{"Hauptstrasse",21},{"Astweg",6},{"Zweigstrasse",1},{"Kaeufermarkt",4},{"Zum Unterstand",6}};
-		};	
-		class 35182 {
-			id = 28;
-			name = "Poliakko";
-			plz = 35182;
-			str[] = {{"Huettenstrasse",8},{"Zur Wende",2}};
-		};	
-		class 36893 {
-			id = 29;
-			name = "Pyrgos";
-			plz = 36893;
-			str[] = {{"Hauptstrasse",12},{"Kanalweg",8},{"Muehlenstrasse",5},{"Inselweg",4},{"Felsenfest",4},{"Weinsbergwiese",8}};
-		};	
-		class 36602 {
-			name = "Rodopoli";
-			plz = 36602;
-			str[] = {{"An zwei Muehlen",4},{"Hauptstrasse",5},{"Kuesterweg",4}};
-		};	
-		class 30081 {
-			id = 30;
-			name = "Sofia";
-			plz = 30081;
-			str[] = {{"Hauptstrasse",16},{"Am Sportplatz",6},{"Radarweg",7},{"Langensberg",6}};
-		};	
-		class 34301 {
-			id = 31;
-			name = "Stavros";
-			plz = 34301;
-			str[] = {{"An der Nadel",12},{"Im Nadelwald",4},{"Agia Marinaweg",4}};
-		};	
-		class 37083 {
-			id = 32;
-			name = "Syrta";
-			plz = 37083;
-			str[] = {{"Girnaweg",11},{"Millerweg",2}};
-		};	
-		class 31535 {
-			id = 33;
-			name = "Telos";
-			plz = 31535;
-			str[] = {{"Vierer Rad",14},{"Hauptstrasse",3},{"Finanzweg",5}};
-		};	
-		class 35427 {
-			id = 34;
-			name = "Therisa";
-			plz = 35427;
-			str[] = {{"Sonnenweg",6},{"Am Feldplatz",3}};
-		};	
-		class 38255 {
-			id = 35;
-			name = "Topolia";
-			plz = 38255;
-			str[] = {{"Ygontweg",2}};
-		};	
-		class 31167 {
-			id = 36;
-			name = "Zaros";
-			plz = 31167;
-			str[] = {{"Glaubensweiser",12},{"Am Sportplatz",6},{"Zur Hauptstrasse",8},{"Am Wald",4}};
-		};	
+		
 	};
 	// Vorhandene Gesichter # some faces
 	class persoBild

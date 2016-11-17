@@ -388,6 +388,21 @@ class Life_Client_Core {
 		class vehicleEmpd {};
 		class fuel {};
 		class fuelCheck {};
+		class gater {};
+		class opendoorsUh {};
+		class opendoorsUh1 {};
+		class opendoorsUh2 {};
+		class opendoorsUh3 {};
+		class opendoorsUh4 {};
+		class opendoorsUh5 {};
+		class opendoorsUh6 {};
+		class einop {};
+	};
+	class Map
+	{
+		file = "core\map";
+		class openMap {};
+		class mapMarkers {};
 	};
 	
 };

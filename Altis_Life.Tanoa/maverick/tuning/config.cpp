@@ -251,16 +251,6 @@ class Maverick_Tuning
 			default[] = {{},"",0,0,{-1,-1,-1}};
 			fetchDefaultFromVehicleState = 1;
 
-			class Colors
-			{
-				pool[] = {"RGB"};
-				class RGB
-				{
-					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
-					texture = "";
-				};
-			};
 			class Nitro
 			{
 				pool[] = {"Nitro1","Nitro2","Nitro3"};
@@ -290,6 +280,77 @@ class Maverick_Tuning
 				{
 					displayText = "Custom RGB Vehicle Underglow";
 					price = 100000;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 25000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 2000;
+					texture = "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};
+			};
+		};
+		class Offroad_02_unarmed_base_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			fetchDefaultFromVehicleState = 1;
+
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 15000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 25000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 40000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 100000;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 25000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 2000;
+					texture = "textures\fahrzeuge\cop\Pol_WD40.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};
 			};
 		};
@@ -340,27 +401,11 @@ class Maverick_Tuning
 				};
 			};
 		};
-		class Offroad_02_unarmed_base_F
+		class Hatchback_01_sport_base_F
 		{
 			default[] = {{},"",0,0,{-1,-1,-1}};
 			fetchDefaultFromVehicleState = 1;
 
-			class Colors
-			{
-				pool[] = {"RGB","Red"};
-				class RGB
-				{
-					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
-					texture = "";
-				};
-				class Red
-				{
-					displayText = "Red";
-					price = 2000;
-					texture = "a3\soft_f_exp\offroad_02\data\offroad_02_ext_red_co.paa";
-				};
-			};
 			class Nitro
 			{
 				pool[] = {"Nitro1","Nitro2","Nitro3"};
@@ -390,6 +435,131 @@ class Maverick_Tuning
 				{
 					displayText = "Custom RGB Vehicle Underglow";
 					price = 100000;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 25000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 2000;
+					texture = "\A3\soft_f_gamma\Hatchback_01\hatchback_01_ext_base01_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};
+			};
+		};
+		class C_Kart_01_F_Base
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			fetchDefaultFromVehicleState = 1;
+
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 15000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 25000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 40000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 100000;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 25000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 2000;
+					texture = "a3\soft_f_kart\kart_01\data\kart_01_base_blue_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};
+			};
+		};
+		class MRAP_01_base_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			fetchDefaultFromVehicleState = 1;
+
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 15000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 25000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 40000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 100000;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 25000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 2000;
+					texture = "\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};
 			};
 		};

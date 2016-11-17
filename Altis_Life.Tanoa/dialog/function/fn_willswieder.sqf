@@ -6,16 +6,16 @@ _vehicle = lbData[28020,(lbCurSel 28020)];
 _vehicle = (call compile format["%1",_vehicle]) select 0;
 _vehicleLife = _vehicle;
 _vid = lbValue[28020,(lbCurSel 28020)];
-_pid = steamid;
+_pid = getPlayerUID player;
 _unit = player;
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 if(!isClass (missionConfigFile >> CONFIG_LIFE_VEHICLES >> _vehicleLife)) then {
 _vehicleLife = "Default"; //Use Default class if it doesn't exist
 diag_log format["%1: LifeCfgVehicles class doesn't exist",_vehicle];
 };
-_price = M_CONFIG(getNumber,CONFIG_LIFE_VEHICLES,_vehicleLife,"impound");
+_price = M_CONFIG(getNumber,"LifeCfgVehicles",_vehicleLife,"impound");
 if(!((typeName _price) isEqualTo (typeName 0)) OR _price < 1) then {_price = 1000};
-if(life_atmbank < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
+if(BANK < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 if((typeName life_garage_sp) isEqualTo (typeName [])) then {
 [_vid,_pid,life_garage_sp select 0,_unit,_price,life_garage_sp select 1] remoteExec ["TON_fnc_spawnVehicle",RSERV];
 } else {
@@ -26,5 +26,6 @@ if(life_garage_sp in ["medic_spawn_1","medic_spawn_2","medic_spawn_3"]) then {
 };
 };
 hint localize "STR_Garage_SpawningVeh";
-life_atmbank = life_atmbank - _price;
+BANK = BANK - _price;
+[1] call SOCK_fnc_updatePartial;
 closeDialog 0;

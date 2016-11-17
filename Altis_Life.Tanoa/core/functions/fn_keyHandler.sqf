@@ -287,17 +287,20 @@ switch (_code) do {
     };
 
     //O Key
-    case 24: {
-        if (_shift) then {
-            if (soundVolume != 1) then {
-                1 fadeSound 1;
-                systemChat localize "STR_MISC_soundnormal";
-            } else {
-                1 fadeSound 0.1;
-                systemChat localize "STR_MISC_soundfade";
-            };
-        };
-    };
+	case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide in [west,independent])) then {
+			[] call life_fnc_gater;
+		};
+	};
+	case _mapKey: {
+		 [] spawn life_fnc_openMap;
+		 _handled = true;
+		 //switch (playerSide) do {
+		 //case west: {if(!visibleMap) then {[] spawn AGUK_fnc_copMarkers;}};
+		 //case independent: {if(!visibleMap) then {[] spawn AGUK_fnc_medicMarkers;}};
+		 //};
+		 };
 
     //U Key
     case 22: {

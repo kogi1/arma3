@@ -113,7 +113,8 @@ class CarShops {
         side = "cop";
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_SUV_01_F", { "", "", 2 } },
+            { "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
+			{ "C_Offroad_02_unarmed_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 3 } },
 			{ "B_T_LSV_01_unarmed_F", { "life_coplevel", "SCALAR", 6 } },
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 7 } },
@@ -197,6 +198,9 @@ class LifeCfgVehicles {
         textures[] = {
 			{ "Polizei", "cop", {
                 "textures\fahrzeuge\cop\Pol_WD40.paa"
+            } },
+			{ "Zivi", "civ", {
+                "textures\fahrzeuge\civ\car\4wd.jpg"
             } }
 		};
     };

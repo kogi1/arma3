@@ -6,6 +6,7 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 #include "config\Config_Master.hpp"
 #include "config\Config_Perso.hpp"
 #include "maverick\maverick_master.cpp"
+#include "config\mapMarkers.hpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
