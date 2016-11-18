@@ -209,7 +209,7 @@ class LifeCfgVehicles {
     class C_Plane_Civil_01_F {
         vItemSpace = 75;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 150000;
+        price = 500000;
 		impound = 20000;
         textures[] = {};
     };
@@ -227,7 +227,7 @@ class LifeCfgVehicles {
     class O_T_LSV_02_unarmed_F {
         vItemSpace = 100;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 100000;
+        price = 1200000;
 		impound = 20000;
         textures[] = {};
     };
