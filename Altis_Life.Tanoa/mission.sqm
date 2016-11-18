@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=6039;
+		nextID=6042;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5649.2231,8.2064867,10574.699};
-		dir[]={-0.96866947,-0.24824859,0.017916594};
-		up[]={-0.248274,0.96867687,0.0045900792};
-		aside[]={0.018492887,-9.6821896e-007,0.99996948};
+		pos[]={9185.2031,64.419739,10078.714};
+		dir[]={0.7855643,-0.43826509,-0.43695492};
+		up[]={0.3830145,0.89883107,-0.213045};
+		aside[]={-0.48612142,7.7483128e-007,-0.87395358};
 	};
 };
 binarizationWanted=0;
@@ -306,24 +306,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -338,6 +320,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -396,7 +396,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1309;
+		items=1311;
 		class Item0
 		{
 			dataType="Marker";
@@ -467,7 +467,6 @@ class Mission
 			type="Empty";
 			angle=13.856561;
 			id=8;
-			atlOffset=0.079476357;
 		};
 		class Item8
 		{
@@ -539,7 +538,6 @@ class Mission
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=16;
-			atlOffset=0.079496384;
 		};
 		class Item15
 		{
@@ -899,7 +897,6 @@ class Mission
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=53;
-			atlOffset=0.079496384;
 		};
 		class Item49
 		{
@@ -2366,7 +2363,7 @@ class Mission
 			position[]={6849.2598,2.6600001,7437.4902};
 			name="kart_shop_1";
 			type="Empty";
-			angle=229.15717;
+			angle=229.15715;
 			id=203;
 		};
 		class Item189
@@ -8571,6 +8568,7 @@ class Mission
 			};
 			id=748;
 			type="Land_CashDesk_F";
+			atlOffset=0.046278;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8967,13 +8965,13 @@ class Mission
 				angles[]={0,1.5885869,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.45715857;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15036,7 +15034,7 @@ class Mission
 					};
 					id=960;
 					type="C_man_polo_3_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21261,7 +21259,7 @@ class Mission
 					};
 					id=1069;
 					type="C_Nikos_aged";
-					atlOffset=0.053512573;
+					atlOffset=0.099498749;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21858,7 +21856,6 @@ class Mission
 						angles[]={0,4.4320588,6.2272439};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -21866,7 +21863,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
-					atlOffset=2.3841858e-007;
+					atlOffset=0.5024755;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27311,7 +27308,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=257.53326;
 			id=2000;
-			atlOffset=0.004250288;
+			atlOffset=0.11424375;
 		};
 		class Item636
 		{
@@ -27330,7 +27327,7 @@ class Mission
 			};
 			id=2001;
 			type="Land_Atm_02_F";
-			atlOffset=2.1457672e-005;
+			atlOffset=0.11001492;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29541,14 +29538,13 @@ class Mission
 				angles[]={0,0,6.2823472};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				description="RIP Tonic";
 			};
 			id=4062;
 			type="Land_Can_V3_F";
-			atlOffset=0.00048446655;
+			atlOffset=0.50376129;
 		};
 		class Item745
 		{
@@ -51166,7 +51162,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5705.4844,4.2755551,10600.561};
+				position[]={5705.4839,4.2760534,10600.561};
 				angles[]={0,4.7384639,0};
 			};
 			side="Empty";
@@ -51177,7 +51173,7 @@ class Mission
 			};
 			id=5762;
 			type="SignAd_Sponsor_Blueking_F";
-			atlOffset=0.25450182;
+			atlOffset=0.25500011;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -60605,6 +60601,124 @@ class Mission
 			id=6038;
 			type="Land_CncWall4_F";
 			atlOffset=2.1832252;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item1309
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12197.75,7.9910531,12956.25};
+				angles[]={0,3.3973558,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this setObjectTexture [0, ""textures\schilder\polizeigebiet.paa""];";
+			};
+			id=6039;
+			type="SignAd_Sponsor_Blueking_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item1310
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12175.75,7.9910531,12961.75};
+				angles[]={0,3.3960295,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this setObjectTexture [0, ""textures\schilder\polizeigebiet.paa""];";
+			};
+			id=6040;
+			type="SignAd_Sponsor_Blueking_F";
 			class CustomAttributes
 			{
 				class Attribute0

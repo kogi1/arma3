@@ -26,10 +26,10 @@ _text2 = _display displayCtrl 1102;
 
 _message = "";
 _message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
-_message = _message + "Useful links (click on the links to open your browser)<br /><br />";
-_message = _message + " <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'>AsYetUntitled</a> -- The official repository for the project.<br /><br />";
-_message = _message + "TeamSpeak 3 address: ADDRESS HERE  <br /><br />";
-_message = _message + "Discord invite: <a href='https://discord.gg/sEcQdPn' color='#56BDD6'>ArmA RPG Life</a>  <br /><br />";
+_message = _message + "Herzlich Willkommen bei PK-Tanoa Life.<br /><br />";
+_message = _message + " Bitte lies dir die Regeln gut durch. Das Aktuelle Regelwerk findest du im Forum oder am TS.<br /><br />";
+_message = _message + "TeamSpeak 3: <a href='ts3server://ts.pk-tanoa.ovh/' color='#56BDD6'>ts.pk-tanoa.ovh</a>  <br /><br />";
+_message = _message + "Forum: <a href='http://forum.pk-tanoa.ovh/' color='#56BDD6'>forum.pk-tanoa.ovh</a>  <br /><br />";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
