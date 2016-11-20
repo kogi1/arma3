@@ -771,8 +771,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Skull", "civ", {
                 "textures\fahrzeuge\civ\car\civ_suv_skull.jpg"
             } },
-			{ "Hello Kitty", "civ", {
-                "textures\fahrzeuge\civ\car\kitty.jpg"
+			{ "Racing Rot", "civ", {
+                "textures\fahrzeuge\civ\car\civ_suv_racingrot.jpg"
+            } },
+			{ "Racing Grau", "civ", {
+                "textures\fahrzeuge\civ\car\civ_suv_racinggrau.jpg"
             } },
 			{ "Polizei", "cop", {
                 "textures\fahrzeuge\cop\Pol_SUV.paa"
