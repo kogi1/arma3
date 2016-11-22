@@ -68,7 +68,7 @@ for "_i" from 0 to 1 step 0 do {
         if (!(backpack player isEqualTo "") && {!(backpack player isEqualTo _bp)}) then {
             _bp = backpack player;
             life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_bp,"maximumload") / 4);
-			if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];};
+			if(playerside == west)then{(unitBackpack player) setObjectTextureGlobal [0,""];};
         };
     };
 

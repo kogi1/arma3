@@ -45,6 +45,7 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
+		
     };
 
     case independent: {
