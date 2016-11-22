@@ -8,6 +8,7 @@ class Socket_Reciever {
         class syncData {};
         class updatePartial {};
         class updateRequest {};
+		class tazeRagdoll {};
     };
 };
 
@@ -24,6 +25,11 @@ class Life_Client_Core {
         class survival {};
         class welcomeNotification {};
     };
+	class holy_help {
+		file = "core\holy_help";
+		class holy_bug;
+		class holy_help;
+	};
 
     class Actions {
         file = "core\actions";
@@ -403,6 +409,11 @@ class Life_Client_Core {
 		file = "core\map";
 		class openMap {};
 		class mapMarkers {};
+	};
+	class VIS
+	{
+		file = "scripts\vis";
+		class vehInfo {};
 	};
 	
 };

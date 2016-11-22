@@ -27,6 +27,14 @@ class RscTitles {
 	#include "dialog\statusBar.hpp"
 	#include "dialog\uiPerso.hpp"
 	#include "maverick\tuning\dialogs\titles.hpp"
+	#include "dialog\vehInfo.hpp"
+	class Default 
+	{
+		idd = -1;
+		fadein = 0;
+		fadeout = 0;
+		duration = 0;
+	};
 };
 
 class CfgFunctions {

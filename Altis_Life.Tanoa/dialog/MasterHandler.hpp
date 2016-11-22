@@ -34,3 +34,5 @@
 #include "personalausweis.hpp"
 #include "impounded.hpp"
 #include "map.hpp"
+#include "vehinfo.hpp"
+#include "..\core\holy_help\dialog\dialog_handler.hpp"

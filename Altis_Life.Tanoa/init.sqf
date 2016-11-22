@@ -11,5 +11,6 @@ StartProgress = false;
 [] execVM "KRON_Strings.sqf";
 [] execVM "scripts\safe.sqf";
 [] execVM "scripts\fn_statusBar.sqf";
+[] execVM "scripts\vis\fn_vehInfo.sqf";
 
 StartProgress = true;

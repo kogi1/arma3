@@ -287,5 +287,14 @@ class playerSettings {
 			h = 0.04;
 			tooltip = "Meinen Personal-/Dienstausweis ansehen \/ Take a look on my ID card";
 		};
+		class holy_help : Life_RscButtonMenu {
+			idc = -1;
+			text = "Help-Menu";
+			onButtonClick = "createDialog 'holy_help'";
+			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.805;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
     };
 };
