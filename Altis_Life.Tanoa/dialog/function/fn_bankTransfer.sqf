@@ -25,13 +25,15 @@ BANK = BANK - (_value + _tax);
 [] call life_fnc_atmMenu;
 [1] call SOCK_fnc_updatePartial;
 hint format [localize "STR_ATM_SentMoneySuccess",[_value] call life_fnc_numberText,_unit getVariable ["realname",name _unit],[_tax] call life_fnc_numberText];
-
+_log = format [localize "STR_DL_ML_transferredBank",profileName,(getPlayerUID player),_value,_unit getVariable ["realname",name _unit],[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+[_log,"MoneyLog"] remoteExecCall ["A3Log", 2];
 
 if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
     if (LIFE_SETTINGS(getNumber,"battlEye_friendlyLogging") isEqualTo 1) then {
         money_log = format [localize "STR_DL_ML_transferredBank_BEF",_value,_unit getVariable ["realname",name _unit],[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
     } else {
         money_log = format [localize "STR_DL_ML_transferredBank",profileName,(getPlayerUID player),_value,_unit getVariable ["realname",name _unit],[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+		
     };
     publicVariableServer "money_log";
 };

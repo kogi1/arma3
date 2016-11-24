@@ -158,6 +158,7 @@ class WeaponShops {
 			{ "ItemRadio", "", 50, -1, { "", "", -1 } },
             { "FirstAidKit", "", 150, 65, { "", "", -1 } },
             { "NVGoggles", "", 2000, 980, { "", "", -1 } },
+            { "DemoCharge_Remote_Mag", "Explosivladung", 2000, 980, {"life_coplevel", "SCALAR", 4 } },
             { "HandGrenade_Stone", "Flashbang", 1700, -1, { "", "", -1 } },
             { "hgun_P07_snds_F", "Stun Pistol", 2000, 650, { "", "", -1 } },
             { "arifle_sdar_F", "Taser Rifle", 20000, 7500, { "", "", -1 } },
@@ -166,7 +167,10 @@ class WeaponShops {
             { "arifle_MX_F", "", 35000, 7500, {"life_coplevel", "SCALAR", 2 } },
             { "hgun_ACPC2_F", "", 17500, -1, {"life_coplevel", "SCALAR", 3 } },
             { "arifle_MXC_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 3 } },
-            // Snipers
+            { "arifle_SPAR_01_blk_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 3 } },//Spar Rang 4
+            { "arifle_SPAR_01_GL_blk_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 5 } },//Spar GL mit Rauchgranaten rang 5
+            { "arifle_SPAR_03_blk_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 6 } },//Spar Sniper Rang 6
+            { "arifle_SPAR_02_blk_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 6 } },//Spar LMG Rang 6
             { "srifle_DMR_07_blk_F", "", 32000, 5000, {"life_coplevel", "SCALAR", 3 } } //Apex DLC
 
         };
@@ -176,6 +180,12 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 130, 100, { "", "", -1 } },
             { "30Rnd_9x21_Mag", "", 250, 100, {"life_coplevel", "SCALAR", 2 } },
             { "9Rnd_45ACP_Mag", "", 200, 100, {"life_coplevel", "SCALAR", 3 } },
+            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, {"life_coplevel", "SCALAR", 3 } }, //Apex DLC
+			{ "30Rnd_556x45_Stanag", "", 200, 100, {"life_coplevel", "SCALAR", 4 } }, //Spar Muni Rang 4
+            { "1Rnd_Smoke_Grenade_shell", "", 200, 100, {"life_coplevel", "SCALAR", 5 } }, //Spar Rauch Rang 5
+            { "1Rnd_SmokeGreen_Grenade_shell", "", 200, 100, {"life_coplevel", "SCALAR", 5 } }, //Spar Rauch Rang 5
+            { "20Rnd_762x51_Mag", "", 200, 100, {"life_coplevel", "SCALAR", 6 } }, //Spar Sniper Rang 6
+            { "150Rnd_556x45_Drum_Mag_F", "", 200, 100, {"life_coplevel", "SCALAR", 6 } }, //Spar LMG Rang 6
             { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, {"life_coplevel", "SCALAR", 3 } } //Apex DLC
         };
         accs[] = {
