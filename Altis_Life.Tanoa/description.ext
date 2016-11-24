@@ -85,6 +85,21 @@ class CfgSounds {
         sound[] = {"\sounds\carLock.ogg", 0.25, 1};
         titles[] = {};
     };
+	class opengater {
+        name = "opengater";
+        sound[] = {"\sounds\soundeing.ogg", 8, 1};
+        titles[] = {};
+    };
+	class zellauf {
+        name = "zellauf";
+        sound[] = {"\sounds\openzell.ogg", 10, 1};
+        titles[] = {};
+    };
+	class zellzu {
+        name = "zellzu";
+        sound[] = {"\sounds\zell_zu.ogg", 10, 1};
+        titles[] = {};
+    };
 
     class unlockCarSound {
         name = "unlockCarSound";
@@ -246,7 +261,7 @@ class CfgNotifications {
 	class PolizeiRundfunk
 	 {
 		 title = "Polizei Rundfunk";
-		 iconPicture = "icons\messagepolice.paa"; //Icon kann geändert werden, kein Icon = leere ""
+		 iconPicture = "icons\ico_messagePolice.paa"; //Icon kann geändert werden, kein Icon = leere ""
 		 description = "%1";
 		 duration = 10;
 		 priority = 5;

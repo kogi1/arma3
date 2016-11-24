@@ -403,6 +403,8 @@ class Life_Client_Core {
 		class opendoorsUh5 {};
 		class opendoorsUh6 {};
 		class einop {};
+		class globalsound {};
+		class globalSoundClient {};
 	};
 	class Map
 	{
