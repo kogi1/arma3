@@ -107,7 +107,7 @@ class Life_Settings {
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 7000; //Amount of cash in bank for new cops
-    bank_civ = 10000000; //Amount of cash in bank for new civillians
+    bank_civ = 5000000; //Amount of cash in bank for new civillians
     bank_med = 6500; //Amount of cash in bank for new medics
 
     paycheck_cop = 2200; //Payment for cops
@@ -162,6 +162,8 @@ class Life_Settings {
     vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
     vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
     vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+	
+	vehicle_impound_fee_multiplier = .4;
 
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */

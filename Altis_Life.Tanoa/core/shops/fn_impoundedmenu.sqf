@@ -1,40 +1,31 @@
+
+#include "..\..\script_macros.hpp"
 /*
-File: fn_impoundMenu.sqf
-Author: Bryan "Tonic" Boardwine
-Description:
-Lists impounded vehicles.
-DUE TO BE REWROTE IN NEW SYSTEM
+ File: fn_impoundedMenu.sqf
+ Author: Bryan "Tonic" Boardwine
+ Description:
+ Not actually a impound menu, may act as confusion to some but that is what I wanted.
+ The purpose of this menu is it is now called a 'Garage' where vehicles are stored (persistent ones).
 */
-private["_display","_cars","_name","_pic","_color","_text","_price"];
-if(!dialog) then
-{
-if(!(createDialog "Life_impounded_menu")) exitWith {};
-life_impound_yard = _this select 3;
-};
+private ["_vehicles","_control"];
 disableSerialization;
-_display = findDisplay 28000;
-if(isNull _display) exitWith {};
-_cars = _display displayCtrl 28010;
-lbClear _cars;
-for "_i" from 0 to (count life_vehicles)-1 do
-{
-_veh = life_vehicles select _i;
-if(_veh distance impound_obj < 50) then
-{
-_price = [_veh] call life_fnc_impoundPrice;
-switch (true) do
-{
-case (_veh isKindOf "Car") : {_price = _price + 100;};
-case (_veh isKindOf "Air") : {_price = _price + 650;};
-case (_veh isKindOf "Ship") : {_price = _price + 50;};
+_vehicles = param [0,[],[[]]];
+ctrlShow[28030,false];
+ctrlShow[28300,false];
+waitUntil {!isNull (findDisplay 28000)};
+if (count _vehicles isEqualTo 0) exitWith {
+ ctrlSetText[28110,localize "STR_Garage_NoVehicles"];
 };
-if(_price > life_cash) then
+_control = CONTROL(28000,28020);
+lbClear _control;
 {
-_price = _price + 200;
-};
-_name = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
-_pic = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "picture");
-_cars lbSetPicture [(lbSize _cars)-1,_pic];
-_cars lbSetData [(lbSize _cars)-1,str(_i)];
-};
-};
+ _vehicleInfo = [(_x select 2)] call life_fnc_fetchVehInfo;
+ _control lbAdd (_vehicleInfo select 3);
+ _tmp = [(_x select 2),(_x select 8)];
+ _tmp = str(_tmp);
+ _control lbSetData [(lbSize _control)-1,_tmp];
+ _control lbSetPicture [(lbSize _control)-1,(_vehicleInfo select 2)];
+ _control lbSetValue [(lbSize _control)-1,(_x select 0)];
+} forEach _vehicles;
+ctrlShow[28100,false];
+ctrlShow[28110,false];
