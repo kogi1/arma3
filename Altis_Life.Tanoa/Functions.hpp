@@ -405,6 +405,7 @@ class Life_Client_Core {
 		class einop {};
 		class globalsound {};
 		class globalSoundClient {};
+		class initIntro {};
 	};
 	class Map
 	{

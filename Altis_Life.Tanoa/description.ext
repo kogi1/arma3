@@ -79,6 +79,11 @@ class CfgSounds {
         sound[] = {"\sounds\harvest.ogg", 1.0, 1};
         titles[] = {};
     };
+	class intro {
+        name = "intro";
+        sound[] = {"\sounds\intro.ogg", 3.0, 1};
+        titles[] = {};
+    };
 
     class lockCarSound {
         name = "lockCarSound";
@@ -87,17 +92,17 @@ class CfgSounds {
     };
 	class opengater {
         name = "opengater";
-        sound[] = {"\sounds\soundeing.ogg", 8, 1};
+        sound[] = {"\sounds\soundeing.ogg", 10, 1};
         titles[] = {};
     };
 	class zellauf {
         name = "zellauf";
-        sound[] = {"\sounds\openzell.ogg", 10, 1};
+        sound[] = {"\sounds\openzell.ogg", 15, 1};
         titles[] = {};
     };
 	class zellzu {
         name = "zellzu";
-        sound[] = {"\sounds\zell_zu.ogg", 10, 1};
+        sound[] = {"\sounds\zell_zu.ogg", 15, 1};
         titles[] = {};
     };
 
