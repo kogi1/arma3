@@ -6,7 +6,7 @@
     
 */
 StartProgress = false;
-
+["Server Started!"] remoteExecCall ["A3Log", 2];
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "scripts\safe.sqf";

@@ -30,9 +30,10 @@ switch(_auswahl) do {
 	case 1: {
 		if(((ctrlText 1352) != "") && ((ctrlText 1353) != "")) then {
 			if(((ctrlText 1352) != "Bitte Titel eingeben") && ((ctrlText 1353) != "Bitte Beschreibung eingeben")) then {
-				//[format ["[color=#FF0000]2[/color]|Hier ist ein ganz normaler Format Text",Format Text Variablen] remoteExecCall ["Arma3Log",2];
-				[format ["Bugs| %1(%2) hat gerade einen Bug gefunden: ['TITEL: %3'],['BESCHREIBUNG: %4']",_name,_uid,ctrlText 1352,ctrlText 1353]] remoteExecCall ["Arma3Log",2];
-				//diag_log format["%1(%2) hat gerade einen Bug gefunden: ['TITEL: %3'],['BESCHREIBUNG: %4']"]; //<-- muss geaendert werden, diag_log ist scheisse
+			
+				_textt = format ["Bugs| %1(%2) hat gerade einen Bug gefunden: ['TITEL: %3'],['BESCHREIBUNG: %4']",_name,_uid,ctrlText 1352,ctrlText 1353];
+				[_textt,"Bugs"] remoteExecCall ["A3Log",2];
+
 				hint "Bug wurde erfolgreich gemeldet!";
 				closeDialog 0;
 			} else {hint "Du musst jedes Feld ausfüllen!"};
