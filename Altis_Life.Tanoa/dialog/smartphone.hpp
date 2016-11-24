@@ -329,7 +329,7 @@ class Life_smartphone_notruf {
  idc = 3023;
  text = "Rundfunk";
  colorBackground[] = {"(profileNamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profileNamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profileNamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
- onButtonClick = "[] call TON_fnc_cell_polizeimsgall";
+ onButtonClick = "[8,-1,(ctrlText 888894)] call life_fnc_newMsg;";
  x = 0.32;
  y = 0.45;
  w = 0.2;

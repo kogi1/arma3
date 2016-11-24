@@ -97,4 +97,12 @@ switch(_type) do{
  hint format["Eine Nachricht wurde an alle Admins gesendet: %1",_msg];
  closeDialog 887890;
  };
+  case 8: { if((FETCH_CONST(life_coplevel) < 3)) exitWith {hint "Du bist dazu nicht berächtigt!";
+};
+ if(_msg == "") exitWith {hint "Du kannst keine leere Nachricht senden!";
+ };
+[ObjNull,_msg,player,6] remoteExec ["TON_fnc_handleMessages",2];
+ hint format["Polizeirundfunk ist raus: %1",_msg];
+ closeDialog 887890;
+ };
 };
