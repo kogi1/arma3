@@ -15,7 +15,11 @@ class CfgRemoteExec {
 
         /* Client only functions */
 		F(call,ANYONE)
+		F(skipTime,ANYONE)
+		F(fn_enableSimulation,ANYONE)
 		F(Arma3Log,ANYONE)
+		F(life_client_fnc_animsync,ANYONE)
+		F(life_client_fnc_broadcast,ANYONE)
 		F(life_fnc_globalSoundClient,ANYONE)
 		F(life_fnc_globalSound,ANYONE)
 		F(A3Log,ANYONE)
@@ -197,7 +201,7 @@ class CfgRemoteExec {
 
     class Commands {
         mode = 1;
-        jip = 0;
+        jip = 1;
 
         F(addHandgunItem,ANYONE)
         F(addMagazine,ANYONE)
@@ -207,5 +211,6 @@ class CfgRemoteExec {
 		F(linkItem,ANYONE)
 		F(setDamage,ANYONE)
 		F(deleteVehicle,ANYONE)
+		F(skipTime,ANYONE)
     };
 };

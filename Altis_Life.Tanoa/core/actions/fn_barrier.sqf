@@ -40,7 +40,9 @@
 				_light2 allowDamage false;
 				_light1 attachTo [placeable, [-0.5,0,0.439]]; 
 				_light2 attachTo [placeable, [0.5,0,0.439]];
+				_light1 enableSimulation false;
 				_light1 enableSimulation true;
+				_light2 enableSimulation false;
 				_light2 enableSimulation true;
 			}else{
 				if (placeableClass == "Land_PortableLight_double_F") then { 

@@ -12,5 +12,9 @@ StartProgress = false;
 [] execVM "scripts\safe.sqf";
 [] execVM "scripts\fn_statusBar.sqf";
 [] execVM "scripts\vis\fn_vehInfo.sqf";
+fn_enableSimulation = {
 
+	(_this select 0) enableSimulation (_this select 1);
+
+};
 StartProgress = true;

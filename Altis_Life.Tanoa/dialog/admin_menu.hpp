@@ -126,6 +126,15 @@ class life_admin_menu {
             w = 0.061875 * safezoneW;
             h = 0.022 * safezoneH;
         };
+		class RscButtonMenu_24032: Life_RscButtonMenu {
+            idc = 2912;
+            text = "Time 6";
+            onButtonClick = "6 remoteExec ['skipTime', 2, false];";
+            x = 0.695624 * safezoneW + safezoneX;
+            y = 0.676 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
 
         class PlayerList_Admin: Life_RscListBox {
             idc = 2902;
