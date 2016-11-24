@@ -16,6 +16,9 @@ class CfgRemoteExec {
         /* Client only functions */
 		F(call,ANYONE)
 		F(Arma3Log,ANYONE)
+		F(life_fnc_globalSoundClient,ANYONE)
+		F(life_fnc_globalSound,ANYONE)
+		F(A3Log,ANYONE)
         F(life_fnc_AAN,CLIENT)
         F(life_fnc_addVehicle2Chain,CLIENT)
         F(life_fnc_adminID,CLIENT)
