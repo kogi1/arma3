@@ -11,6 +11,9 @@
 ****** Backend Variables *****
 *****************************
 */
+BarrierOpen = 0;
+BarrierOpen1 = 0;
+barr_checked = false;
 fvs_persoReady = false;
 fvs_hakenregeln = false;
 fvs_checking = false;

@@ -15,6 +15,7 @@ _alt = _this select 4;
 _speed = speed cursorObject;
 _handled = false;
 
+
 _interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = (actionKeys "ShowMap" select 0);
 //hint str _code;
@@ -286,6 +287,16 @@ switch (_code) do {
                 };
             };
         };
+		if(playerside == west && (vehicle player == player)) then {
+			if(BarrierOpen1 == 0) then {
+				player addaction ["Barrieren",life_fnc_barrier,[""],0,false,true,"","vehicle player == player"];
+				BarrierOpen1 = 1;
+			}else{
+				removeAllActions player;
+				[] call life_fnc_setupActions;
+				BarrierOpen1 = 0;
+			};
+		};
     };
 
     //O Key
