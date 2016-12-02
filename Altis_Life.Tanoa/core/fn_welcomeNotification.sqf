@@ -30,6 +30,7 @@ _message = _message + "Herzlich Willkommen bei PK-Tanoa Life.<br /><br />";
 _message = _message + " Bitte lies dir die Regeln gut durch. Das Aktuelle Regelwerk findest du im Forum oder am TS.<br /><br />";
 _message = _message + "TeamSpeak 3: <a href='ts3server://ts.pk-tanoa.ovh/' color='#56BDD6'>ts.pk-tanoa.ovh</a>  <br /><br />";
 _message = _message + "Forum: <a href='http://forum.pk-tanoa.ovh/' color='#56BDD6'>forum.pk-tanoa.ovh</a>  <br /><br />";
+_message = _message + "PS: Brauchst du Hilfe oder willst du Bugs melden? Dann öffne das Z-Menü und wähle die Option Hilfe aus  <br /><br />";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
