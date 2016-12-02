@@ -74,7 +74,7 @@ class holy_help
 		class TITLE: Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Alliance PLUS Hilfe Menü";
+			text = "PK-Tanoa Hilfe Menü";
 			x = 0.2 * safezoneW + safezoneX;
 			y = 0.128 * safezoneH + safezoneY;
 			w = 0.6 * safezoneW;
@@ -99,7 +99,7 @@ class holy_help
 		class Button2: Life_RscButton
 		{
 			idc = -1;
-			text = "Test2"; 
+			text = "Regelwerk"; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.24 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -113,7 +113,7 @@ class holy_help
 		class Button3: Life_RscButton
 		{
 			idc = -1;
-			text = "Test3"; 
+			text = "Steuerung"; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.3 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -127,7 +127,7 @@ class holy_help
 		class Button4: Life_RscButton
 		{
 			idc = -1;
-			text = "Test4"; 
+			text = "Fahrzeugpreise"; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.36 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -141,7 +141,7 @@ class holy_help
 		class Button5: Life_RscButton
 		{
 			idc = -1;
-			text = "Test5"; 
+			text = "Lizenzenpreise"; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.42 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -155,7 +155,7 @@ class holy_help
 		class Button6: Life_RscButton
 		{
 			idc = -1;
-			text = "Test6"; 
+			text = "Farmrouten"; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -169,7 +169,7 @@ class holy_help
 		class Button7: Life_RscButton
 		{
 			idc = -1;
-			text = "Test7"; 
+			text = "Event INFOs"; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.54 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -183,7 +183,7 @@ class holy_help
 		class Button8: Life_RscButton
 		{
 			idc = -1;
-			text = "Test8"; 
+			text = "Unser Team"; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -197,7 +197,7 @@ class holy_help
 		class Button9: Life_RscButton
 		{
 			idc = -1;
-			text = "Test9"; 
+			text = ""; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.66 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -211,7 +211,7 @@ class holy_help
 		class Button10: Life_RscButton
 		{
 			idc = -1;
-			text = "Test10"; 
+			text = ""; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;
@@ -225,7 +225,7 @@ class holy_help
 		class Button11: Life_RscButton
 		{
 			idc = -1;
-			text = "Test11"; 
+			text = ""; 
 			x = 0.2125 * safezoneW + safezoneX;
 			y = 0.78 * safezoneH + safezoneY;
 			w = 0.1125 * safezoneW;

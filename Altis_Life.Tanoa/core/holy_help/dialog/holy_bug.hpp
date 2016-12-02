@@ -75,7 +75,7 @@ class holy_bug
 		class TITEL: Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Alliance PLUS Bugtracker"; 
+			text = "PK-Tanoa Bugtracker"; 
 			x = 0.3875 * safezoneW + safezoneX;
 			y = 0.272 * safezoneH + safezoneY;
 			w = 0.225 * safezoneW;
