@@ -44,7 +44,7 @@ class WeaponShops {
     };
 
     class rebel {
-        name = "Mohammed's Jihadi Shop";
+        name = "Rebellen Waffenshop";
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
@@ -57,8 +57,13 @@ class WeaponShops {
             { "arifle_AKS_F", "", 220000, 7500, { "", "", -1 } }, //Apex DLC
             { "arifle_AKM_F", "", 220000, 7500, { "", "", -1 } }, //Apex DLC
             { "arifle_ARX_blk_F", "", 220000, 7500, { "", "", -1 } }, //Apex DLC
+			{ "arifle_MXC_khk_F", "", 400000, 5000, { "", "", -1 } }, //Apex DLC
+			{ "arifle_MXM_khk_F", "", 450000, 5000, { "", "", -1 } }, //Apex DLC
             { "arifle_SPAR_01_blk_F", "", 330000, 7500, { "", "", -1 } }, //Apex DLC
-            { "arifle_CTAR_blk_F", "", 300000, 5000, { "", "", -1 } } //Apex DLC
+            { "arifle_CTAR_ghex_F", "", 300000, 5000, { "", "", -1 } }, //Apex DLC
+			{ "arifle_CTARS_ghex_F", "", 700000, 5000, { "", "", -1 } }, //Apex DLC
+			{ "srifle_DMR_07_hex_F", "", 930000, 5000, { "", "", -1 } }, //Apex DLC
+			{ "srifle_GM6_ghex_F", "", 1200000, 5000, { "", "", -1 } } //Apex DLC
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 300, 100, { "", "", -1 } },
@@ -67,13 +72,20 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_green", "", 275, 100, { "", "", -1 } },
             { "10Rnd_762x54_Mag", "", 500, 100, { "", "", -1 } },
             { "20Rnd_556x45_UW_mag", "", 125, 100, { "", "", -1 } },
-            { "30Rnd_580x42_Mag_F", "", 125, 100, { "", "", -1 } } //Apex DLC
+            { "30Rnd_580x42_Mag_F", "", 125, 100, { "", "", -1 } }, //Apex DLC
+			{ "100Rnd_580x42_Mag_F", "", 13400, 100, { "", "", -1 } },
+			{ "30Rnd_65x39_caseless_mag", "", 500, 30, { "", "", -1 } },
+			{ "20Rnd_650x39_Cased_Mag_F", "", 500, 30, { "", "", -1 } },
+			{ "5Rnd_127x108_Mag", "", 500, 30, { "", "", -1 } }
         };
         accs[] = {
             { "optic_ACO_grn", "", 3500, 100, { "", "", -1 } },
             { "optic_Holosight", "", 3600, 100, { "", "", -1 } },
             { "optic_Hamr", "", 7500, 100, { "", "", -1 } },
-            { "acc_flashlight", "", 1000, 100, { "", "", -1 } }
+			{ "optic_LRPS_ghex_F", "", 15000, 100, { "", "", -1 } },
+			{ "optic_AMS_khk", "", 7500, 100, { "", "", -1 } },
+            { "acc_flashlight", "", 1000, 100, { "", "", -1 } },
+			{ "muzzle_snds_M", "", 200000, 100, { "", "", -1 } }
         };
     };
 
