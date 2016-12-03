@@ -293,6 +293,10 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_3_F", "", 50032, { "", "", -1 } }, //Apex DLC
             { "U_I_C_Soldier_Bandit_4_F", "", 50020, { "", "", -1 } }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 50020, { "", "", -1 } }, //Apex DLC
+			{ "U_B_CTRG_Soldier_urb_1_F", "", 70078, { "", "", -1 } }, //Apex DLC
+			{ "U_O_T_Soldier_F", "", 60078, { "", "", -1 } }, //Apex DLC
+			{ "U_B_T_Sniper_F", "", 107078, { "", "", -1 } }, //Apex DLC
+			{ "U_O_T_Sniper_F", "", 109048, { "", "", -1 } }, //Apex DLC
             { "U_I_C_Soldier_Camo_F", "", 52000, { "", "", -1 } } //Apex DLC
         };
         headgear[] = {
@@ -336,7 +340,10 @@ class Clothing {
             { "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
             { "V_HarnessO_brn", "", 7500, { "", "", -1 } },
             { "V_TacVest_khk", "", 12500, { "", "", -1 } },
-            { "V_TacVest_gen_F", "", 14500, { "", "", -1 } },
+			{ "V_HarnessO_ghex_F", "", 22500, { "", "", -1 } },
+			{ "V_HarnessOGL_ghex_F", "", 15500, { "", "", -1 } },
+			{ "V_PlateCarrierSpec_tna_F", "", 18530, { "", "", -1 } },
+            { "V_TacVest_gen_F", "", 14500, { "", "", -1 } }
 
         };
         backpacks[] = {

@@ -36,7 +36,7 @@ switch(_auswahl) do {
 								<br />
 									<t align='center'>
 										<t shadow='2'>
-											Allgemeine Übersicht
+										Allgemeine Übersicht
 										</t>
 									</t>
 								<br /> 
@@ -97,8 +97,8 @@ switch(_auswahl) do {
 						<br />
 						<br /> Die Geschwindigkeiten sind einzuhalten:
 						<br /> Freilandstraßen: 100km/h
-						<br /> In Städten mit Vorangsraße: 60km/h
-						<br /> In Städten ohne Vorangsraße: 30km/h
+						<br /> In Städten mit Vorangstraße: 60km/h
+						<br /> In Städten ohne Vorangstraße: 30km/h
 						<br />
 						<br />
 						<br />
@@ -124,7 +124,7 @@ switch(_auswahl) do {
 						<br />
 						<br />
 						<br />
-						<br /> <t align='center'>Polizei und Medics</t>
+						<br /> <t align='center'>Polizei und Medic</t>
 						<br /> F: Vehicle siren
 						<br /> L: Speed radar (police only and weapon is P07 Suppressed)
 						<br /> Left Shift + L: Activates siren lights
@@ -153,7 +153,34 @@ switch(_auswahl) do {
 		_desctext = "<t size='2.0'><t color='#ff0000'><t underline='true'><t align='center'>Lizenzpreise</t></t></t></t>
 						<br />
 						<br />
-						<br /> <t align='center'>Bald verfügbar...</t>
+						<br /> Führerschein [B]:      500$
+						<br /> Führerschein [C]:    20000$
+						<br /> Pilotenschein:      250000$
+						<br /> Bootschein:          10000$
+						<br /> Taucherzulassung:      900$
+						<br /> Eigentumsurkunde:   750000$
+						<br /> Waffenschein:       100000$
+						<br /> Rebellenausbildung: 750000$
+						<br /> 
+						<br />
+						<br />
+						<br />
+						<br /> <t size='2.0'><t color='#07EB18'><t align='center'>Verarbeitungslizenzen</t></t></t>
+						<br /> Öl Verarbeitung:        10000$
+						<br /> Daimant Verarbeitung:   35000$
+						<br /> Salz Verarbeitung:      12000$
+						<br /> Sand Verarbeitung:      14500$
+						<br /> Eisen Verarbeitung:      9500$
+						<br /> Kupfer Verarbeitung:     8000$
+						<br /> Zement Verarbeitung:     6500$
+						<br /> Med. Marijuana Verarb.: 15000$
+						<br />
+						<br />
+						<br /> <t color='#ff0000'><t align='center'>Illegal</t></t>
+						<br /> Kokain Verarbeitung:    30000$
+						<br /> Heroin Verarbeitung:    25000$
+						<br /> Marijuana Verarbeitung: 19500$
+						<br />
 						<br />
 						<br />
 						<br />
