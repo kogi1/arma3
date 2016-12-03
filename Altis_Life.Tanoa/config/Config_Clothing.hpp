@@ -136,7 +136,7 @@ class Clothing {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Polizeianwärter", 25, { "", "", -1 } },
             { "U_B_SpecopsUniform_sgg", "Beamten Uniform", 350, { "life_coplevel", "SCALAR", 3 } },
-            { "U_B_CombatUniform_mcam_vest", "", 550, { "life_coplevel", "SCALAR", 4 } },
+            { "U_B_CombatUniform_mcam_vest", "", 550, { "life_coplevel", "SCALAR", 2 } },
             { "U_B_Wetsuit", "Taucheranzug", 1250, { "life_coplevel", "SCALAR", 3 } },
 			{ "U_B_GhillieSuit","GhillieSuit", 1250, { "life_coplevel", "SCALAR", 6 } },
 			{ "U_B_CombatUniform_mcam","SEK-Uniform", 1250, { "life_coplevel", "SCALAR", 6 } }
@@ -256,7 +256,8 @@ class Clothing {
         side = "med";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_Rangemaster", "EMS Uniform", 50, { "", "", -1 } }
+            { "U_B_HeliPilotCoveralls", "ADAC Uniform", 50, { "", "", -1 } },
+			{ "U_O_OfficerUniform_ocamo", "Rettung Uniform", 50, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -271,8 +272,10 @@ class Clothing {
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
-            { "B_FieldPack_oli", "EMS Backpack", 3000, { "", "", -1 } }
+            { "B_Kitbag_cbr", "ADAC Rucksack", 3000, { "", "", -1 } },
+			{ "B_Kitbag_sgg", "Rettung Rucksack", 3000, { "", "", -1 } }
         };
+		
     };
 
     class reb {
