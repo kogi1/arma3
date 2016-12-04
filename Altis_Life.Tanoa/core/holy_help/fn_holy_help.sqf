@@ -70,7 +70,7 @@ switch(_auswahl) do {
 						<br /> Alle Infos findest du im Forum oder am TS.
 						<br />  
 						<br />  
-						<br />  
+						<br /> <t align='center'>Ein großes Dankeschön an SolidShot und LPGamingTV</t>
 						<br />  
 						<br />  
 						<br />  
@@ -118,17 +118,20 @@ switch(_auswahl) do {
 						<br /> Left Shift + H: Waffen holstern
 						<br /> Left Ctrl + H: Waffen enholstern
 						<br /> Shift + Spacebar: Jump
-						<br /> Left Shift + ende: Ohrenstöpsel
+						<br /> ende: Ohrenstöpsel
 						<br /> Left Shift + G: ausrauben
+						<br /> Q: Blinker Links
+						<br /> E: Blinker Rechts
 						<br />
 						<br />
 						<br />
 						<br />
 						<br /> <t align='center'>Polizei und Medic</t>
-						<br /> F: Vehicle siren
+						<br /> F: Fahrzeug-Sirene und Barrieren Menü
 						<br /> L: Speed radar (police only and weapon is P07 Suppressed)
 						<br /> Left Shift + L: Activates siren lights
 						<br /> Left Shift + R: Restrain (police only)
+						<br /> O: Schranken und Türen öffnen
 						<br />
 						<br />
 						<br />
@@ -279,6 +282,7 @@ switch(_auswahl) do {
 						<br />
 						<br />
 						<br /> <t align='center'>Das gesamte Serverteam wünscht dir viel Spaß am Server.</t>
+						<br /> 
 						<br />
 						<br />
 						<br />
