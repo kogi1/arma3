@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="Altis Life RPG">
+<Project name="Tanoa Life RPG">
     <Package name="Init">
         <Key ID="STR_Init_ClientSetup">
             <Original>Setting up client, please wait...</Original>
@@ -59,15 +59,15 @@
             <German>Bruce Outback Outfits</German>
         </Key>
         <Key ID="STR_Shops_C_Police">
-            <Original>Altis Police Department Shop</Original>
-            <Czech>Altis policejní oddělení Shop</Czech>
+            <Original>Tanoa Police Department Shop</Original>
+            <Czech>Tanoa policejní oddělení Shop</Czech>
             <French>Boutique de la police</French>
             <Spanish>Tienda del Departamento de Policía</Spanish>
             <Russian></Russian>
             <Portuguese>Loja de Roupas Policiais</Portuguese>
             <Polish>Sklep Policyjny</Polish>
-            <Italian>Dipartimento della Polizia di Altis</Italian>
-            <German>Altis Police Department-Shop</German>
+            <Italian>Dipartimento della Polizia di Tanoa</Italian>
+            <German>Tanoa Police Department-Shop</German>
         </Key>
         <Key ID="STR_Shops_C_Rebel">
             <Original>Mohammed's Jihadi Shop</Original>
@@ -125,15 +125,15 @@
             <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
-            <Original>Altis Market</Original>
-            <Czech>Altis Market</Czech>
-            <Spanish>Mercado de Altis</Spanish>
+            <Original>Tanoa Market</Original>
+            <Czech>Tanoa Market</Czech>
+            <Spanish>Mercado de Tanoa</Spanish>
             <Russian></Russian>
-            <German>Altis Markt</German>
+            <German>Tanoa Markt</German>
             <Italian>Mercato</Italian>
             <French>Marché</French>
             <Portuguese>Mercado</Portuguese>
-            <Polish>Market Altis</Polish>
+            <Polish>Market Tanoa</Polish>
         </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
@@ -235,11 +235,11 @@
             <Polish>Skup Szkła</Polish>
         </Key>
         <Key ID="STR_Shops_Minerals">
-            <Original>Altis Industrial Trader</Original>
-            <Czech>Altis Industrial Trader</Czech>
+            <Original>Tanoa Industrial Trader</Original>
+            <Czech>Tanoa Industrial Trader</Czech>
             <Spanish>Comerciante Industrial</Spanish>
             <Russian></Russian>
-            <German>Altis Industriehandel</German>
+            <German>Tanoa Industriehandel</German>
             <Italian>Vendita materiali industriali</Italian>
             <French>Acheteur Industriel</French>
             <Portuguese>Comprador de Material Indústrial</Portuguese>
@@ -950,7 +950,7 @@
             <French>Gestion du Compte Bancaire</French>
             <Italian>Gestione Bancaria</Italian>
             <Portuguese>Conta Bancária</Portuguese>
-            <Polish>Bankomat Altis</Polish>
+            <Polish>Bankomat Tanoa</Polish>
         </Key>
         <Key ID="STR_ATM_Withdraw">
             <Original>Withdraw</Original>
@@ -1219,13 +1219,13 @@
     </Package>
     <Package name="Cell_Phone">
         <Key ID="STR_CELL_Title">
-            <Original>Altis Mobile</Original>
-            <Czech>Altis Mobile</Czech>
+            <Original>Tanoa Mobile</Original>
+            <Czech>Tanoa Mobile</Czech>
             <Spanish>Celular</Spanish>
             <Russian></Russian>
-            <German>Altis Mobilfunk</German>
-            <French>Altis Mobile</French>
-            <Italian>Cellulare Altis</Italian>
+            <German>Tanoa Mobilfunk</German>
+            <French>Tanoa Mobile</French>
+            <Italian>Cellulare Tanoa</Italian>
             <Portuguese>Celular</Portuguese>
             <Polish>Telefon</Polish>
         </Key>
@@ -9427,16 +9427,16 @@
             <Polish>Warzelnia soli</Polish>
             <Italian>Processo del sale</Italian>
         </Key>
-        <Key ID="STR_MAR_Altis_Corrections">
-            <Original>Altis Corrections</Original>
-            <Czech>Altis Opravy</Czech>
-            <French>Prison d'Altis</French>
-            <Spanish>Prisión de Altis</Spanish>
+        <Key ID="STR_MAR_Tanoa_Corrections">
+            <Original>Tanoa Corrections</Original>
+            <Czech>Tanoa Opravy</Czech>
+            <French>Prison d'Tanoa</French>
+            <Spanish>Prisión de Tanoa</Spanish>
             <Russian></Russian>
-            <German>Altis Bundesgefängnis</German>
-            <Portuguese>Prisão de Altis</Portuguese>
-            <Polish>Więzienie Altis</Polish>
-            <Italian>Penitenziario di Altis</Italian>
+            <German>Tanoa Bundesgefängnis</German>
+            <Portuguese>Prisão de Tanoa</Portuguese>
+            <Polish>Więzienie Tanoa</Polish>
+            <Italian>Penitenziario di Tanoa</Italian>
         </Key>
         <Key ID="STR_MAR_Tanoa_Corrections">
             <Original>Tanoa Corrections</Original>
@@ -9458,7 +9458,7 @@
             <Russian></Russian>
             <German>Polizei HauptQuartier</German>
             <Portuguese>QG Policial</Portuguese>
-            <Polish>KG Policji Altis</Polish>
+            <Polish>KG Policji Tanoa</Polish>
         </Key>
         <Key ID="STR_MAR_Coast_Guard">
             <Original>Coast Guard</Original>
@@ -9590,7 +9590,7 @@
             <Russian></Russian>
             <German>Zentralbank</German>
             <Portuguese>Banco Local</Portuguese>
-            <Polish>Bank Altis</Polish>
+            <Polish>Bank Tanoa</Polish>
         </Key>
         <Key ID="STR_MAR_Car_Shop">
             <Original>Car Shop</Original>
@@ -9612,7 +9612,7 @@
             <Russian></Russian>
             <German>Krankenhaus</German>
             <Portuguese>Hospital/Clínica</Portuguese>
-            <Polish>Klinika Altis</Polish>
+            <Polish>Klinika Tanoa</Polish>
         </Key>
         <Key ID="STR_MAR_Diamond_Mine">
             <Original>Diamond Mine</Original>
@@ -9718,7 +9718,7 @@
             <Czech>Channel 7 News</Czech>
             <French>Channel 7</French>
             <Spanish>Canal de Noticias 7</Spanish>
-            <Italian>Notiziario di Altis</Italian>
+            <Italian>Notiziario di Tanoa</Italian>
             <Russian></Russian>
             <German>Kanal 7 Nachrichtensender</German>
             <Portuguese>Canal de Notícias 7</Portuguese>
@@ -11881,9 +11881,9 @@
       <German>Doch nicht alle Felder ausgefuellt?</German>
     </Key>	
     <Key ID="STR_IDCard_check_ttip">
-      <Original>Die oben eingetragenen Angaben sind richtig und koennen nur im Einwohnermeldeamt geaengert werden oder via den Altis-Support. Ausgeschlossen sind die Email-Adresse und die Handynummer.</Original>
+      <Original>Die oben eingetragenen Angaben sind richtig und koennen nur im Einwohnermeldeamt geaengert werden oder via den Tanoa-Support. Ausgeschlossen sind die Email-Adresse und die Handynummer.</Original>
       <English>Your data can only be changed at the registration office or contact the 'server support'. Your email address and your phone number are random.</English>
-      <German>Die oben eingetragenen Angaben sind richtig und koennen nur im Einwohnermeldeamt geaengert werden oder via den Altis-Support. Ausgeschlossen sind die Email-Adresse und die Handynummer.</German>
+      <German>Die oben eingetragenen Angaben sind richtig und koennen nur im Einwohnermeldeamt geaengert werden oder via den Tanoa-Support. Ausgeschlossen sind die Email-Adresse und die Handynummer.</German>
     </Key>	
     <Key ID="STR_IDCard_check_persAngabenOK">
       <Original>Keine realen persoenlichen Daten angegeben, welche auf Personen zurueckzufuehren sind!</Original>
@@ -11982,7 +11982,7 @@
     </Key>	
     <Key ID="STR_License_Einb">
       <Original>Einbuergerungsurkunde</Original>
-      <English>Citizen of Altis</English>
+      <English>Citizen of Tanoa</English>
       <German>Einbuergerungsurkunde</German>
     </Key>	
   </Package>

@@ -46,7 +46,7 @@ _name = name player;
  private["_activeHC"];
  sleep 4;
  _activeHC = false;
-[player] remoteExec ["TON_fnc_cleanupRequest",_activeHC];
+[player] remoteExec ["TON_fnc_cleanupRequest",RSERV];
  showChat true;
  disableUserInput false;
  ["",0,0.2,10,0,0,8] spawn BIS_fnc_dynamicText;
