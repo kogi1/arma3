@@ -8,7 +8,7 @@ _backW = 0.25 * safezoneW;
 _backH = 0.29 * safezoneH;
 _background ctrlSetPosition [_backX, _backY, _backW, _backH];
 _background ctrlCommit 0;
-_background ctrlSetText "mrkrFilter\tablet.paa";
+_background ctrlSetText "scripts\mrkrFilter\tablet.paa";
 
 
 

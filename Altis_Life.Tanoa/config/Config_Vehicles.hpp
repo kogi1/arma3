@@ -125,6 +125,7 @@ class CarShops {
     class cop_air {
         side = "cop";
         vehicles[] = {
+			{ "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 3 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
 			{ "O_Heli_Light_02_F", { "life_coplevel", "SCALAR", 4 } },
 			{ "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 6 } },
@@ -863,8 +864,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 245000;
 		impound = 20000;
         textures[] = {
-            { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+            { "Polizei", "cop", {
+                "textures\fahrzeuge\cop\hummingbird_polizei.jpg"
             } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"

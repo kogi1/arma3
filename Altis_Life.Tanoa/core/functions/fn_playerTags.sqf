@@ -42,16 +42,25 @@ private _index = -1;
             if (count _sPos > 1 && {_distance < 15}) then {
                 _text = switch (true) do {
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format ["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
-                    case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-                        case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-                        case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-                        case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-                        case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-                        case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-                        case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-                        case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-                        default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
-                        },_x getVariable ["realname",name _x]]};
+                    case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img>[%3] %2",switch ((_x getVariable "rank")) do {
+                        case 2: {"icons\police\2.paa"};
+                        case 3: {"icons\police\3.paa"};
+                        case 4: {"icons\police\4.paa"};
+                        case 5: {"icons\police\5.paa"};
+                        case 6: {"icons\police\6.paa"};
+                        case 7: {"icons\police\7.paa"};
+                        case 8: {"icons\police\8.paa"};
+                        default {"icons\police\1.paa"};
+                        },_x getVariable ["realname",name _x],switch ((_x getVariable "rank")) do {
+                        case 2: {"PM"};
+                        case 3: {"POM"};
+                        case 4: {"PHM"};
+                        case 5: {"PK"};
+                        case 6: {"POK"};
+                        case 7: {"PHK"};
+                        case 8: {"PDP"};
+                        default {"PMAnw"};
+                        }]};
                     case (side _x isEqualTo independent): {format ["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
                     default {
                         if (!isNil {(group _x) getVariable "gang_name"}) then {
