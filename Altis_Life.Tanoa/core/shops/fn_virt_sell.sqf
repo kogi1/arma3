@@ -2,7 +2,6 @@
 /*
     File: fn_virt_sell.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Sell a virtual item to the store / shop
 */

@@ -2,7 +2,6 @@
 /*
     File: fn_virt_update.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Update and fill the virtual shop menu.
 */
