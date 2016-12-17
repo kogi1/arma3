@@ -406,6 +406,7 @@ class Life_Client_Core {
 		class globalsound {};
 		class globalSoundClient {};
 		class initIntro {};
+		class buyTicket {};
 	};
 	class Map
 	{

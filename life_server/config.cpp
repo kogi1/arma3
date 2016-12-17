@@ -88,6 +88,10 @@ class CfgFunctions {
 			class getImpoundedvehicles {};
 			class vehicleImpound {};
 			class insureCar {};
+			class runLottery {}; 
+			class lotteryPick {}; 
+			class manageLottery {};
+			class compUID {};
         };
 
         class Housing {

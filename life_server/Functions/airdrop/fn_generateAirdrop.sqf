@@ -33,7 +33,7 @@ sleep 60;
 sleep 60;
 [5,"<t size='1.2'><t color='#FF0000'>Airdrop</t></t><br/><br/><t size='1'>2 Minuten bis zum Abwurf!</t>"] remoteExec ["life_fnc_broadcast",true];
 sleep 60;
-[[5,"<t size='1.2'><t color='#FF0000'>Airdrop</t></t><br/><br/><t size='1'>1 bis zum Abwurf!</t>"] remoteExec ["life_fnc_broadcast",true];
+[5,"<t size='1.2'><t color='#FF0000'>Airdrop</t></t><br/><br/><t size='1'>1 bis zum Abwurf!</t>"] remoteExec ["life_fnc_broadcast",true];
 heli1 = CreateVehicle [airdrop_helicopter_main, [7950, 9667, 0], [], 0, "FLY"];
 heli2 = CreateVehicle [airdrop_helicopter_scnd, [7950, 9700, 0], [], 0, "FLY"];
 heli3 = CreateVehicle [airdrop_helicopter_scnd, [7950, 9630, 0], [], 0, "FLY"];

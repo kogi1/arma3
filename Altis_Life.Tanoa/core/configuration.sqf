@@ -95,6 +95,7 @@ life_is_alive = false;
 life_delivery_in_progress = false;
 life_thirst = 100;
 life_hunger = 100;
+life_charged = true;
 life_cash = 0;
 life_atmbank = 0;
 

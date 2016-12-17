@@ -15,6 +15,13 @@ class CfgRemoteExec {
 
         /* Client only functions */
 		F(call,ANYONE)
+		F(life_fnc_buyTicket,ANYONE)
+		F(TON_fnc_compUID,ANYONE)
+		F(TON_fnc_lotteryPick,ANYONE)
+		F(TON_fnc_manageLottery,ANYONE)
+		F(TON_fnc_runLottery,ANYONE)
+		F(TON_fnc_generateAirdropAuto,ANYONE)
+		F(TON_fnc_generateAirdrop,ANYONE)
 		F(skipTime,ANYONE)
 		F(fn_enableSimulation,ANYONE)
 		F(Arma3Log,ANYONE)
