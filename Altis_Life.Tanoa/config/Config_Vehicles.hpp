@@ -127,7 +127,7 @@ class CarShops {
         vehicles[] = {
 			{ "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 3 } },
 			{ "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
-			{ "O_Heli_Light_02_F", { "life_coplevel", "SCALAR", 4 } },
+			{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 4 } },
 			{ "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 6 } },
 			{ "B_Heli_Attack_01_F", { "life_coplevel", "SCALAR", 7 } },
 			{ "B_Heli_Transport_03_F", { "life_coplevel", "SCALAR", 8 } }
@@ -941,6 +941,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
+            } },
+			{ "Polizei", "cop", {
+                "textures\fahrzeuge\cop\Pol_orca.paa"
             } }
         };
     };

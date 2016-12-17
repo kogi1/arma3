@@ -296,9 +296,13 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_5_F", "", 50020, { "", "", -1 } }, //Apex DLC
 			{ "U_B_CTRG_Soldier_urb_1_F", "", 70078, { "", "", -1 } }, //Apex DLC
 			{ "U_O_T_Soldier_F", "", 60078, { "", "", -1 } }, //Apex DLC
-			{ "U_B_T_Sniper_F", "", 107078, { "", "", -1 } }, //Apex DLC
-			{ "U_O_T_Sniper_F", "", 109048, { "", "", -1 } }, //Apex DLC
-            { "U_I_C_Soldier_Camo_F", "", 52000, { "", "", -1 } } //Apex DLC
+			{ "U_B_T_Soldier_AR_F", "", 53078, { "", "", -1 } }, //Apex DLC
+			{ "U_B_T_Soldier_SL_F", "", 55078, { "", "", -1 } }, //Apex DLC
+			{ "U_B_T_Sniper_F", "", 56078, { "", "", -1 } }, //Apex DLC
+			{ "U_O_T_Sniper_F", "", 58048, { "", "", -1 } }, //Apex DLC
+            { "U_I_C_Soldier_Camo_F", "", 52000, { "", "", -1 } }, //Apex DLC
+			{ "U_B_T_FullGhillie_tna_F", "", 60000, { "", "", -1 } }, //Apex DLC
+			{ "U_O_T_FullGhillie_tna_F", "", 60000, { "", "", -1 } } //Apex DLC
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -310,6 +314,9 @@ class Clothing {
             { "H_MilCap_gen_F", "", 1200, { "", "", -1 } }, //Apex DLC
             { "H_MilCap_tna_F", "", 1200, { "", "", -1 } }, //Apex DLC
             { "H_HelmetO_ocamo", "", 2500, { "", "", -1 } },
+			{ "H_HelmetCrew_O_ghex_F", "", 8200, { "", "", -1 } }, //Apex DLC
+			{ "H_HelmetB_Light_tna_F", "", 8200, { "", "", -1 } }, //Apex DLC
+			{ "H_HelmetSpecO_ghex_F", "", 8200, { "", "", -1 } }, //Apex DLC
             { "H_HelmetB_Enh_tna_F", "", 8000, { "", "", -1 } } //Apex DLC
         };
         goggles[] = {
@@ -343,8 +350,7 @@ class Clothing {
             { "V_TacVest_khk", "", 12500, { "", "", -1 } },
 			{ "V_HarnessO_ghex_F", "", 22500, { "", "", -1 } },
 			{ "V_HarnessOGL_ghex_F", "", 15500, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_tna_F", "", 18530, { "", "", -1 } },
-            { "V_TacVest_gen_F", "", 14500, { "", "", -1 } }
+			{ "V_PlateCarrierSpec_tna_F", "", 18530, { "", "", -1 } }
 
         };
         backpacks[] = {
