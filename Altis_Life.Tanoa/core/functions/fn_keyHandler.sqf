@@ -149,8 +149,7 @@ switch (_code) do {
 
     //Map Key
     case _mapKey: {
-		 _handled = true;
-		 execVM "scripts\mrkrFilter\mrkrFilterInit.sqf";
+		[]execVM "scripts\mrkrFilter\mrkrFilterInit.sqf";
         switch (playerSide) do {
             case west: {if (!visibleMap) then {[] spawn life_fnc_copMarkers;}};
             case independent: {if (!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
