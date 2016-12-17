@@ -183,7 +183,8 @@ class WeaponShops {
             { "arifle_SPAR_01_GL_blk_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 5 } },//Spar GL mit Rauchgranaten rang 5
             { "arifle_SPAR_03_blk_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 6 } },//Spar Sniper Rang 6
             { "arifle_SPAR_02_blk_F", "", 30000, 5000, {"life_coplevel", "SCALAR", 6 } },//Spar LMG Rang 6
-            { "srifle_DMR_07_blk_F", "", 32000, 5000, {"life_coplevel", "SCALAR", 3 } } //Apex DLC
+            { "srifle_DMR_07_blk_F", "", 32000, 5000, {"life_coplevel", "SCALAR", 3 } }, //Apex DLC
+            { "srifle_LRR_tna_F", "", 32000, 5000, {"life_coplevel", "SCALAR", 5 } } //Apex DLC
 
         };
         mags[] = {
@@ -198,6 +199,7 @@ class WeaponShops {
             { "1Rnd_SmokeGreen_Grenade_shell", "", 200, 100, {"life_coplevel", "SCALAR", 5 } }, //Spar Rauch Rang 5
             { "20Rnd_762x51_Mag", "", 200, 100, {"life_coplevel", "SCALAR", 6 } }, //Spar Sniper Rang 6
             { "150Rnd_556x45_Drum_Mag_F", "", 200, 100, {"life_coplevel", "SCALAR", 6 } }, //Spar LMG Rang 6
+            { "7Rnd_408_Mag", "", 200, 100, {"life_coplevel", "SCALAR", 5 } }, //Apex DLC
             { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, {"life_coplevel", "SCALAR", 3 } } //Apex DLC
         };
         accs[] = {
@@ -206,7 +208,13 @@ class WeaponShops {
             { "optic_Holosight", "", 1200, 100, {"life_coplevel", "SCALAR", 2 } },
             { "optic_Arco", "", 2500, 100, {"life_coplevel", "SCALAR", 2 } },
             { "muzzle_snds_H", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } },
-            { "optic_MRD", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } }
+            { "optic_DMS", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } },
+            { "optic_Hamr", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } },
+            { "optic_MRCO", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } },
+            { "optic_ERCO_blk_F", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } },
+            { "optic_Arco_blk_F", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } },
+            { "optic_LRPS_tna_F", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } },
+            { "optic_ERCO_blk_F", "", 2750, 100, {"life_coplevel", "SCALAR", 2 } }
         };
     };
 

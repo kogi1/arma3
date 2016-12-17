@@ -3,7 +3,7 @@ class markerGroups
 	class bluBases
 	{
 		displayName = "Polizei HQs";
-		mrkrNames[] = {"police_hq_2","cop_spawn_3","cop_spawn_5","Police__HQ_1","cop_spawn_4"};
+		mrkrNames[] = {"police_hq_2","cop_spawn_3","cop_spawn_5","police_hq_1","cop_spawn_4","police_hq_12"};
 		mrkrTypes[] = {};
 		mrkrTypeColors[] = {};
 		side = "Default";
@@ -29,7 +29,8 @@ class markerGroups
 			"boat_2_1_1",
 			"boat_2",
 			"boat_2_1",
-			"airshop"
+			"airshop",
+			"airshop_1"
 		};
 		mrkrTypes[] = {};
 		mrkrTypeColors[] = {};
@@ -167,9 +168,9 @@ class markerGroups
 	{
 		displayName = "Rebellen HQs";
 		mrkrNames[] = {
+			"Rebelop_1",
 			"Rebelop",
-			"rebel_heli_2",
-			"rebel_car_2"
+			"Rebelop_2"
 		};
 		mrkrTypes[] = {};
 		mrkrTypeColors[] = {};
@@ -216,7 +217,6 @@ class markerGroups
 	{
 		displayName = "General Shops";
 		mrkrNames[] = {
-			"Gen_3_1_1_1",
 			"Gen_4",
 			"Gen",
 			"Gen_2"
