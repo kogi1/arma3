@@ -35,3 +35,5 @@ CONTROL(2900,2971) cbSetChecked life_settings_enableSidechannel;
 CONTROL(2900,2973) cbSetChecked life_settings_enableNewsBroadcast;
 CONTROL(2900,2970) cbSetChecked life_settings_tagson;
 CONTROL(2900,2972) cbSetChecked life_settings_revealObjects;
+
+if(life_enableSnow)then{CONTROL(2900,8654) cbSetChecked true;}else{CONTROL(2900,8654) cbSetChecked false;};

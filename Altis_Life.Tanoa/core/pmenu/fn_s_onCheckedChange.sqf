@@ -59,4 +59,17 @@ switch (_option) do {
             life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",false];
         };
     };
+	case "snow": {
+        if (_state isEqualTo 1) then {
+            life_enableSnow = true;
+			snowlvl = 1;
+			[]spawn life_fnc_snow;
+			[8] call SOCK_fnc_updatePartial;
+        } else {
+            life_enableSnow = false;
+			snowlvl = 0;
+			[]spawn life_fnc_snow;
+			[8] call SOCK_fnc_updatePartial;
+        };
+    };
 };

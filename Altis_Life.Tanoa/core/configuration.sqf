@@ -11,6 +11,8 @@
 ****** Backend Variables *****
 *****************************
 */
+life_enableSnow = false;
+snowlvl = 0;
 BarrierOpen = 0;
 BarrierOpen1 = 0;
 barr_checked = false;

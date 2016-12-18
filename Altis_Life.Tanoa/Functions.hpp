@@ -407,6 +407,8 @@ class Life_Client_Core {
 		class globalSoundClient {};
 		class initIntro {};
 		class buyTicket {};
+		class snow {};
+		class diagsnow {};
 	};
 	class Map
 	{

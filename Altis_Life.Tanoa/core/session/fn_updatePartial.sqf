@@ -54,6 +54,10 @@ switch (_mode) do {
     case 7: {
         // Tonic is using for keychain..?
     };
+	
+	case 8: {
+		_packet set[2,snowlvl];
+	};
 };
 
 if (life_HC_isActive) then {

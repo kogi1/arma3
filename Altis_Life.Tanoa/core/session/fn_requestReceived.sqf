@@ -55,6 +55,8 @@ switch (playerSide) do {
         CONST(life_coplevel, parseNumber(_this select 7));
         CONST(life_medicLevel,0);
         life_blacklisted = _this select 9;
+		snowlvl = parseNumber (_this select 12);;
+		if(snowlvl == 1) then {life_enableSnow = true}else{life_enableSnow = false};
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 10) select 0);
             life_thirst = ((_this select 10) select 1);
@@ -66,7 +68,9 @@ switch (playerSide) do {
         life_is_arrested = _this select 7;
         CONST(life_coplevel, 0);
         CONST(life_medicLevel, 0);
-        life_houses = _this select 13;
+		snowlvl = parseNumber (_this select 13);
+		if(snowlvl == 1) then {life_enableSnow = true}else{life_enableSnow = false};
+        life_houses = _this select 14;
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);
             life_thirst = ((_this select 9) select 1);
@@ -88,7 +92,7 @@ switch (playerSide) do {
             life_vehicles pushBack _house;
         } forEach life_houses;
 
-        life_gangData = _this select 14;
+        life_gangData = _this select 15;
         if (!(count life_gangData isEqualTo 0)) then {
             [] spawn life_fnc_initGang;
         };
@@ -98,6 +102,9 @@ switch (playerSide) do {
     case independent: {
         CONST(life_medicLevel, parseNumber(_this select 7));
         CONST(life_coplevel,0);
+		snowlvl = parseNumber (_this select 11);
+		
+		if(snowlvl == 1) then {life_enableSnow = true}else{life_enableSnow = false};
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);
             life_thirst = ((_this select 9) select 1);
@@ -106,7 +113,7 @@ switch (playerSide) do {
     };
 };
 
-if (count (_this select 15) > 0) then {
+if (count (_this select 16) > 0) then {
     {life_vehicles pushBack _x;} forEach (_this select 15);
 };
 
