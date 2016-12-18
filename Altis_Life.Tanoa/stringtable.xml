@@ -2561,7 +2561,7 @@
             <Polish></Polish>
             <Russian></Russian>
             <Portuguese>Habilitar Transmissões</Portuguese>
-            <German></German>
+            <German>Broadcast Switch</German>
         </Key>
         <Key ID="STR_SM_SCOFF">
             <Original>Sidechat OFF</Original>
@@ -4432,7 +4432,7 @@
             <Czech></Czech>
             <Spanish>Anuncio de la Estación de Noticias</Spanish>
             <Russian></Russian>
-            <German></German>
+            <German>Presse</German>
             <French></French>
             <Italian></Italian>
             <Portuguese>Estação de Transmissão de Notícias</Portuguese>
@@ -4443,7 +4443,7 @@
             <Czech></Czech>
             <Spanish>Estación del Canal de Noticias 7</Spanish>
             <Russian></Russian>
-            <German></German>
+            <German>Channel 7 News Station</German>
             <French></French>
             <Italian></Italian>
             <Portuguese>Estação de Notícias do Canal 7</Portuguese>
@@ -4476,7 +4476,7 @@
             <Czech></Czech>
             <Spanish>Transmitir Anuncio</Spanish>
             <Russian></Russian>
-            <German></German>
+            <German>Nachricht übermitteln</German>
             <French></French>
             <Italian></Italian>
             <Portuguese>Transmitir Anúncio</Portuguese>
@@ -4487,7 +4487,7 @@
             <Czech></Czech>
             <Spanish>Costo de Transmisión: %1&lt;br /&gt;Siguiente Transmisión Disponible en: %2</Spanish>
             <Russian></Russian>
-            <German></German>
+            <German>Nachricht kostet: %1&lt;br /&gt;Nächste Nachricht möglich in: %2</German>
             <French></French>
             <Italian></Italian>
             <Portuguese>Custo de Trasnmissão: %1&lt;br /&gt;Próxima transmissão disponível em: %2</Portuguese>
@@ -4498,7 +4498,7 @@
             <Czech></Czech>
             <Spanish>El título no puede tener mas de %1 caracteres</Spanish>
             <Russian></Russian>
-            <German></German>
+            <German>Die Überschrift kann nicht über %1 Zeichen sein</German>
             <French></French>
             <Italian></Italian>
             <Portuguese>O cabeçalho não pode ter mais que %1 caracteres</Portuguese>
@@ -4509,7 +4509,7 @@
             <Czech></Czech>
             <Spanish>Has introducido un carácter inválido</Spanish>
             <Russian></Russian>
-            <German></German>
+            <German>You've entered an unsupported character!</German>
             <French></French>
             <Italian></Italian>
             <Portuguese>Você inseriu um caractere inválido</Portuguese>
@@ -8001,7 +8001,7 @@
             <Polish></Polish>
             <Russian></Russian>
             <Portuguese>Habilita/Desabilita as transmissões dos jogadores, desabilite caso você não queira ver as transmissões dos outros jogadores.</Portuguese>
-            <German></German>
+            <German>Switch player's broadcast mode, turn this off if you don't want to see any broadcast from other players.</German>
         </Key>
         <Key ID="STR_GUI_PlayTags">
             <Original>Controls whether or not players will have name tags above their head.</Original>
