@@ -8,6 +8,23 @@ class markerGroups
 		mrkrTypeColors[] = {};
 		side = "Default";
 	};
+	class Nationalb
+	{
+		displayName = "Nationalbank";
+		mrkrNames[] = {"fed_reserve"};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	class gef
+	{
+		displayName = "Gefängnis";
+		mrkrNames[] = {"jail_marker"};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	
 		class Krankenhaus
 	{
 		displayName = "Krankenhaus";
@@ -146,7 +163,8 @@ class markerGroups
 			"turle_dealer_2",
 			"turle_dealer_1",
 			"Dealer_1_3",
-			"Dealer_1"
+			"Dealer_1",
+			"gold_bar_dealer"
 		};
 		mrkrTypes[] = {};
 		mrkrTypeColors[] = {};
@@ -259,4 +277,140 @@ class markerGroups
 		mrkrTypeColors[] = {};
 		side = "Default";
 	};
+	class genstor1
+	{
+		displayName = "Fahrzeugdealer";
+		mrkrNames[] = {
+			"chop_shop_3",
+			"chop_shop_4",
+			"chop_shop_1",
+			"chop_shop_2"
+		};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	class genstor11
+	{
+		displayName = "Jagdgebiet";
+		mrkrNames[] = {
+			"hunting_marker",
+			"hunting_zone"
+		};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	class genstor111
+	{
+		displayName = "Brücke";
+		mrkrNames[] = {
+			"marker_228",
+			"marker_227"
+		};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	class Gangversteck
+	{
+		displayName = "Gangverstecke";
+		mrkrNames[] = {
+			"gang_area_3",
+			"gang_area_2",
+			"gang_area_1"
+		};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	class nachrichten
+	{
+		displayName = "Kanal 7 News";
+		mrkrNames[] = {
+			"7News_4",
+			"7News_1",
+			"7News_3",
+			"7News_2"
+		};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	class nof
+	{
+		displayName = "No FireZones";
+		mrkrNames[] = {
+			"Rebelop",
+			"Rebelop_1",
+			"Rebelop_2"
+		};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	class atm
+	{
+		displayName = "Geldautomat";
+		mrkrNames[] = {
+			"atm_marker_16",
+			"atm_marker_2_9",
+			"atm_marker_18",
+			"atm_marker_2_2",
+			"atm_marker_3",
+			"atm_marker_2",
+			"atm_marker_13",
+			"atm_marker_12",
+			"atm_marker_2_10",
+			"atm_marker_11",
+			"atm_marker_17",
+			"atm_marker_14",
+			"atm_marker_15",
+			"atm_marker_9",
+			"atm_marker_5",
+			"atm_marker_7",
+			"atm_marker_6",
+			"atm_marker_8",
+			"atm_marker_1",
+			"atm_marker",
+			"atm_marker_1_1",
+			"atm_marker_2_4",
+			"atm_marker_10",
+			"atm_marker_2_32",
+			"atm_marker_2_31",
+			"atm_marker_4_1",
+			"atm_marker_2_30",
+			"atm_marker_2_3",
+			"atm_marker_2_29",
+			"atm_marker_2_28",
+			"atm_marker_2_27",
+			"atm_marker_2_26",
+			"atm_marker_2_25",
+			"atm_marker_2_25",
+			"atm_marker_2_23",
+			"atm_marker_2_22",
+			"atm_marker_2_21",
+			"atm_marker_2_20",
+			"atm_marker_2_5",
+			"atm_marker_2_19",
+			"atm_marker_2_18",
+			"atm_marker_2_17",
+			"atm_marker_2_12",
+			"atm_marker_2_16",
+			"atm_marker_2_15",
+			"atm_marker_2_11",
+			"atm_marker_2_14",
+			"atm_marker_2_13",
+			"atm_marker_2_1",
+			"atm_marker_4",
+			"atm_marker_2_6",
+			"atm_marker_2_34",
+			"atm_marker_2_33"
+		};
+		mrkrTypes[] = {};
+		mrkrTypeColors[] = {};
+		side = "Default";
+	};
+	
+	
 };

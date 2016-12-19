@@ -49,6 +49,12 @@ class WeaponShops {
         license = "rebel";
         level[] = { "", "", -1, "" };
         items[] = {
+			{ "Binocular", "", 150, -1, { "", "", -1 } },
+            { "Rangefinder", "", 50000, -1, { "", "", -1 } },
+            { "ItemGPS", "", 100, 45, { "", "", -1 } },
+			{ "ItemRadio", "", 50, -1, { "", "", -1 } },
+            { "FirstAidKit", "", 150, 65, { "", "", -1 } },
+            { "NVGoggles", "", 25000, 980, { "", "", -1 } },
             { "arifle_TRG20_F", "", 250000, 2500, { "", "", -1 } },
             { "arifle_Katiba_F", "", 300000, 5000, { "", "", -1 } },
             { "srifle_DMR_01_F", "", 500000, -1, { "", "", -1 } },
@@ -125,7 +131,7 @@ class WeaponShops {
             { "ItemWatch", "", 50, -1, { "", "", -1 } },
             { "ItemRadio", "", 50, -1, { "", "", -1 } },
             { "FirstAidKit", "", 150, 65, { "", "", -1 } },
-            { "NVGoggles", "", 2000, 980, { "", "", -1 } },
+            { "NVGoggles", "", 25000, 980, { "", "", -1 } },
             { "Chemlight_red", "", 300, -1, { "", "", -1 } },
             { "Chemlight_yellow", "", 300, 50, { "", "", -1 } },
             { "Chemlight_green", "", 300, 50, { "", "", -1 } },
@@ -148,7 +154,7 @@ class WeaponShops {
             { "ItemWatch", "", 250, -1, { "", "", -1 } },
 			{ "ItemRadio", "", 50, -1, { "", "", -1 } },
             { "FirstAidKit", "", 750, 65, { "", "", -1 } },
-            { "NVGoggles", "", 10000, 980, { "", "", -1 } },
+            { "NVGoggles", "", 25000, 980, { "", "", -1 } },
             { "Chemlight_red", "", 1500, -1, { "", "", -1 } },
             { "Chemlight_yellow", "", 1500, 50, { "", "", -1 } },
             { "Chemlight_green", "", 1500, 50, { "", "", -1 } },
@@ -166,6 +172,7 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             { "Binocular", "", 150, -1, { "", "", -1 } },
+            { "Rangefinder", "", 150, -1, { "", "", -1 } },
             { "ItemGPS", "", 100, 45, { "", "", -1 } },
 			{ "ItemRadio", "", 50, -1, { "", "", -1 } },
             { "FirstAidKit", "", 150, 65, { "", "", -1 } },
