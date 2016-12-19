@@ -8,18 +8,18 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=8556;
+		nextID=8558;
 	};
 	class MarkerIDProvider
 	{
-		nextID=227;
+		nextID=229;
 	};
 	class Camera
 	{
-		pos[]={5663.2036,63.306503,10286.666};
-		dir[]={0.91146499,-0.39464697,-0.11712053};
-		up[]={0.39152017,0.91878271,-0.050310314};
-		aside[]={-0.12746386,2.2217864e-006,-0.99197137};
+		pos[]={13302.049,75.721581,12073.212};
+		dir[]={-0.17888302,-0.45080408,0.8745259};
+		up[]={-0.090341948,0.89261889,0.44166699};
+		aside[]={0.97972405,1.9697472e-007,0.20040154};
 	};
 };
 binarizationWanted=0;
@@ -329,6 +329,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -343,24 +361,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -421,7 +421,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2527;
+		items=2529;
 		class Item0
 		{
 			dataType="Marker";
@@ -1912,7 +1912,6 @@ class Mission
 			dataType="Marker";
 			position[]={1860.174,6.1502796e+022,12051.77};
 			name="Gen_4";
-			text="";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=156;
@@ -2354,7 +2353,7 @@ class Mission
 			position[]={6849.2598,2.6600001,7437.4902};
 			name="kart_shop_1";
 			type="Empty";
-			angle=229.15631;
+			angle=229.1563;
 			id=203;
 		};
 		class Item185
@@ -8518,7 +8517,6 @@ class Mission
 			};
 			id=748;
 			type="Land_CashDesk_F";
-			atlOffset=0.046278;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20755,7 +20753,7 @@ class Mission
 					};
 					id=1069;
 					type="C_Nikos_aged";
-					atlOffset=0.099498749;
+					atlOffset=0.053512573;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27194,9 +27192,9 @@ class Mission
 		class Item728
 		{
 			dataType="Marker";
-			position[]={11071.861,-1.3989135e-012,11500.825};
+			position[]={11071.861,-4.6401831e-027,11500.825};
 			name="fed_reserve";
-			text="@STR_MAR_Federal_Reserve";
+			text="Nationalbank";
 			type="hd_dot";
 			colorName="ColorWEST";
 			id=5372;
@@ -98023,19 +98021,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13283.357,10.591439,12180.732};
-						angles[]={0,2.1395626,0};
+						position[]={13283.357,2.6154361,12180.732};
+						angles[]={0,2.3690364,0};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
-						init="this allowDamage false; " \n "this enableSimulation false;npc_tuning_1 = this; " \n "player addAction [""Tuning Shop"", {[vehicle player] spawn mav_tuning_fnc_start}];";
+						init="this allowDamage false; " \n "this enableSimulation false;npc_tuning_2 = this; " \n "player addAction [""Tuning Shop"", {[vehicle player] spawn mav_tuning_fnc_start}];";
 						name="veh_tune_1";
 					};
 					id=8551;
 					type="C_man_sport_1_F";
-					atlOffset=8.04;
+					atlOffset=0.063997269;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -98065,7 +98063,7 @@ class Mission
 			{
 			};
 			id=8550;
-			atlOffset=8.04;
+			atlOffset=0.063997269;
 		};
 		class Item2524
 		{
@@ -98098,7 +98096,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this allowDamage false; " \n "this enableSimulation false;npc_tuning_1 = this; " \n "player addAction [""Tuning Shop"", {[vehicle player] spawn mav_tuning_fnc_start}];";
+						init="this allowDamage false; " \n "this enableSimulation false;npc_tuning_3 = this; " \n "player addAction [""Tuning Shop"", {[vehicle player] spawn mav_tuning_fnc_start}];";
 						name="veh_tune_2";
 					};
 					id=8554;
@@ -98141,9 +98139,32 @@ class Mission
 			text="Tuning Shop";
 			type="mil_dot";
 			colorName="ColorKhaki";
-			angle=73.954994;
+			angle=73.954987;
 			id=8555;
 			atlOffset=8.7721277e+030;
+		};
+		class Item2527
+		{
+			dataType="Marker";
+			position[]={7998.5332,-2.6262485e-030,4105.9761};
+			name="marker_227";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=30;
+			b=1000;
+			angle=98.497002;
+			id=8556;
+			atlOffset=28.405582;
+		};
+		class Item2528
+		{
+			dataType="Marker";
+			position[]={7992.4321,-1.6821714e-023,4109.4849};
+			name="marker_228";
+			text="Brücke";
+			type="mil_dot";
+			id=8557;
+			atlOffset=27.769047;
 		};
 	};
 };

@@ -166,6 +166,7 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             { "Binocular", "", 150, -1, { "", "", -1 } },
+            { "Rangefinder", "", 150, -1, { "", "", -1 } },
             { "ItemGPS", "", 100, 45, { "", "", -1 } },
 			{ "ItemRadio", "", 50, -1, { "", "", -1 } },
             { "FirstAidKit", "", 150, 65, { "", "", -1 } },
