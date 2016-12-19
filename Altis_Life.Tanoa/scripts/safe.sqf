@@ -1,38 +1,27 @@
-#define SAFETY_ZONES    [["civ_spawn_1", 100], ["Rebelop", 200], ["Rebelop_1", 200], ["Rebelop_2", 200], ["civ_spawn_4", 100]]
-    _zone1 = getMarkerPos "civ_spawn_1"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
-    _dis1 = 100;//Unterschiedliche Distanz der Einzelnen Safezones
+#define SAFETY_ZONES    ["Rebelop", 200], ["Rebelop_1", 200], ["Rebelop_2", 200]
+
+   
+    _zone1 = getMarkerPos "Rebelop"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
+    _dis1 = 200;//Unterschiedliche Distanz der Einzelnen Safezones
     _m1 = createMarker ["sz1", _zone1];//Erstellt einen grünen Kreis um die Safezone herum
     _m1 setMarkerShape "ELLIPSE";//-||-
     _m1 setMarkerSize [_dis1,_dis1];//-||-
     _m1 setMarkerColor "ColorGreen";//-||-
    
-    _zone2 = getMarkerPos "Rebelop"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
+    _zone2 = getMarkerPos "Rebelop_1"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
     _dis2 = 200;//Unterschiedliche Distanz der Einzelnen Safezones
     _m2 = createMarker ["sz2", _zone2];//Erstellt einen grünen Kreis um die Safezone herum
-    _m2 setMarkerShape "ELLIPSE";//-||-
-    _m2 setMarkerSize [_dis2,_dis2];//-||-
-    _m2 setMarkerColor "ColorGreen";//-||-
-   
-    _zone3 = getMarkerPos "Rebelop_1"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
+    _m2 setMarkerShape "ELLIPSE";
+    _m2 setMarkerSize [_dis2,_dis2];
+    _m2 setMarkerColor "ColorGreen";
+	
+	_zone3 = getMarkerPos "Rebelop_2"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
     _dis3 = 200;//Unterschiedliche Distanz der Einzelnen Safezones
     _m3 = createMarker ["sz3", _zone3];//Erstellt einen grünen Kreis um die Safezone herum
     _m3 setMarkerShape "ELLIPSE";
     _m3 setMarkerSize [_dis3,_dis3];
     _m3 setMarkerColor "ColorGreen";
 	
-	_zone4 = getMarkerPos "Rebelop_2"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
-    _dis4 = 200;//Unterschiedliche Distanz der Einzelnen Safezones
-    _m4 = createMarker ["sz4", _zone4];//Erstellt einen grünen Kreis um die Safezone herum
-    _m4 setMarkerShape "ELLIPSE";
-    _m4 setMarkerSize [_dis4,_dis4];
-    _m4 setMarkerColor "ColorGreen";
-	
-	_zone5 = getMarkerPos "civ_spawn_4"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
-    _dis5 = 100;//Unterschiedliche Distanz der Einzelnen Safezones
-    _m5 = createMarker ["sz5", _zone5];//Erstellt einen grünen Kreis um die Safezone herum
-    _m5 setMarkerShape "ELLIPSE";
-    _m5 setMarkerSize [_dis5,_dis5];
-    _m5 setMarkerColor "ColorGreen";
      if (isDedicated) exitWith {};
      waitUntil {!isNull player};
  
