@@ -90,6 +90,15 @@ switch (_code) do {
 			};
 		};
 	};
+	case 76:
+	{
+		if(vehicle player isEqualTo player) then {
+			if(!life_action_inUse) then {
+				player playActionNow "GestureLegPush";
+			};
+		};
+	};
+	
     //Space key for Jumping
     case 57: {
         if (isNil "jumpActionTime") then {jumpActionTime = 0;};

@@ -141,6 +141,7 @@ life_fnc_RequestClientId = player;
 publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for HeadlessClient
 
 [] spawn life_fnc_survival;
+[] spawn life_fnc_addkeyback;
 
 [] spawn {
     for "_i" from 0 to 1 step 0 do {

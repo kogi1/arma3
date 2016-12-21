@@ -268,7 +268,6 @@ compileFinal "
             if (side player != west) exitWith {};
             private [""_message"",""_loc"",""_unit""];
             _loc = _this select 3;
-            _unit = _this select 4;
             _message = format [""--- 911 DISPATCH FROM %1: %2"",_from,_msg];
             if (isNil ""_loc"") then {_loc = ""Unknown"";};
             hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>New Dispatch<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Officers<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
@@ -281,7 +280,6 @@ compileFinal "
             if ((call life_adminlevel) < 1) exitWith {};
             private [""_message"",""_loc"",""_unit""];
             _loc = _this select 3;
-            _unit = _this select 4;
             _message = format [""!!! ADMIN REQUEST FROM %1: %2"",_from,_msg];
             if (isNil ""_loc"") then {_loc = ""Unknown"";};
             hint parseText format [""<t color='#ffcefe'><t size='2'><t align='center'>Admin Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>Admins<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
@@ -316,7 +314,6 @@ compileFinal "
             if (side player != independent) exitWith {};
             private [""_message"",""_loc"",""_unit""];
             _loc = _this select 3;
-            _unit = _this select 4;
             _message = format [""!!! EMS REQUEST: %1"",_msg];
             hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>EMS Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
 

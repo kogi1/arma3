@@ -1,22 +1,123 @@
-#include "..\..\script_macros.hpp"
-/*
-    File: fn_sirenLights.sqf
-    Author: Bryan "Tonic" Boardwine
+Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed"];
+_vehicle = _this select 0;
 
-    Description:
-    Lets play a game! Can you guess what it does? I have faith in you, if you can't
-    then you have failed me and therefor I lose all faith in humanity.. No pressure.
-*/
-private ["_vehicle","_trueorfalse"];
-_vehicle = param [0,objNull,[objNull]];
-if (isNull _vehicle) exitWith {}; //Bad entry!
-if (!(typeOf _vehicle in ["C_Offroad_01_F"])) exitWith {}; //Last chance check to prevent something from defying humanity and creating a monster.
+if (isNil "_vehicle" || isNull _vehicle || !(_vehicle getVariable "lights")) exitWith {};
+_lightRed = [0.1, 0.1, 20];
+_lightBlue = [0.1, 0.1, 20];
 
-_trueorfalse = _vehicle getVariable ["lights",false];
+_lightleft = "#lightpoint" createVehicle getPos _vehicle;
+sleep 0.2;
+_lightleft setLightColor _lightRed;
+_lightleft setLightBrightness 0.2;
+_lightleft setLightAmbient [0.1,0.1,1];
 
-if (_trueorfalse) then {
-    _vehicle setVariable ["lights",false,true];
-} else {
-    _vehicle setVariable ["lights",true,true];
-    [_vehicle,0.22] remoteExec ["life_fnc_medicLights",RCLIENT];
+switch (typeOf _vehicle) do
+{
+    case "C_Offroad_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
+    };
+
+    case "B_MRAP_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+
+    case "C_SUV_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37,-1.2,0.42]];
+    };
+
+    case "C_Hatchback_01_sport_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.35,-0.2,0.25]];
+    };
+
+    case "B_Heli_Light_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle,[-0.37, 0.0, -0.80]];
+    };
+
+    case "B_Heli_Transport_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+     };
 };
+
+_lightleft setLightAttenuation [0.181, 0, 1000, 130];
+_lightleft setLightIntensity 10;
+_lightleft setLightFlareSize 0.38;
+_lightleft setLightFlareMaxDistance 150;
+_lightleft setLightUseFlare true;
+
+_lightright = "#lightpoint" createVehicle getPos _vehicle;
+sleep 0.2;
+_lightright setLightColor _lightBlue;
+_lightright setLightBrightness 0.2;
+_lightright setLightAmbient [0.1,0.1,1];
+
+switch (typeOf _vehicle) do
+{
+    case "C_Offroad_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.56]];
+    };
+
+    case "B_MRAP_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+
+    case "C_SUV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37,-1.2,0.42]];
+    };
+
+    case "C_Hatchback_01_sport_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.35,-0.2,0.25]];
+    };
+
+    case "B_Heli_Light_01_F":
+    {
+        _lightright lightAttachObject [_vehicle,[0.37, 0.0, -0.80]];
+    };
+
+    case "B_Heli_Transport_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+     };
+};
+
+_lightright setLightAttenuation [0.181, 0, 1000, 130];
+_lightright setLightIntensity 10;
+_lightright setLightFlareSize 0.38;
+_lightright setLightFlareMaxDistance 150;
+_lightright setLightUseFlare true;
+
+//ARE YOU ALL HAPPY?!?!?!?!?!?!?!?!?%#?@WGD?TGD?BN?ZDHBFD?GA
+_lightleft setLightDayLight true;
+_lightright setLightDayLight true;
+
+_leftRed = true;
+while{ (alive _vehicle)} do
+{
+    if (!(_vehicle getVariable "lights")) exitWith {};
+    if (_leftRed) then
+    {
+        _leftRed = false;
+        _lightright setLightBrightness 0.0;
+        sleep 0.05;
+        _lightleft setLightBrightness 6;
+    }
+        else
+    {
+        _leftRed = true;
+        _lightleft setLightBrightness 0.0;
+        sleep 0.05;
+        _lightright setLightBrightness 6;
+    };
+    sleep (_this select 1);
+};
+deleteVehicle _lightleft;
+deleteVehicle _lightright;

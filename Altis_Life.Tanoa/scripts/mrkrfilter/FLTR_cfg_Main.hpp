@@ -63,6 +63,8 @@ class markerGroups
 			"civ_gar_1_3",
 			"civ_gar_1",
 			"civ_gar_1_1",
+			"civ_gar_1_5",
+			"civ_gar_1_6",
 			"civ_gar_1_2"
 		};
 		mrkrTypes[] = {};
@@ -148,7 +150,8 @@ class markerGroups
 		mrkrNames[] = {
 			"heroin_p",
 			"Weed_p_1",
-			"cocaine_processing"
+			"cocaine_processing",
+			"cocainaaa"
 		};
 		mrkrTypes[] = {};
 		mrkrTypeColors[] = {};

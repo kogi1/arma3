@@ -114,6 +114,7 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
+            { "I_Truck_02_transport_F", { "life_coplevel", "SCALAR", 2 } },
 			{ "C_Offroad_02_unarmed_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 3 } },
 			{ "B_T_LSV_01_unarmed_F", { "life_coplevel", "SCALAR", 6 } },
@@ -500,6 +501,9 @@ class LifeCfgVehicles {
         price = 275000;
 		impound = 20000;
         textures[] = {
+			{ "Standart", "civ", {
+                "\A3\soft_f_beta\Truck_01\Data\Truck_01_ext_01_CO.paa"
+            } },
 			{ "ADAC", "med", {
                 "textures\fahrzeuge\medic\adac_hemtt.jpg"
             } }
@@ -676,7 +680,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
             } },
-            { "Black", "cop", {
+            { "Transporter", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } }
         };
@@ -693,7 +697,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
             } },
             { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+                "textures\fahrzeuge\cop\zamak_abg_01_polizei.jpg",
+				"textures\fahrzeuge\cop\zamak_abg_02_polizei.jpg"
             } }
         };
     };

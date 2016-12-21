@@ -410,6 +410,7 @@ class Life_Client_Core {
 		class snow {};
 		class diagsnow {};
 		class teargas {};
+		class addkeyback {};
 	};
 	class Map
 	{

@@ -91,11 +91,11 @@ switch (playerSide) do {
         };
 		
 		if (backpack player isEqualTo "B_Kitbag_cbr") then {
-            player setObjectTextureGlobal [0, "textures\human\medic\adac_backpack.jpg"];
+            (backpackContainer player) setObjectTextureGlobal [0, "textures\human\medic\adac_backpack.jpg"];
         };
 		
 		if (backpack player isEqualTo "B_Kitbag_sgg") then {
-            player setObjectTextureGlobal [0, "textures\human\medic\medic_backpack.jpg"];
+            (backpackContainer player) setObjectTextureGlobal [0, "textures\human\medic\medic_backpack.jpg"];
         };
     };
 };

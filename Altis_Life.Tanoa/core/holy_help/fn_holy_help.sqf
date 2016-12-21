@@ -120,16 +120,22 @@ switch(_auswahl) do {
 						<br /> Z: Spieler Menü und Telefon
 						<br /> U: Auf- und Zusperren von Fahrzeugen und Häusern
 						<br /> T: Kofferraum vom Fahrzeug öffnen
-						<br /> Left Shift + B: Ergeben (Hände auf den Kopf)
+						<br /> Left Shift + C: Ergeben (Hände auf den Kopf)
+						<br /> Left Shift + B: Als Rebelle Personen fesseln (Rebellenlizenz & Kabelbinder)
 						<br /> Left Windows: Interaktions Menu (Fahrzeuge, Personen, Häuser, ATMs,...) Kann unter ESC->Configure->Controls->Custom->Use Action 10 umgestellt werden
 						<br /> Left Shift + H: Waffen holstern
 						<br /> Left Ctrl + H: Waffen enholstern
 						<br /> Shift + Spacebar: Jump
-						<br /> ende: Ohrenstöpsel
+						<br /> ENDE: Ohrenstöpsel
 						<br /> Left Shift + G: ausrauben
 						<br /> Q: Blinker Links
 						<br /> E: Blinker Rechts
 						<br /> G: Warnblinker
+						<br /> NUM 1: Gestik Hi
+						<br /> NUM 2: Gestik Hi 2
+						<br /> NUM 3: Gestik Hi 3
+						<br /> NUM 4: Gestik Jap
+						<br /> NUM 5: Gestik Legpush 
 						<br />
 						<br />
 						<br />
