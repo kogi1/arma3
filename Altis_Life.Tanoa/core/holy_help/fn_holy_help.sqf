@@ -89,6 +89,11 @@ switch(_auswahl) do {
 						<br /> <t colorLink='#ff0000'><a href='http://forum.pk-tanoa.ovh/index.php?thread/2-aktuelles-regelwerk'>Alle aktuellen Regeln findest du im Forum.</a></t>
 						<br /> Unwissenheit schützt nicht vor Strafe!
 						<br />
+						<br /> RDM führt zum Speilausschluss!
+						<br /> VDM führt zum Spielausschluss!
+						<br /> Bugusing führt zum Spielausschluss!
+						<br /> (Bugs müssen sofort im Forum gemeldet werden)
+						<br />
 						<br /> Wenn Fragen aufkommen steht dir gerne der Support zu Verfügung.
 						<br />
 						<br />
@@ -102,6 +107,8 @@ switch(_auswahl) do {
 						<br />
 						<br />
 						<br />
+						<br />
+						<br /> 
 						<br />
 						";
 	};
@@ -122,7 +129,7 @@ switch(_auswahl) do {
 						<br /> Left Shift + G: ausrauben
 						<br /> Q: Blinker Links
 						<br /> E: Blinker Rechts
-						<br />
+						<br /> G: Warnblinker
 						<br />
 						<br />
 						<br />
