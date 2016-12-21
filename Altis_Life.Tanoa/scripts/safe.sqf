@@ -1,4 +1,4 @@
-#define SAFETY_ZONES    ["Rebelop", 200], ["Rebelop_1", 200], ["Rebelop_2", 200]
+#define SAFETY_ZONES [["Rebelop", 200], ["Rebelop_1", 200], ["Rebelop_2", 200]]
 
    
     _zone1 = getMarkerPos "Rebelop"; // <-- HIER EURE SAFE_ZONE NAMEN REIN !!!
