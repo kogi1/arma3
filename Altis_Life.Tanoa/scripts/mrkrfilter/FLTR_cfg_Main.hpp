@@ -3,7 +3,7 @@ class markerGroups
 	class bluBases
 	{
 		displayName = "Polizei HQs";
-		mrkrNames[] = {"police_hq_2","cop_spawn_3","cop_spawn_5","police_hq_1","cop_spawn_4","police_hq_12"};
+		mrkrNames[] = {"police_hq_2","cop_spawn_3","cop_spawn_5","police_hq_1","cop_spawn_4","police_hq_12","marker_225"};
 		mrkrTypes[] = {};
 		mrkrTypeColors[] = {};
 		side = "Default";
