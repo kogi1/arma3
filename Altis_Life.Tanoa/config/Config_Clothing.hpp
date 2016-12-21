@@ -123,8 +123,14 @@ class Clothing {
             { "B_Carryall_khk", "", 7500, { "", "", -1 } },
             { "B_Carryall_cbr", "", 7500, { "", "", -1 } },
             { "B_Carryall_ghex_f", "", 7500, { "", "", -1 } }, //Apex DLC
-            { "B_Bergen_dgtl_f", "", 6500, { "", "", -1 } }, //Apex DLC
-            { "B_Bergen_tna_f", "", 6500, { "", "", -1 } } //Apex DLC
+            { "B_ViperHarness_blk_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_ghex_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_khk_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_oli_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_hex_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperLightHarness_ghex_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_Bergen_dgtl_f", "", 8500, { "", "", -1 } }, //Apex DLC
+            { "B_Bergen_tna_f", "", 8500, { "", "", -1 } } //Apex DLC
         };
     };
 
@@ -161,7 +167,8 @@ class Clothing {
             { "G_Aviator", "", 100, { "", "", -1 } },
             { "G_Lady_Mirror", "", 150, { "", "", -1 } },
             { "G_Lady_Dark", "", 150, { "", "", -1 } },
-            { "G_Lady_Blue", "", 150, { "", "", -1 } }
+            { "G_Lady_Blue", "", 150, { "", "", -1 } },
+            { "G_Balaclava_blk", "Gasschutz | NONAME", 150, { "life_coplevel", "SCALAR", 6 }}
         };
         vests[] = {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
@@ -244,7 +251,13 @@ class Clothing {
             { "V_Rangemaster_belt", "", 1900, { "", "", -1 } }
         };
         backpacks[] = {
-            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
+            { "NONE", "Remove Backpack", 0, { "", "", -1 } },
+			 { "B_ViperHarness_blk_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_ghex_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_khk_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_oli_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_hex_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperLightHarness_ghex_F", "", 6500, { "", "", -1 } } //Apex DLC
         };
     };
 
@@ -379,7 +392,13 @@ class Clothing {
             { "B_Carryall_mcamo", "", 7500, { "", "", -1 } },
             { "B_Carryall_oli", "", 7500, { "", "", -1 } },
             { "B_Carryall_khk", "", 7500, { "", "", -1 } },
-            { "B_Carryall_cbr", "", 7500, { "", "", -1 } }
+            { "B_Carryall_cbr", "", 7500, { "", "", -1 } },
+			{ "B_ViperHarness_blk_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_ghex_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_khk_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_oli_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperHarness_hex_F", "", 6500, { "", "", -1 } }, //Apex DLC
+            { "B_ViperLightHarness_ghex_F", "", 6500, { "", "", -1 } } //Apex DLC
         };
     };
 

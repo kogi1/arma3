@@ -58,7 +58,7 @@ if (count crew _vehicle isEqualTo 0) then {
     };
 
     waitUntil {!life_impound_inuse};
-    if (playerSide isEqualTo west) then {
+    if (playerSide isEqualTo west OR playerSide isEqualTo independent) then {
             _impoundMultiplier = LIFE_SETTINGS(getNumber,"vehicle_cop_impound_multiplier");
             _value = _price * _impoundMultiplier;
             [0,"STR_NOTF_HasImpounded",true,[profileName,((_vehicleData select 0) select 1),_vehicleName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];

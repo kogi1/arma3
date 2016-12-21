@@ -10,6 +10,8 @@ if (!life_settings_tagson) exitWith {};
 private ["_ui","_units","_masks"];
 #define iconID 78000
 #define scale 0.8
+_headgear = ["H_ShemagOpen_khk","H_ShemagOpen_tan","H_Shemag_olive"];
+_goggles = ["G_Balaclava_blk"];
 
 if (visibleMap || {!alive player} || {dialog}) exitWith {
     500 cutText["","PLAIN"];
@@ -41,6 +43,8 @@ private _index = -1;
         if (!((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks)) then {
             if (count _sPos > 1 && {_distance < 15}) then {
                 _text = switch (true) do {
+					case ((headgear _x) in _headgear): {format["<t color='#000000'>Unbekannter</t>"];};
+					case ((goggles _x) in _goggles): {format["<t color='#000000'>Unbekannter</t>"];};
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format ["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img>[%3] %2",switch ((_x getVariable "rank")) do {
                         case 2: {"icons\police\2.paa"};

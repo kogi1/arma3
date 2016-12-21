@@ -75,6 +75,35 @@ if(playerSide == west) then {
 	};
 	
 } else {
+	if(playerSide == independent) then {
+		_Btn2 ctrlSetText localize "STR_vInAct_PullOut";
+		_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
+		if(count crew _curTarget == 0) then {_Btn2 ctrlEnable false;};
+		
+		_Btn3 ctrlSetText localize "STR_vInAct_Impound";
+		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
+		
+		if(_curTarget isKindOf "Ship") then {
+			_Btn4 ctrlSetText localize "STR_vInAct_PushBoat";
+			_Btn4 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
+			if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn4 ctrlEnable true;} else {_Btn4 ctrlEnable false};
+		} else {
+			if((typeOf (_curTarget) in _dlcVehicles) && !(288520 in getDLCs 1)) then {
+				if(_curTarget isKindOf "Air") then {
+					_Btn4 ctrlSetText localize "STR_vInAct_GetInHeli";
+				} else {
+					_Btn4 ctrlSetText localize "STR_vInAct_GetInKart";
+				};
+				_Btn4 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
+				if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn4 ctrlEnable true;} else {_Btn4 ctrlEnable false};
+			} else {
+				_Btn4 ctrlSetText localize "STR_vInAct_Unflip";
+				_Btn4 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
+				if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn4 ctrlEnable false;} else {_Btn4 ctrlEnable true;};
+			};
+		};
+		
+	}else{
 	
 	if(_curTarget isKindOf "Ship") then {
 		_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";

@@ -409,6 +409,7 @@ class Life_Client_Core {
 		class buyTicket {};
 		class snow {};
 		class diagsnow {};
+		class teargas {};
 	};
 	class Map
 	{

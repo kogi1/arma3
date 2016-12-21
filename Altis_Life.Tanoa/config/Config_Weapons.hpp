@@ -59,14 +59,14 @@ class WeaponShops {
             { "arifle_Katiba_F", "", 300000, 5000, { "", "", -1 } },
             { "srifle_DMR_01_F", "", 500000, -1, { "", "", -1 } },
             { "arifle_SDAR_F", "", 200000, 7500, { "", "", -1 } },
-            { "arifle_AK12_F", "", 220000, 7500, { "", "", -1 } }, //Apex DLC
-            { "arifle_AKS_F", "", 220000, 7500, { "", "", -1 } }, //Apex DLC
-            { "arifle_AKM_F", "", 220000, 7500, { "", "", -1 } }, //Apex DLC
             { "arifle_ARX_blk_F", "", 220000, 7500, { "", "", -1 } }, //Apex DLC
 			{ "arifle_MXC_khk_F", "", 400000, 5000, { "", "", -1 } }, //Apex DLC
 			{ "arifle_MXM_khk_F", "", 450000, 5000, { "", "", -1 } }, //Apex DLC
             { "arifle_SPAR_01_blk_F", "", 330000, 7500, { "", "", -1 } }, //Apex DLC
             { "arifle_CTAR_ghex_F", "", 300000, 5000, { "", "", -1 } }, //Apex DLC
+			{ "arifle_AK12_F", "", 650000, 7500, { "", "", -1 } }, //Apex DLC
+            { "arifle_AKS_F", "", 450000, 7500, { "", "", -1 } }, //Apex DLC
+            { "arifle_AKM_F", "", 450000, 7500, { "", "", -1 } }, //Apex DLC
 			{ "arifle_CTARS_ghex_F", "", 700000, 5000, { "", "", -1 } }, //Apex DLC
 			{ "srifle_DMR_07_hex_F", "", 930000, 5000, { "", "", -1 } }, //Apex DLC
 			{ "srifle_GM6_ghex_F", "", 1200000, 5000, { "", "", -1 } } //Apex DLC
@@ -178,6 +178,7 @@ class WeaponShops {
             { "FirstAidKit", "", 150, 65, { "", "", -1 } },
             { "NVGoggles", "", 2000, 980, { "", "", -1 } },
             { "DemoCharge_Remote_Mag", "Explosivladung", 2000, 980, {"life_coplevel", "SCALAR", 4 } },
+            { "SmokeShellGreen", "Tränengas", 120, 980, {"life_coplevel", "SCALAR", 6 } },
             { "HandGrenade_Stone", "Flashbang", 1700, -1, { "", "", -1 } },
             { "hgun_P07_snds_F", "Stun Pistol", 2000, 650, { "", "", -1 } },
             { "arifle_sdar_F", "Taser Rifle", 20000, 7500, { "", "", -1 } },

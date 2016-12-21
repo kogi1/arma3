@@ -171,6 +171,7 @@ life_hideoutBuildings = [];
 } count ["gang_area_1","gang_area_2","gang_area_3"];
 
 [] spawn life_fnc_snow;
+[] spawn life_fnc_teargas;
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
