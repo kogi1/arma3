@@ -89,7 +89,7 @@ switch(_auswahl) do {
 						<br /> <t colorLink='#ff0000'><a href='http://forum.pk-tanoa.ovh/index.php?thread/2-aktuelles-regelwerk'>Alle aktuellen Regeln findest du im Forum.</a></t>
 						<br /> Unwissenheit schützt nicht vor Strafe!
 						<br />
-						<br /> RDM führt zum Speilausschluss!
+						<br /> RDM führt zum Spielausschluss!
 						<br /> VDM führt zum Spielausschluss!
 						<br /> Bugusing führt zum Spielausschluss!
 						<br /> (Bugs müssen sofort im Forum gemeldet werden)
@@ -121,7 +121,7 @@ switch(_auswahl) do {
 						<br /> U: Auf- und Zusperren von Fahrzeugen und Häusern
 						<br /> T: Kofferraum vom Fahrzeug öffnen
 						<br /> Left Shift + C: Ergeben (Hände auf den Kopf)
-						<br /> Left Shift + B: Als Rebelle Personen fesseln (Rebellenlizenz & Kabelbinder)
+						<br /> Left Shift + B: Als Rebelle Personen fesseln (Rebellenlizenz und Kabelbinder benötigt)
 						<br /> Left Windows: Interaktions Menu (Fahrzeuge, Personen, Häuser, ATMs,...) Kann unter ESC->Configure->Controls->Custom->Use Action 10 umgestellt werden
 						<br /> Left Shift + H: Waffen holstern
 						<br /> Left Ctrl + H: Waffen enholstern

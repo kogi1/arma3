@@ -233,7 +233,7 @@ class CfgSpawnPoints {
             };
 
             class TanoukaHospital {
-                displayName = "Tanouka Regional";
+                displayName = "Georgetown Regional";
                 spawnMarker = "medic_spawn_2";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
