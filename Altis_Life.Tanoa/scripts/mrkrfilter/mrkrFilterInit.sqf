@@ -23,7 +23,7 @@ _tree ctrlSetBackgroundColor [0, 0, 0, 0];
 _tree ctrlCommit 0;
 tvClear _tree;
 _tree ctrlSetEventHandler ["TreeSelChanged","_this call FLTR_fnc_TreeSel"];
-{_x setMarkerAlphaLocal 0;}forEach allMapMarkers;
+//{_x setMarkerAlphaLocal 0;}forEach allMapMarkers;
 	_allTrunk = _tree tvAdd [[],"Show All"];
 	_tree tvSetPicture [[_allTrunk], "\A3\ui_f\data\map\mapcontrol\taskIconDone_ca.paa"];
 	_noneTrunk = _tree tvAdd [[],"Show None"];

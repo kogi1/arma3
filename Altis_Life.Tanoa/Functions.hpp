@@ -411,6 +411,7 @@ class Life_Client_Core {
 		class diagsnow {};
 		class teargas {};
 		class addkeyback {};
+		class telep {};
 	};
 	class Map
 	{

@@ -16,6 +16,8 @@ class CfgRemoteExec {
         /* Client only functions */
 		F(call,ANYONE)
 		F(life_fnc_buyTicket,ANYONE)
+		F(stig_sz_msg_add,ANYONE)
+		F(stig_sz_msg_del,ANYONE)
 		F(TON_fnc_compUID,ANYONE)
 		F(TON_fnc_lotteryPick,ANYONE)
 		F(TON_fnc_manageLottery,ANYONE)
