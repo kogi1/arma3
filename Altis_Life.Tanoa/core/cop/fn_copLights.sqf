@@ -49,7 +49,12 @@ switch (typeOf _vehicle) do
     case "B_Heli_Transport_01_F":
     {
         _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
-     };
+    };
+	
+	case "C_Offroad_02_unarmed_F":
+	{
+		_lightleft lightAttachObject [_vehicle, [-0.5, 0.4, 0.62]];
+	}; 
 };
 
 _lightleft setLightAttenuation [0.181, 0, 1000, 130];
@@ -94,7 +99,12 @@ switch (typeOf _vehicle) do
     case "B_Heli_Transport_01_F":
     {
         _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
-     };
+    };
+	 
+	case "C_Offroad_02_unarmed_F":
+	{
+		_lightleft lightAttachObject [_vehicle, [0.5, 0.4, 0.62]];
+	};
 };
 
 _lightright setLightAttenuation [0.181, 0, 1000, 130];
