@@ -57,7 +57,7 @@ _WinnersOnline = [];
 {
 if (getPlayerUID _x in _WinnersOnline) then 
 {
-["atm","add",_Split] remoteExec ["life_fnc_handlePaper",_x,false];
+[_Split] remoteExec ["life_fnc_handlePaper",_x,false];
 [2,format["You have won $%1 from the lottery!",[_Split] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",_x,false];
 [1,format["You have won $%1 from the lottery!",[_Split] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",_x,false];
 [0,format["%1 is a winner!",name _x]] remoteExec ["life_fnc_broadcast",0];

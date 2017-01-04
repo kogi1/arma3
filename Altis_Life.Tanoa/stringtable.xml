@@ -10651,15 +10651,7 @@
             <German>Einbruch</German>
         </Key>
         <Key ID="STR_Crime_666">
-            <Original>Tax Evasion</Original>
-            <Czech>Daňový únik</Czech>
-            <French>Évasion fiscale</French>
-            <Spanish>Evadir Impuestos</Spanish>
-            <Russian></Russian>
-            <Portuguese>Evasão Fiscal</Portuguese>
-            <German>Steuerhinterziehung</German>
-            <Italian>Evasione delle tasse</Italian>
-            <Polish>Unikanie podatków</Polish>
+            <German>Hausfriedensbruch</German>
         </Key>
         <Key ID="STR_Crime_667">
             <Original>Terrorism</Original>
@@ -10734,7 +10726,7 @@
             <Russian></Russian>
             <French>Non respect des signalisations</French>
             <Portuguese>Não respeitar as sinalizações</Portuguese>
-            <German>Nicht unter Beachtung der Signalisierungen</German>
+            <German>Nicht beachten Polizeilicher Anordnunen</German>
             <Italian>Mancato rispetto dei segnali stradali</Italian>
             <Polish>Nie przestrzegając sygnalizacji czy</Polish>
         </Key>

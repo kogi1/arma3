@@ -47,7 +47,7 @@ switch(_auswahl) do {
 						<br />  
 						<br /> Sollten die oben angeführten Links nicht funktionieren, sind hier nocheinmal die Informationen im Klartext: 
 						<br /> Forum: https://forum.pk-tanoa.ovh
-						<br /> Teamspeak 3 Server: ts3.pk-tanoa.ovh
+						<br /> Teamspeak 3 Server: ts.pk-tanoa.ovh
 						<br />  
 						<br />  
 						<br /> Brauchst du Hilfe oder hast du Fragen?  
@@ -121,8 +121,9 @@ switch(_auswahl) do {
 						<br /> U: Auf- und Zusperren von Fahrzeugen und Häusern
 						<br /> T: Kofferraum vom Fahrzeug öffnen
 						<br /> Left Shift + C: Ergeben (Hände auf den Kopf)
-						<br /> Left Shift + B: Als Rebelle Personen fesseln (Rebellenlizenz und Kabelbinder benötigt)
-						<br /> Left Windows: Interaktions Menu (Fahrzeuge, Personen, Häuser, ATMs,...) Kann unter ESC->Configure->Controls->Custom->Use Action 10 umgestellt werden
+						<br /> Left Shift + B: Als Rebelle Personen fesseln (Kabelbinder)
+						<br /> Left Windows: Interaktions Menu (Fahrzeuge, Personen, Häuser, ATMs,...)
+						<br /> Kann unter ESC->Configure->Controls->Custom->Use Action 10 umgestellt werden
 						<br /> Left Shift + H: Waffen holstern
 						<br /> Left Ctrl + H: Waffen enholstern
 						<br /> Shift + Spacebar: Jump
@@ -141,7 +142,7 @@ switch(_auswahl) do {
 						<br />
 						<br /> <t align='center'>Polizei und Medic</t>
 						<br /> F: Fahrzeug-Sirene und Barrieren Menü
-						<br /> L: Speed radar (police only and weapon is P07 Suppressed)
+						<br /> L: Speed radar
 						<br /> Left Shift + L: Activates siren lights
 						<br /> Left Shift + R: Restrain (police only)
 						<br /> O: Schranken und Türen öffnen
@@ -156,11 +157,17 @@ switch(_auswahl) do {
 		_desctext = "<t size='2.0'><t color='#ff0000'><t underline='true'><t align='center'>Fahrzeugpreise</t></t></t></t>
 						<br />
 						<br />
-						<br /> <t align='center'>Bald verfügbar...</t>
-						<br />
-						<br />
-						<br />
-						<br />
+						<br />         Truck Boxer           |    150 Platz     | 100.000$
+						<br />      Zamak Transporter        |    200 Platz     | 130.000$
+						<br />  Zamak Transporter Abgedeckt  |    250 Platz     | 250.000$
+						<br />      Hemtt Transporter        |    325 Platz     | 325.000$
+						<br />     Tempest Transporter       |    285 Platz     | 410.000$
+						<br /> Tempest Transporter Abgedeckt |    300 Plazt     | 510.000$
+						<br />    Hemtt Transporter Box      |    750 Platz     | 1.840.000$
+						<br />   Tempest Gerät (auto Farm)   |    300 Platz     | 3.200.000$
+						<br />          Tanklaster           | 19500 Fuel Platz | 160.000$
+						<br />          Zamak Tank           | 42000 Fuel Platz | 250.000$
+						<br />       Hemtt Treibstoff        | 50000 Fuel Platz | 400.000$
 						<br />
 						<br />
 						";

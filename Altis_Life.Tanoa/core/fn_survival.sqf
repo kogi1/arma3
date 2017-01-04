@@ -83,6 +83,7 @@ for "_i" from 0 to 1 step 0 do {
         player forceWalk true;
         if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 1;};
         hint localize "STR_NOTF_MaxWeight";
+		[] call life_fnc_hudUpdate;
     } else {
         if (isForcedWalk player) then {
             player forceWalk false;

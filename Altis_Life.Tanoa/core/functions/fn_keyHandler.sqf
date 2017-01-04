@@ -295,7 +295,7 @@ switch (_code) do {
                 };
             };
         };
-		if(playerside == west && (vehicle player == player)) then {
+		if(playerSide in [west,independent] && (vehicle player == player)) then {
 			if(BarrierOpen1 == 0) then {
 				player addaction ["Barrieren",life_fnc_barrier,[""],0,false,true,"","vehicle player == player"];
 				BarrierOpen1 = 1;

@@ -23,6 +23,7 @@ class Life_Client_Core {
         class setupActions {};
         class setupEVH {};
         class survival {};
+        class updateHUD {};
         class welcomeNotification {};
     };
 	class holy_help {
@@ -412,6 +413,7 @@ class Life_Client_Core {
 		class teargas {};
 		class addkeyback {};
 		class telep {};
+		class handlePaper {};
 	};
 	class Map
 	{

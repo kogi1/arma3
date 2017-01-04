@@ -418,15 +418,15 @@ class LifeCfgVehicles {
     class O_Truck_03_transport_F {
         vItemSpace = 285;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 200000;
+        price = 410000;
 		impound = 20000;
         textures[] = { };
     };
 
     class O_Truck_03_device_F {
-        vItemSpace = 350;
+        vItemSpace = 300;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 450000;
+        price = 3200000;
 		impound = 40000;
         textures[] = { };
     };
@@ -488,9 +488,9 @@ class LifeCfgVehicles {
     };
 
     class B_Truck_01_box_F {
-        vItemSpace = 450;
+        vItemSpace = 750;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 350000;
+        price = 1840000;
 		impound = 20000;
         textures[] = { };
     };
@@ -498,7 +498,7 @@ class LifeCfgVehicles {
     class B_Truck_01_transport_F {
         vItemSpace = 325;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 275000;
+        price = 325000;
 		impound = 20000;
         textures[] = {
 			{ "Standart", "civ", {
@@ -673,7 +673,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class I_Truck_02_covered_F {
         vItemSpace = 250;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 100000;
+        price = 250000;
 		impound = 5000;
         textures[] = {
             { "Orange", "civ", {
@@ -689,7 +689,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class I_Truck_02_transport_F {
         vItemSpace = 200;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 75000;
+        price = 130000;
 		impound = 7000;
         textures[] = {
             { "Orange", "civ", {
@@ -706,7 +706,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class O_Truck_03_covered_F {
         vItemSpace = 300;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 250000;
+        price = 510000;
 		impound = 20000;
         textures[] = {};
     };
@@ -816,7 +816,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Van_01_box_F {
         vItemSpace = 150;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 60000;
+        price = 100000;
 		impound = 3000;
         textures[] = {
             { "White", "civ", {
@@ -965,7 +965,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 20;
         vFuelSpace = 19500;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 120000;
+        price = 160000;
 		impound = 10000;
         textures[] = {
             { "White", "civ", {
@@ -983,7 +983,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 40;
         vFuelSpace = 42000;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 200000;
+        price = 250000;
 		impound = 15000;
         textures[] = {
             { "White", "civ", {
@@ -997,7 +997,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 50;
         vFuelSpace = 50000;	
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 250000;
+        price = 400000;
 		impound = 20000;
         textures[] = {};
     };
