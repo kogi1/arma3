@@ -69,8 +69,8 @@ class Life_Settings {
 
     /* Fuel System Configurations */
     pump_service = true; //Allow users to use pump service on the map. Default = false
-    fuel_cost = 120; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
-    service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
+    fuel_cost = 180; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
+    service_chopper = 15000; //Cost to service chopper at chopper service station(Repair/Refuel).
     fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
@@ -102,13 +102,13 @@ class Life_Settings {
 
     /* Medical System Configurations */
     revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
-    revive_fee = 1500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
-    hospital_heal_fee = 100; //Fee to heal at a hospital NPC
+    revive_fee = 6500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
+    hospital_heal_fee = 1500; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 7000; //Amount of cash in bank for new cops
+    bank_cop = 5000000; //Amount of cash in bank for new cops
     bank_civ = 5000000; //Amount of cash in bank for new civillians
-    bank_med = 6500; //Amount of cash in bank for new medics
+    bank_med = 5000000; //Amount of cash in bank for new medics
 
     paycheck_cop = 2200; //Payment for cops
     paycheck_civ = 1200; //Payment for civillians

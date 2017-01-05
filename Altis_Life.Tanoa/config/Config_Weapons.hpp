@@ -202,7 +202,7 @@ class WeaponShops {
             { "30Rnd_9x21_Mag", "", 250, 100, {"life_coplevel", "SCALAR", 2 } },
             { "9Rnd_45ACP_Mag", "", 200, 100, {"life_coplevel", "SCALAR", 3 } },
             { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, {"life_coplevel", "SCALAR", 3 } }, //Apex DLC
-			{ "30Rnd_556x45_Stanag", "", 200, 100, {"life_coplevel", "SCALAR", 4 } }, //Spar Muni Rang 4
+			{ "30Rnd_556x45_Stanag", "", 200, 100, {"life_coplevel", "SCALAR", 3 } }, //Spar Muni Rang 4
             { "1Rnd_Smoke_Grenade_shell", "", 200, 100, {"life_coplevel", "SCALAR", 5 } }, //Spar Rauch Rang 5
             { "1Rnd_SmokeGreen_Grenade_shell", "", 200, 100, {"life_coplevel", "SCALAR", 5 } }, //Spar Rauch Rang 5
             { "20Rnd_762x51_Mag", "", 200, 100, {"life_coplevel", "SCALAR", 6 } }, //Spar Sniper Rang 6
