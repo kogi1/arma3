@@ -25,10 +25,7 @@ switch (_state) do {
     };
 
     //Remove motor vehicle licenses
-    case 2: {
-        if (
-        };
-    };
+    case 2: {};
 
     //Killing someone while owning a gun license
     case 3: {

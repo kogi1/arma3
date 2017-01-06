@@ -14,11 +14,7 @@ _value = ((_this getVariable "item") select 1);
 if (!isNil "_value") exitWith {
     deleteVehicle _this;
 
-    switch (true) do {
-        case (_value > 20000000) : {_value = 100000;}; //VAL>20mil->100k
-        case (_value > 5000000) : {_value = 250000;}; //VAL>5mil->250k
-        default {};
-    };
+
 
     player playMove "AinvPknlMstpSlayWrflDnon";
     titleText[format [localize "STR_NOTF_PickedMoney",[_value] call life_fnc_numberText],"PLAIN"];

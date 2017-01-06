@@ -34,6 +34,9 @@ _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 _price = M_CONFIG(getNumber,"LifeCfgVehicles",_classNameLife,"price");
 _storageFee = LIFE_SETTINGS(getNumber,"vehicle_storage_fee_multiplier");
 
+
+
+
 switch (playerSide) do {
  case civilian: {
  _purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_CIVILIAN");
@@ -57,6 +60,10 @@ switch (playerSide) do {
  };
 };
 _retrievePrice = _purchasePrice * _storageFee;
+
+if(_className == "B_T_VTOL_01_vehicle_F") then {_retrievePrice = 600000};
+if(_className == "O_T_VTOL_02_vehicle_F") then {_retrievePrice = 300000};
+
 _sellPrice = _purchasePrice * _sellMultiplier;
 _insurancePrice = _purchasePrice * _insuranceMultiplier;
 

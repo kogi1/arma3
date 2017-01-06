@@ -22,6 +22,7 @@ if (!isClass (missionConfigFile >> "LifeCfgVehicles" >> _vehicleLife)) then {
     diag_log format ["%1: LifeCfgVehicles class doesn't exist",_vehicle];
 };
 
+
 _price = M_CONFIG(getNumber,"LifeCfgVehicles",_vehicleLife,"price");
 _storageFee = LIFE_SETTINGS(getNumber,"vehicle_storage_fee_multiplier");
 
@@ -32,6 +33,8 @@ switch (playerSide) do {
     case east: {_purchasePrice = _price * LIFE_SETTINGS(getNumber,"vehicle_purchase_multiplier_OPFOR");};
 };
 _price = _purchasePrice * _storageFee;
+if(_vehicleLife == "B_T_VTOL_01_vehicle_F") then {_price = 600000};
+if(_vehicleLife == "O_T_VTOL_02_vehicle_F") then {_price = 300000};
 
 if (!(_price isEqualType 0) || _price < 1) then {_price = 500;};
 if (BANK < _price) exitWith {hint format [(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
