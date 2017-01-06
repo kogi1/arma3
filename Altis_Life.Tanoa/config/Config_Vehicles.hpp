@@ -238,7 +238,7 @@ class LifeCfgVehicles {
     class B_T_VTOL_01_vehicle_F {
         vItemSpace = 2000;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 7500000;
+        price = 12000000;
 		impound = 120000;
         textures[] = {};
     };
