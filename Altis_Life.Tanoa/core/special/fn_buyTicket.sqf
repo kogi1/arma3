@@ -21,7 +21,7 @@ if(life_cash < _price) exitWith { _huan = "Du hat nicht genung Geld um diese Anz
 _uid = getPlayerUID player;
 _Entry = [_uid,_amount];
 life_cash = life_cash - _price;
-_huan = format["Du hast %1 Lotterietickets für $%2 gekafut, Viel Glück!",_amount,[_price] call life_fnc_numberText];
+_huan = format["Du hast %1 Lotterietickets fuer $%2 gekauft, Viel Glueck!",_amount,[_price] call life_fnc_numberText];
 [_huan,"red","slow"] call life_fnc_notify;
 [_Entry] remoteExec ["TON_fnc_manageLottery",2];
 closeDialog 0;
