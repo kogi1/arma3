@@ -33,7 +33,7 @@ if (_action) then {
     CASH = CASH - _healCost;
     life_action_inUse = false;
 } else {
-    _huan localize "STR_NOTF_ActionCancel";
+    _huan = localize "STR_NOTF_ActionCancel";
 	[_huan,"red","slow"] call life_fnc_notify;
     closeDialog 0;
     life_action_inUse = false;

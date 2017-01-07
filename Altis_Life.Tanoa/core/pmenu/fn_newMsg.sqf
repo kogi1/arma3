@@ -74,7 +74,7 @@ switch(_type) do{
  ctrlShow[888899,true];
 };
 [ObjNull,_msg,player,3] remoteExec ["TON_fnc_handleMessages",2];
- _huan format["Du hast eine Nachricht an die Rettungs/ADAC Dienststelle gesendet.",_msg];
+ _huan = format["Du hast eine Nachricht an die Rettungs/ADAC Dienststelle gesendet.",_msg];
  [_huan,"blue","slow"] call life_fnc_notify;
  ctrlShow[888899,true];
  closeDialog 887890;
