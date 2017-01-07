@@ -14,9 +14,10 @@ if((_unit getVariable "restrained")) exitWith {};
 if(side _unit isEqualTo west) exitWith {};
 if(player isEqualTo _unit) exitWith {};
 if (side player isEqualTo civilian) then {
-	if(life_inv_zipties < 1) exitWith { hintSilent "You dont have any zipties"; };
+	if(life_inv_zipties < 1) exitWith {_huan = "Du hast keine Kabelbinder!"; [_huan,"red","slow"] call life_fnc_notify;};
 	life_inv_zipties = life_inv_zipties - 1;
-	hintSilent "You have ziptied him";
+	_huan = "Du hast ihn gefesselt!";
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 if(!isPlayer _unit) exitWith {};
 //Broadcast!

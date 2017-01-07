@@ -11,6 +11,7 @@
 ****** Backend Variables *****
 *****************************
 */
+life_open_notifications = [];
 life_enableSnow = false;
 snowlvl = 0;
 BarrierOpen = 0;

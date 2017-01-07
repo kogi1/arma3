@@ -12,7 +12,7 @@ _list = ["Air","Ship","LandVehicle"];
 if (isNull _vehicle || {!(KINDOF_ARRAY(_vehicle,_list))}) exitWith {};
 
 _vehicleInfo = _vehicle getVariable ["Trunk",[]];
-if (count _vehicleInfo isEqualTo 0) exitWith {hint localize "STR_Cop_VehEmpty"};
+if (count _vehicleInfo isEqualTo 0) exitWith {_huan = localize "STR_Cop_VehEmpty"; [_huan,"red","slow"] call life_fnc_notify;};
 
 _value = 0;
 _illegalValue = 0;
@@ -37,5 +37,6 @@ if (_value > 0) then {
     [1] call SOCK_fnc_updatePartial;
     _vehicle setVariable ["Trunk",[[],0],true];
 } else {
-    hint localize "STR_Cop_NoIllegalVeh";
+    _huan = localize "STR_Cop_NoIllegalVeh";
+	[_huan,"green","slow"] call life_fnc_notify;
 };

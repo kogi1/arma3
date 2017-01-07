@@ -7,7 +7,8 @@ if(playerside == west)then{
 		sleep 5.9;
 		//[[light_vera, false], "fn_enableSimulation"] call BIS_fnc_MP;
 		light_vera enableSimulation false;
-		hint "Türe geschlossen";
+		_huan = "Türe geschlossen";
+		[_huan,"green","slow"] call life_fnc_notify;
 	} 
 	else 
 	{
@@ -16,9 +17,11 @@ if(playerside == west)then{
 		light_vera enableSimulation true;
 		sleep 5.9;
 		light_vera enableSimulation false;
-		hint "Türe geöffnet";
+		_huan = "Türe geöffnet";
+		[_huan,"green","slow"] call life_fnc_notify;
 	};
 }else{
-	hint"Du hast keine berechtigung diesen Eingang zu öffnen!";
+	_huan = "Du hast keine berechtigung diesen Eingang zu öffnen!";
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 

@@ -25,9 +25,9 @@ if (vehicle player != player) then {
     };
 };
 
-if (isNil "_vehicle") exitWith {hint localize "STR_Garage_NoNPC"};
+if (isNil "_vehicle") exitWith {_huan = localize "STR_Garage_NoNPC"; [_huan,"red","slow"] call life_fnc_notify;};
 if (isNull _vehicle) exitWith {};
-if (!alive _vehicle) exitWith {hint localize "STR_Garage_SQLError_Destroyed"};
+if (!alive _vehicle) exitWith {_huan = localize "STR_Garage_SQLError_Destroyed"; [_huan,"red","slow"] call life_fnc_notify;};
 
 _storetext = localize "STR_Garage_Store_Success";
 
@@ -37,5 +37,6 @@ if (life_HC_isActive) then {
     [_vehicle,false,(_this select 1),_storetext] remoteExec ["TON_fnc_vehicleStore",RSERV];
 };
 
-hint localize "STR_Garage_Store_Server";
+_huan = localize "STR_Garage_Store_Server";
+[_huan,"red","slow"] call life_fnc_notify;
 life_garage_store = true;

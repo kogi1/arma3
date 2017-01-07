@@ -41,7 +41,8 @@ life_pInact_curTarget = _curTarget;
 
 if (_curTarget in life_hideoutBuildings) exitWith {
     closeDialog 0;
-    hint localize "STR_House_Hideout";
+    _huan = localize "STR_House_Hideout";
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 
 if (_curTarget isKindOf "House_F" && playerSide isEqualTo west) exitWith {
@@ -109,7 +110,7 @@ if (!(_curTarget in life_vehicles) || isNil {_curTarget getVariable "house_owner
     if (_isHouse) then {
         if (getNumber (missionConfigFile >> "Housing" >> worldName >> (typeOf _curTarget) >> "canGarage") isEqualTo 1) then {
             _Btn2 ctrlSetText localize "STR_pInAct_GarageExt";
-            _Btn2 buttonSetAction "hint format [localize 'STR_pInAct_GarageExtNOTF',LIFE_SETTINGS(getNumber,'houseGarage_buyPrice')];";
+            _Btn2 buttonSetAction "_huan = format [localize 'STR_pInAct_GarageExtNOTF',LIFE_SETTINGS(getNumber,'houseGarage_buyPrice')]; [_huan,'red','slow'] call life_fnc_notify;";
             _Btn2 ctrlShow true;
         };
     };

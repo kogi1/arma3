@@ -12,7 +12,8 @@ _classname = lbData[20302,(lbCurSel 20302)];
 _index =  lbValue[20302,(lbCurSel 20302)];
 
 if (isNil "_classname" || _classname isEqualTo "") exitWith {
-    hint localize "STR_Select_Vehicle_Pump";
+    _huan = localize "STR_Select_Vehicle_Pump";
+	[_huan,"red","slow"] call life_fnc_notify;
     vehiclefuelList = [];
     life_action_inUse = false;
     closeDialog 0;
@@ -29,7 +30,8 @@ _fueltoput= ((SliderPosition 20901)-(floor(_fuelnow * _fueltank)));
 _setfuell = _fuelnow + (_fueltoput/_fueltank);
 _timer = ((_fueltoput * .25)/100);
 if (_car distance player > 10 && vehicle player != player) exitWith {
-    hint localize "STR_Distance_Vehicle_Pump";
+    _huan = localize "STR_Distance_Vehicle_Pump";
+	[_huan,"red","slow"] call life_fnc_notify;
     vehiclefuelList = [];
     life_action_inUse = false;
     closeDialog 0;
@@ -66,7 +68,8 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
     };
     "progressBar" cutText ["","PLAIN"];
     if (_car distance player > 10 || vehicle player != player) then {
-        hint localize "STR_Distance_Vehicle_Pump";
+        _huan = localize "STR_Distance_Vehicle_Pump";
+		[_huan,"red","slow"] call life_fnc_notify;
         vehiclefuelList = [];
         life_is_processing = false;
         life_action_inUse = false;
@@ -77,7 +80,8 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
         [0] call SOCK_fnc_updatePartial;
     };
 } else {
-    hint localize "STR_NOTF_NotEnoughMoney";
+    _huan = localize "STR_NOTF_NotEnoughMoney";
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 
 vehiclefuelList = [];

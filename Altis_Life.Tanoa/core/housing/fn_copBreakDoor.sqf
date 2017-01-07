@@ -10,14 +10,14 @@ private ["_house","_door","_title","_titleText","_progressBar","_cpRate","_cP","
 _house = param [0,objNull,[objNull]];
 
 if (isNull _house || !(_house isKindOf "House_F")) exitWith {};
-if (isNil {(_house getVariable "house_owner")}) exitWith {hint localize "STR_House_Raid_NoOwner"};
+if (isNil {(_house getVariable "house_owner")}) exitWith {_huan = localize "STR_House_Raid_NoOwner"; [_huan,"red","slow"] call life_fnc_notify;};
 
 _uid = (_house getVariable "house_owner") select 0;
-if (!([_uid] call life_fnc_isUIDActive)) exitWith {hint localize "STR_House_Raid_OwnerOff"};
+if (!([_uid] call life_fnc_isUIDActive)) exitWith {_huan = localize "STR_House_Raid_OwnerOff"; [_huan,"red","slow"] call life_fnc_notify;};
 
 _door = [_house] call life_fnc_nearestDoor;
-if (_door isEqualTo 0) exitWith {hint localize "STR_Cop_NotaDoor"};
-if ((_house getVariable [format ["bis_disabled_Door_%1",_door],0]) isEqualTo 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
+if (_door isEqualTo 0) exitWith {_huan = localize "STR_Cop_NotaDoor"; [_huan,"red","slow"] call life_fnc_notify;};
+if ((_house getVariable [format ["bis_disabled_Door_%1",_door],0]) isEqualTo 0) exitWith {_huan = localize "STR_House_Raid_DoorUnlocked"; [_huan,"red","slow"] call life_fnc_notify;};
 
 life_action_inUse = true;
 

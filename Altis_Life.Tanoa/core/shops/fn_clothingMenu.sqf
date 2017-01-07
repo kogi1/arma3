@@ -25,7 +25,7 @@ if (_exit) exitWith {};
 
 if (!(_license isEqualTo "")) then {
     _flag = M_CONFIG(getText,"Licenses",_license,"side");
-    if (!(LICENSE_VALUE(_license,_flag))) exitWith {hint localize "STR_Shop_Veh_NoLicense"; _exit = true;};
+    if (!(LICENSE_VALUE(_license,_flag))) exitWith {_huan = localize "STR_Shop_Veh_NoLicense";[_huan,"red","slow"] call life_fnc_notify; _exit = true;};
 };
 if (_exit) exitWith {};
 
@@ -39,10 +39,10 @@ disableSerialization;
 sliderSetRange [3107, 0, 360];
 
 //Cop / Civ Pre Check
-if (((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian)) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
-if (((_this select 3) == "reb" && !license_civ_rebel)) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
-if (((_this select 3) in ["cop"] && playerSide != west)) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
-if (((_this select 3) in ["dive"] && !license_civ_dive)) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
+if (((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian)) exitWith {_huan = localize "STR_Shop_NotaCiv"; [_huan,"red","slow"] call life_fnc_notify; closeDialog 0;};
+if (((_this select 3) == "reb" && !license_civ_rebel)) exitWith {_huan = localize "STR_Shop_NotaReb"; [_huan,"red","slow"] call life_fnc_notify;closeDialog 0;};
+if (((_this select 3) in ["cop"] && playerSide != west)) exitWith {_huan = localize "STR_Shop_NotaCop"; [_huan,"red","slow"] call life_fnc_notify;closeDialog 0;};
+if (((_this select 3) in ["dive"] && !license_civ_dive)) exitWith { _huan = localize "STR_Shop_NotaDive"; [_huan,"red","slow"] call life_fnc_notify;closeDialog 0;};
 
 if (LIFE_SETTINGS(getNumber,"clothing_noTP") isEqualTo 1) then {
     _pos = getPosATL player;
@@ -115,7 +115,8 @@ if (isClass(missionConfigFile >> "Licenses" >> life_clothing_store)) then {
     _flag = M_CONFIG(getText,"Licenses",life_clothing_store,"side");
     _displayName = M_CONFIG(getText,"Licenses",life_clothing_store,"displayName");
     if (!(LICENSE_VALUE(life_clothing_store,_flag))) exitWith {
-        hint format [localize "STR_Shop_YouNeed",localize _displayName];
+        _huan = format [localize "STR_Shop_YouNeed",localize _displayName];
+		[_huan,"red","slow"] call life_fnc_notify;
         closeDialog 0;
     };
 };

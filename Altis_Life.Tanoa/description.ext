@@ -114,6 +114,11 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
         titles[] = {};
     };
+	class notifyme {
+        name = "notifyme";
+        sound[] = {"\sounds\notifyme.ogg", 0.50, 1};
+        titles[] = {};
+    };
 	class empwarn
 	  {
 		name = "empwarn";

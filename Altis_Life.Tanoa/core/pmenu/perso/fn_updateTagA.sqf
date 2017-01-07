@@ -19,7 +19,7 @@
 
 if(playerside != civilian) exitWith {}; 
 disableSerialization;
-if(isNull (findDisplay 70000)) exitWith {hint "Fehler";};
+if(isNull (findDisplay 70000)) exitWith {_huan = "Fehler"; [_huan,"red","slow"] call life_fnc_notify;};
 _display = findDisplay 70000;
 _lb_bdayTagList = _display displayCtrl 70008;
 lbClear _lb_bdayTagList;

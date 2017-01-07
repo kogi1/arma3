@@ -17,11 +17,11 @@
 */
 disableSerialization;
 _sender = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-if(!(isNull (uiNameSpace getVariable "playerPerso"))) exitWith {hint format["%1 moechte dir seinen Personal- / Dienstausweis zeigen, jedoch schaust du dir gerade einen an. Blende den aktuellen Ausweis mit F10 aus, um den von %1 zu sehen.",_sender getVariable["realname",name _sender]]}; // Aktuell wird schon ein Personalausweis angesehen
+if(!(isNull (uiNameSpace getVariable "playerPerso"))) exitWith {_huan = format["%1 moechte dir seinen Personal- / Dienstausweis zeigen, jedoch schaust du dir gerade einen an. Blende den aktuellen Ausweis mit F10 aus, um den von %1 zu sehen.",_sender getVariable["realname",name _sender]]; [_huan,"red","slow"] call life_fnc_notify;}; // Aktuell wird schon ein Personalausweis angesehen
 if(_sender distance player > 5) exitWith {titleText ["Der Spieler ist zu weit weg","PLAIN"];};
 if(isNull _sender) exitWith {};
 _senderVar = _sender getVariable ["personaltext",[]];
-if(_senderVar isEqualTo []) exitWith {hint format ["Fehler im Personalausweis von %1 und kann somit nicht dargestellt werden ( %1 )",_sender getVariable["realname",name _sender],_senderVar];}; // Fehler
+if(_senderVar isEqualTo []) exitWith {_huan = format ["Fehler im Personalausweis von %1 und kann somit nicht dargestellt werden ( %1 )",_sender getVariable["realname",name _sender],_senderVar]; [_huan,"red","slow"] call life_fnc_notify;}; // Fehler
 
 ("perso" call BIS_fnc_rscLayer) cutRsc ["playerPerso","PLAIN"];
 _ui = uiNameSpace getVariable "playerPerso";
@@ -87,8 +87,10 @@ _textBild = if(side _sender == civilian) then {getText(missionConfigFile >> "Per
 _fraktBild ctrlSetText _textBild;
 
 if(_sender != player) then {
-	hint format["Dir wird gerade der Personal- / Dienstausweis von %1 angezeigt. Blende ihn mit F10 wieder aus",_sender getVariable["realname",name _sender]];
+	_huan = format["Dir wird gerade der Personal- / Dienstausweis von %1 angezeigt. Blende ihn mit F10 wieder aus",_sender getVariable["realname",name _sender]];
+	[_huan,"red","slow"] call life_fnc_notify;
 } else {
-	hint "Du schaust die gerade deinen Personal- / Dienstausweis an. Blende ihn mit F10 wieder aus"; // Eigener Personalausweis?
+	_huan = "Du schaust die gerade deinen Personal- / Dienstausweis an. Blende ihn mit F10 wieder aus"; // Eigener Personalausweis?
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 PERSO_EXIT = (findDisplay 46) displayAddEventHandler ["KeyDown","if((_this select 1) == 68) then {(findDisplay 46) displayRemoveEventHandler ['KeyDown',PERSO_EXIT];(""perso"" call BIS_fnc_rscLayer) cutText ["""",""PLAIN""];};false"];

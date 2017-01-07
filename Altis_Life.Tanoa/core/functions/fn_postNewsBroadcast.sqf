@@ -16,13 +16,13 @@ _allowed = toArray("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567
 _allowedLength = LIFE_SETTINGS(getNumber,"news_broadcast_header_length");
 _badCharacter = false;
 
-if (_length > _allowedLength) exitWith {hint format [localize "STR_News_HeaderLength",_allowedLength];};
+if (_length > _allowedLength) exitWith {_huan = format [localize "STR_News_HeaderLength",_allowedLength]; [_huan,"red","slow"] call life_fnc_notify;};
 
 {
     if (!(_x in _allowed)) exitWith {_badCharacter = true;};
 } forEach _characterByte;
 
-if (_badCharacter) exitWith {hint localize "STR_News_UnsupportedCharacter"};
+if (_badCharacter) exitWith {_huan = localize "STR_News_UnsupportedCharacter"; [_huan,"red","slow"] call life_fnc_notify;};
 
 [_broadcastHeader,_broadcastMessage,profileName] remoteExec ['life_fnc_AAN',-2];
 

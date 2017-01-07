@@ -7,7 +7,7 @@
     32 hours later...
 */
 private ["_unitID ","_members"];
-if (getPlayerUID player isEqualTo (group player getVariable "gang_owner")) exitWith {hint localize "STR_GNOTF_LeaderLeave"};
+if (getPlayerUID player isEqualTo (group player getVariable "gang_owner")) exitWith {_huan = localize "STR_GNOTF_LeaderLeave"; [_huan,"red","slow"] call life_fnc_notify;};
 
 _unitID = getPlayerUID player;
 _members = group player getVariable "gang_members";

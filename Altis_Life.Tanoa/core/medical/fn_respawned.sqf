@@ -55,7 +55,8 @@ camDestroy life_deathCamera;
 
 //Bad boy
 if (life_is_arrested) exitWith {
-    hint localize "STR_Jail_Suicide";
+    _huan = localize "STR_Jail_Suicide";
+	[_huan,"green","slow"] call life_fnc_notify;
     life_is_arrested = false;
     [player,true] spawn life_fnc_jail;
     [] call SOCK_fnc_updateRequest;

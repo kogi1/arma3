@@ -17,7 +17,8 @@ _nearVehicles = nearestObjects [getMarkerPos life_chopShop,_chopable,25];
 _vehicle = (_nearVehicles select _vehicle);
 if (isNull _vehicle) exitWith {};
 
-hint localize "STR_Shop_ChopShopSelling";
+_huan = localize "STR_Shop_ChopShopSelling";
+[_huan,"green","slow"] call life_fnc_notify;
 life_action_inUse = true;
 _price2 = CASH + _price;
 [0] call SOCK_fnc_updatePartial;

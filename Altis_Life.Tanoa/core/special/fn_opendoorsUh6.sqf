@@ -5,7 +5,8 @@ if(playerside == west)then{
 		zell_light7 enableSimulation true; 
 		sleep 1.9;
 		zell_light7 enableSimulation false;
-		hint "Türe geschlossen";
+		_huan = "Türe geschlossen";
+		[_huan,"green","slow"] call life_fnc_notify;
 	} 
 	else 
 	{
@@ -14,8 +15,10 @@ if(playerside == west)then{
 		zell_light7 enableSimulation true; 
 		sleep 1.9;
 		zell_light7 enableSimulation false;
-		hint "Türe geöffnet";
+		_huan = "Türe geöffnet";
+		[_huan,"green","slow"] call life_fnc_notify;
 	};
 }else{
-	hint"Du hast keine berechtigung eine Zellentüre zu öffnen!";
+	_huan = "Du hast keine berechtigung eine Zellentüre zu öffnen!";
+	[_huan,"red","slow"] call life_fnc_notify;
 };

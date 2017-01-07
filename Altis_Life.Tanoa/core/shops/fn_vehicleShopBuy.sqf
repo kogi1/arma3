@@ -9,7 +9,7 @@
 private ["_mode","_vIndex","_spawnPoints","_className","_purchasePrice","_buyMultiplier","_rentMultiplier","_colorIndex","_spawnPoint","_vehicle","_vehicleList","_shopSide","_licenses","_licensesName","_exit","_initalPrice"];
 _mode = _this select 0;
 _exit = false;
-if ((lbCurSel 2302) isEqualTo -1) exitWith {hint localize "STR_Shop_Veh_DidntPick";closeDialog 0;};
+if ((lbCurSel 2302) isEqualTo -1) exitWith {_huan = localize "STR_Shop_Veh_DidntPick"; [_huan,"red","slow"] call life_fnc_notify; closeDialog 0;};
 _className = lbData[2302,(lbCurSel 2302)];
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = M_CONFIG(getArray,"CarShops",(life_veh_shop select 0),"vehicles");
@@ -58,10 +58,10 @@ _licensesName = "";
     };
 } forEach _licenses;
 
-if (_exit) exitWith {hint parseText format [(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];closeDialog 0;};
+if (_exit) exitWith {_huan = parseText format [(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName]; [_huan,"red","slow"] call life_fnc_notify; closeDialog 0;};
 
 if (_purchasePrice < 0) exitWith {closeDialog 0;}; //Bad price entry
-if (CASH < _purchasePrice) exitWith {hint format [localize "STR_Shop_Veh_NotEnough",[_purchasePrice - CASH] call life_fnc_numberText];closeDialog 0;};
+if (CASH < _purchasePrice) exitWith {_huan = format [localize "STR_Shop_Veh_NotEnough",[_purchasePrice - CASH] call life_fnc_numberText]; [_huan,"red","slow"] call life_fnc_notify;closeDialog 0;};
 
 _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
@@ -79,10 +79,11 @@ if (((life_veh_shop select 0) == "med_air_hs")) then {
 };
 
 
-if (_spawnPoint isEqualTo "") exitWith {hint localize "STR_Shop_Veh_Block";closeDialog 0;};
+if (_spawnPoint isEqualTo "") exitWith {_huan = localize "STR_Shop_Veh_Block"; [_huan,"red","slow"] call life_fnc_notify; closeDialog 0;};
 CASH = CASH - _purchasePrice;
 [0] call SOCK_fnc_updatePartial;
-hint format [localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_purchasePrice] call life_fnc_numberText];
+_huan = format [localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_purchasePrice] call life_fnc_numberText];
+[_huan,"green","slow"] call life_fnc_notify;
 
 //Spawn the vehicle and prep it.
 if ((life_veh_shop select 0) == "med_air_hs") then {

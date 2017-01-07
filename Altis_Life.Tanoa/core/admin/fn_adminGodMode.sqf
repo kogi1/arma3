@@ -6,7 +6,7 @@
     Description: Enables God mode for Admin
 */
 
-if (FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+if (FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0; _huan = localize "STR_ANOTF_ErrorLevel"; [_huan,"red","slow"] call life_fnc_notify;};
 
 closeDialog 0;
 

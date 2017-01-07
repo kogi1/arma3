@@ -28,8 +28,8 @@ if((lbCurSel 70013) == -1) exitWith {};
 if((lbCurSel 70018) == -1) exitWith {};
 if((lbCurSel 70011) == -1) exitWith {};
 if((lbCurSel 70012) == -1) exitWith {};
-if(ctrlText 70002 == "" && fvs_namenInfo) exitWith {hint "Du willst den Namen zwar aendern, aber es ist kein Neuer angegeben. Name darf nicht leer sein und mindestens 4 Zeichen enthalten!"};
-if(life_cash < 250000) exitWith {hint parseText format ["Du hast nicht genug Geld auf der Hand.<br/>Aktuell: $%2<br/>Fehlend: $%1",(250000 - life_cash), life_cash];};
+if(ctrlText 70002 == "" && fvs_namenInfo) exitWith {_huan = "Du willst den Namen zwar aendern, aber es ist kein Neuer angegeben. Name darf nicht leer sein und mindestens 4 Zeichen enthalten!"; [_huan,"red","slow"] call life_fnc_notify;};
+if(life_cash < 250000) exitWith {_huan = parseText format ["Du hast nicht genug Geld auf der Hand.<br/>Aktuell: $%2<br/>Fehlend: $%1",(250000 - life_cash), life_cash]; [_huan,"red","slow"] call life_fnc_notify;};
 _sex = call compile format ["%1",lbData[70003,(lbCurSel 70003)]];
 _cm = call compile format ["%1",lbValue[70004,(lbCurSel 70004)]];
 _kg = call compile format ["%1",lbValue[70006,(lbCurSel 70006)]];
@@ -83,7 +83,8 @@ _bildID = _insert select 14;
 _bildName = getText(missionConfigFile >> "Personalausweis" >> "persoBild" >> _bildID >> "name");
 closeDialog 0;
 if(fvs_namen_a) then {
-	hint parseText format ["Du hast deinen Personalausweis geaendert. Du wirst automatisch nach 5 Minuten aus dem Spiel entfernt, damit du dein Profilnamen aendern kannst. Es wurde eine Gebuehr von $250.000 erhoben.<br/><br/>Daten des Personalausweises im Ueberblick:<br/><br/>Name: %1<br/>Strasse: %2 %3<br/>Plz/Ort: %4 %5<br/><br/>Email: %6<br/>Handynummer: 0%7<br/>Koerpergroesse: %8cm<br/>Gewicht: %9kg<br/>Alter: %10 Jahre<br/>Geburtsdatum: %11 %12 %13<br/>Blutgruppe: %14<br/><br/>Fotobezeichnung: %15 %16",_name,_stra,_hsnr,_plz,_wohnort,_email,fvs_handynr,_cm,_kg,_alter,_t,_m,_j,_bltg,_bildID,_bildName];
+	_huan = parseText format ["Du hast deinen Personalausweis geaendert. Du wirst automatisch nach 5 Minuten aus dem Spiel entfernt, damit du dein Profilnamen aendern kannst. Es wurde eine Gebuehr von $250.000 erhoben.<br/><br/>Daten des Personalausweises im Ueberblick:<br/><br/>Name: %1<br/>Strasse: %2 %3<br/>Plz/Ort: %4 %5<br/><br/>Email: %6<br/>Handynummer: 0%7<br/>Koerpergroesse: %8cm<br/>Gewicht: %9kg<br/>Alter: %10 Jahre<br/>Geburtsdatum: %11 %12 %13<br/>Blutgruppe: %14<br/><br/>Fotobezeichnung: %15 %16",_name,_stra,_hsnr,_plz,_wohnort,_email,fvs_handynr,_cm,_kg,_alter,_t,_m,_j,_bltg,_bildID,_bildName];
+	[_huan,"green","slow"] call life_fnc_notify;
 	player setVariable ["personaltext",_insert,true];
 	fvs_namen_a = false;
 	fvs_checking_a = false;
@@ -92,7 +93,8 @@ if(fvs_namen_a) then {
 	sleep (60 * 5);
 	endMission "persoA";
 } else {
-	hint parseText format ["Du hast deinen Personalausweis geaendert. Es wurde eine Gebuehr von $250.000 erhoben. <br/><br/>Daten des Personalausweises im Ueberblick:<br/><br/>Name: %1<br/>Strasse: %2 %3<br/>Plz/Ort: %4 %5<br/><br/>Email: %6<br/>Handynummer: 0%7<br/>Koerpergroesse: %8cm<br/>Gewicht: %9kg<br/>Alter: %10 Jahre<br/>Geburtsdatum: %11 %12 %13<br/>Blutgruppe: %14<br/><br/>Fotobezeichnung: %15 %16",_name,_stra,_hsnr,_plz,_wohnort,_email,fvs_handynr,_cm,_kg,_alter,_t,_m,_j,_bltg,_bildID,_bildName];
+	_huan = parseText format ["Du hast deinen Personalausweis geaendert. Es wurde eine Gebuehr von $250.000 erhoben. <br/><br/>Daten des Personalausweises im Ueberblick:<br/><br/>Name: %1<br/>Strasse: %2 %3<br/>Plz/Ort: %4 %5<br/><br/>Email: %6<br/>Handynummer: 0%7<br/>Koerpergroesse: %8cm<br/>Gewicht: %9kg<br/>Alter: %10 Jahre<br/>Geburtsdatum: %11 %12 %13<br/>Blutgruppe: %14<br/><br/>Fotobezeichnung: %15 %16",_name,_stra,_hsnr,_plz,_wohnort,_email,fvs_handynr,_cm,_kg,_alter,_t,_m,_j,_bltg,_bildID,_bildName];
+	[_huan,"green","slow"] call life_fnc_notify;
 	player setVariable ["personaltext",_insert,true];
 	fvs_namen_a = false;
 	fvs_checking_a = false;

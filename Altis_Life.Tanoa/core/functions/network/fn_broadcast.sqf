@@ -27,7 +27,7 @@ if(_localize) exitWith {
             switch((_type select _i)) do
             {
                 case 0: {systemChat _msg;};
-                case 1: {hint _msg;};
+                case 1: {[_msg,"green","slow"] call life_fnc_notify;};
                 case 2: {titleText[_msg,"PLAIN"];};
             };
         };
@@ -35,7 +35,7 @@ if(_localize) exitWith {
         switch (_type) do
         {
             case 0: {systemChat _msg;};
-            case 1: {hint _msg;};
+            case 1: {[_msg,"green","slow"] call life_fnc_notify;};
             case 2: {titleText[_msg,"PLAIN"];};
         };
     };
@@ -47,9 +47,9 @@ if(typeName _type == typeName []) then
         switch((_type select _i)) do
         {
             case 0: {systemChat _message};
-            case 1: {hint format["%1", _message]};
+            case 1: {_text = format["%1", _message]; [_text,"green","slow"] call life_fnc_notify;};
             case 2: {titleText[format["%1",_message],"PLAIN"];};
-            case 5: {hint parseText format["%1", _message]};
+            case 5: {_dick = parseText format["%1", _message]; [_dick,"green","slow"] call life_fnc_notify;};
         };
     };
 }
@@ -58,8 +58,8 @@ if(typeName _type == typeName []) then
     switch (_type) do
     {
         case 0: {systemChat _message};
-        case 1: {hint format["%1", _message]};
+        case 1: {_asds = format["%1", _message]; [_asds,"green","slow"] call life_fnc_notify;};
         case 2: {titleText[format["%1",_message],"PLAIN"];};
-        case 5: {hint parseText format["%1", _message]};
+        case 5: {_ghads = parseText format["%1", _message]; [_ghads,"green","slow"] call life_fnc_notify;};
     };
 };

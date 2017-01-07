@@ -7,7 +7,7 @@
     Setup the settings menu.
 */
 if (isNull (findDisplay 2900)) then {
-    if (!createDialog "SettingsMenu") exitWith {hint localize "STR_NOTF_menuWillNotOpen";};
+    if (!createDialog "SettingsMenu") exitWith {_huan = localize "STR_NOTF_menuWillNotOpen"; [_huan,"red","slow"] call life_fnc_notify;};
 };
 
 disableSerialization;

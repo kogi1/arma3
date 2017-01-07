@@ -7,7 +7,7 @@
     Picks up money
 */
 private "_value";
-if ((time - life_action_delay) < 1.5) exitWith {hint localize "STR_NOTF_ActionDelay"; _this setVariable ["inUse",false,true];};
+if ((time - life_action_delay) < 1.5) exitWith {_huan = localize "STR_NOTF_ActionDelay"; [_huan,"red","slow"] call life_fnc_notify; _this setVariable ["inUse",false,true];};
 if (isNull _this || {player distance _this > 3}) exitWith {_this setVariable ["inUse",false,true];};
 
 _value = ((_this getVariable "item") select 1);

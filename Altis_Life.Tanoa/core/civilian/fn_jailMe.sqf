@@ -48,7 +48,8 @@ switch (true) do {
  case (_bail): {
  life_is_arrested = false;
  life_bail_paid = false;
- hint localize "STR_Jail_Paid";
+ _huan = localize "STR_Jail_Paid";
+ [_huan,"green","slow"] call life_fnc_notify;
  serv_wanted_remove = [player];
  player setPos (getMarkerPos "jail_release");
  [getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",RSERV];
@@ -56,14 +57,16 @@ switch (true) do {
  };
  case (_esc): {
  life_is_arrested = false;
- hint localize "STR_Jail_EscapeSelf";
+ _huan = localize "STR_Jail_EscapeSelf";
+ [_huan,"green","slow"] call life_fnc_notify;
  [0,"STR_Jail_EscapeNOTF",true,[profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
  [getPlayerUID player,profileName,"901"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
  [5] call SOCK_fnc_updatePartial;
  };
  case (alive player && !_esc && !_bail): {
  life_is_arrested = false;
- hint localize "STR_Jail_Released";
+ _huan = localize "STR_Jail_Released";
+ [_huan,"green","slow"] call life_fnc_notify;
  [getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",RSERV];
  player setPos (getMarkerPos "jail_release");
  [5] call SOCK_fnc_updatePartial;

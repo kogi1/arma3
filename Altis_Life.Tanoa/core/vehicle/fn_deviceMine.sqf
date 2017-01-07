@@ -12,7 +12,8 @@ _isMineral = true;
 if (isNull _vehicle) exitWith {};
 
 if (!isNil {_vehicle getVariable "mining"}) exitWith {
-    hint localize "STR_NOTF_DeviceIsMining";
+    _huan = localize "STR_NOTF_DeviceIsMining";
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 
 if (fuel _vehicle isEqualTo 0) exitWith {
@@ -24,7 +25,8 @@ life_action_inUse = true; //Lock out the interaction menu for a bit..
 
 _weight = [_vehicle] call life_fnc_vehicleWeight;
 if ((_weight select 1) >= (_weight select 0)) exitWith {
-    hint localize "STR_NOTF_DeviceFull";
+    _huan = localize "STR_NOTF_DeviceFull";
+	[_huan,"red","slow"] call life_fnc_notify;
     life_action_inUse = false;
 };
 
@@ -73,7 +75,8 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
 };
 
 if (_zone isEqualTo "") exitWith {
-    hint localize "STR_NOTF_notNearResource";
+    _huan = localize "STR_NOTF_notNearResource";
+	[_huan,"red","slow"] call life_fnc_notify;
     life_action_inUse = false;
 };
 

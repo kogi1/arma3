@@ -12,7 +12,8 @@ switch (_mode) do {
 		sleep 4;
 		titleCut ["", "BLACK IN", 5];
 	}else{
-			hint "Du darfst den Lift nicht nutzen!";
+			_huan = "Du darfst den Lift nicht nutzen!";
+			[_huan,"red","slow"] call life_fnc_notify;
 		};
     };
 	case 2: {
@@ -25,7 +26,8 @@ switch (_mode) do {
 		sleep 2;
 		titleCut ["", "BLACK IN", 5];
 	}else{
-			hint "Du darfst den Lift nicht nutzen!";
+			_huan = "Du darfst den Lift nicht nutzen!";
+			[_huan,"red","slow"] call life_fnc_notify;
 		};
     };
 	case 3: {

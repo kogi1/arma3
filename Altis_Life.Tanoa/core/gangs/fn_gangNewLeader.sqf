@@ -9,11 +9,11 @@
 private ["_unit","_unitID","_members","_action","_index"];
 disableSerialization;
 
-if ((lbCurSel 2621) isEqualTo -1) exitWith {hint localize "STR_GNOTF_TransferSelect"};
+if ((lbCurSel 2621) isEqualTo -1) exitWith {_huan = localize "STR_GNOTF_TransferSelect";[_huan,"red","slow"] call life_fnc_notify;};
 _unit = call compile format ["%1",CONTROL_DATA(2621)];
 
 if (isNull _unit) exitWith {}; //Bad unit?
-if (_unit == player) exitWith {hint localize "STR_GNOTF_TransferSelf"};
+if (_unit == player) exitWith {_huan = localize "STR_GNOTF_TransferSelf";[_huan,"red","slow"] call life_fnc_notify;};
 
 _action = [
     format [localize "STR_GNOTF_TransferMSG",_unit getVariable ["realname",name _unit]],
@@ -24,7 +24,7 @@ _action = [
 
 if (_action) then {
     _unitID = getPlayerUID _unit;
-    if (_unitID isEqualTo "") exitWith {hint localize "STR_GNOTF_badUID";}; //Unlikely?
+    if (_unitID isEqualTo "") exitWith {_huan = localize "STR_GNOTF_badUID";[_huan,"red","slow"] call life_fnc_notify;}; //Unlikely?
     group player setVariable ["gang_owner",_unitID,true];
     group player selectLeader _unit;
     [_unit,group player] remoteExec ["TON_fnc_clientGangLeader",_unit]; //Boot that bitch!
@@ -36,6 +36,7 @@ if (_action) then {
     };
 
 } else {
-    hint localize "STR_GNOTF_TransferCancel";
+    _huan = localize "STR_GNOTF_TransferCancel";
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 [] call life_fnc_gangMenu;

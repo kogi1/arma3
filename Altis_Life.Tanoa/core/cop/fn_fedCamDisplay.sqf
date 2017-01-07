@@ -20,7 +20,7 @@ private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_t
 
 private _dome = nearestObject [_pos,"Land_Dome_Big_F"];
 
-if (!isPiPEnabled) exitWith {hint localize "STR_Cop_EnablePiP";};
+if (!isPiPEnabled) exitWith {_huan = localize "STR_Cop_EnablePiP"; [_huan,"red","slow"] call life_fnc_notify;};
 if (isNil "life_fed_scam") then {
     life_fed_scam = "camera" camCreate [0,0,0];
     life_fed_scam camSetFov 0.5;

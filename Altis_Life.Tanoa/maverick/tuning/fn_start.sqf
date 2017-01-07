@@ -13,11 +13,11 @@ if (isNil "mav_tuning_lastVisit") then {
 	mav_tuning_lastVisit = -999;
 };
 
-if (vehicle player == player) exitWith {hint "You have to be in a vehicle"};
-if (driver vehicle player != player) exitWith {hint "You're not the driver of the vehicle!"};
-if ((count crew vehicle player) > 1) exitWith {hint "You have to be alone in the vehicle!"};
-if (isNil {(vehicle player) getVariable "vehicleID"}) exitWith {hint "The vehicle has to be stored in a garage first before it can be tuned!"};
-if (diag_tickTime - mav_tuning_lastVisit < 10) exitWith {hint "You are already visiting the tuning shop!"};
+if (vehicle player == player) exitWith {_huan = "Du musst in einem Fahrzeug sitzen!"; [_huan,"red","slow"] call life_fnc_notify;};
+if (driver vehicle player != player) exitWith {_huan = "Du bist nicht der Fahrer des Fahrzeugs!"; [_huan,"red","slow"] call life_fnc_notify;};
+if ((count crew vehicle player) > 1) exitWith {_huan = "Du musst alleine im Fahrzeug sitzen!"; [_huan,"red","slow"] call life_fnc_notify;};
+if (isNil {(vehicle player) getVariable "vehicleID"}) exitWith {_huan = "Das Fahrzeug muss mindestens einmal in der Garage gewesen sein!"; [_huan,"red","slow"] call life_fnc_notify;};
+if (diag_tickTime - mav_tuning_lastVisit < 10) exitWith {_huan = "Du besuchst schon den Tuning Shop!"; [_huan,"red","slow"] call life_fnc_notify;};
 
 // Var
 _veh = vehicle player;
@@ -29,7 +29,7 @@ mav_tuning_lastVisit = diag_tickTime;
 _configName = [typeOf _veh] call mav_tuning_fnc_getMasterConfig;
 
 // Not tuneable?
-if (_configName == "") exitWith {hint "This vehicle cannot be tuned"};
+if (_configName == "") exitWith {_huan = "Das Fahrzeug kann nicht getuned werden!"; [_huan,"red","slow"] call life_fnc_notify;};
 
 // Input
 //disableUserInput true; // DEBUG TURNED OFF

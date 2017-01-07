@@ -10,11 +10,11 @@
 private ["_startPos","_badDistance","_title","_ui","_progress","_pgText","_cP","_action","_fuelCost"];
 life_interrupted = false;
 if (life_inv_fuelEmpty isEqualTo 0) exitWith {};
-if (count(nearestObjects [player,["Land_FuelStation_Feed_F","Land_fs_feed_F"],3.5]) isEqualTo 0) exitWith { hint localize "STR_ISTR_Jerry_Distance";};
+if (count(nearestObjects [player,["Land_FuelStation_Feed_F","Land_fs_feed_F"],3.5]) isEqualTo 0) exitWith { _huan = localize "STR_ISTR_Jerry_Distance";[_huan,"red","slow"] call life_fnc_notify;};
 if (life_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
-if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
-if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+if (player getVariable "restrained") exitWith {_huan = localize "STR_NOTF_isrestrained";[_huan,"red","slow"] call life_fnc_notify;};
+if (player getVariable "playerSurrender") exitWith {_huan = localize "STR_NOTF_surrender";[_huan,"red","slow"] call life_fnc_notify;};
 _fuelCost = LIFE_SETTINGS(getNumber,"fuelCan_refuel");
 
 life_action_inUse = true;
@@ -26,7 +26,7 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if (_action) then {
-    if (CASH < _fuelCost) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; life_action_inUse = false;};
+    if (CASH < _fuelCost) exitWith {_huan = localize "STR_NOTF_NotEnoughMoney"; [_huan,"red","slow"] call life_fnc_notify; life_action_inUse = false;};
     _startPos = getPos player;
     //Setup our progress bar.
     disableSerialization;
@@ -72,9 +72,11 @@ if (_action) then {
     life_action_inUse = false;
     CASH = CASH - _fuelCost;
     [true,"fuelFull",1] call life_fnc_handleInv;
-    hint localize "STR_ISTR_Jerry_Refueled";
+    _huan = localize "STR_ISTR_Jerry_Refueled";
+	[_huan,"green","slow"] call life_fnc_notify;
 } else {
-    hint localize "STR_NOTF_ActionCancel";
+    _huan = localize "STR_NOTF_ActionCancel";
+	[_huan,"red","slow"] call life_fnc_notify;
     closeDialog 0;
     life_action_inUse = false;
 };

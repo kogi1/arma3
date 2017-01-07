@@ -48,5 +48,6 @@ _wohnort = getText(missionConfigFile >> "Personalausweis" >> "persoOrt" >> (_tex
 _bildID = _text select 14;
 _bildName = getText(missionConfigFile >> "Personalausweis" >> "persoBild" >> _bildID >> "name");
 hint parseText format["Daten des Personalausweises im Ueberblick:<br/><br/>Name: %1<br/>Strasse: %2 %3<br/>Plz/Ort: %4 %5<br/><br/>Email: %6<br/>Handynummer: 0%7<br/>Koerpergroesse: %8cm<br/>Gewicht: %9kg<br/>Alter: %10 Jahre<br/>Geburtsdatum: %11 %12 %13<br/>Blutgruppe: %14<br/><br/>Fotobezeichnung: %15 %16",_name,_stra,_hsnr,_plz,_wohnort,_email,_handynr,_cm,_kg,_alter,_t,_m,_j,_bltg,_bildID,_bildName];
+//[_huan,"green","slow"] call life_fnc_notify;
 player setVariable ["personaltext",_text,true];
 fvs_persoReady = true;

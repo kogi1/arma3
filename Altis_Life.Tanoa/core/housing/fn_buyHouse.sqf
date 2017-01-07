@@ -12,10 +12,10 @@ _uid = getPlayerUID player;
 
 if (isNull _house) exitWith {};
 if (!(_house isKindOf "House_F")) exitWith {};
-if (_house getVariable ["house_owned",false]) exitWith {hint localize "STR_House_alreadyOwned";};
-if (!isNil {(_house getVariable "house_sold")}) exitWith {hint localize "STR_House_Sell_Process"};
-if (!license_civ_home) exitWith {hint localize "STR_House_License"};
-if (count life_houses >= (LIFE_SETTINGS(getNumber,"house_limit"))) exitWith {hint format [localize "STR_House_Max_House",LIFE_SETTINGS(getNumber,"house_limit")]};
+if (_house getVariable ["house_owned",false]) exitWith {_huan = localize "STR_House_alreadyOwned"; [_huan,"red","slow"] call life_fnc_notify;};
+if (!isNil {(_house getVariable "house_sold")}) exitWith {_huan = localize "STR_House_Sell_Process"; [_huan,"red","slow"] call life_fnc_notify;};
+if (!license_civ_home) exitWith {_huan = localize "STR_House_License"; [_huan,"red","slow"] call life_fnc_notify;};
+if (count life_houses >= (LIFE_SETTINGS(getNumber,"house_limit"))) exitWith {_huan = format [localize "STR_House_Max_House",LIFE_SETTINGS(getNumber,"house_limit")]; [_huan,"red","slow"] call life_fnc_notify;};
 closeDialog 0;
 
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
@@ -28,7 +28,7 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if (_action) then {
-    if (BANK < (_houseCfg select 0)) exitWith {hint format [localize "STR_House_NotEnough"]};
+    if (BANK < (_houseCfg select 0)) exitWith {_huan = format [localize "STR_House_NotEnough"]; [_huan,"red","slow"] call life_fnc_notify;};
     BANK = BANK - (_houseCfg select 0);
     [1] call SOCK_fnc_updatePartial;
 

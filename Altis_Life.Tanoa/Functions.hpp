@@ -414,6 +414,7 @@ class Life_Client_Core {
 		class addkeyback {};
 		class telep {};
 		class handlePaper {};
+		class notify {};
 	};
 	class Map
 	{

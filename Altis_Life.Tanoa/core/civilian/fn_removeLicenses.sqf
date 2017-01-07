@@ -31,7 +31,8 @@ switch (_state) do {
     case 3: {
         if (missionNamespace getVariable LICENSE_VARNAME("gun","civ")) then {
             missionNamespace setVariable [LICENSE_VARNAME("gun","civ"),false];
-            hint localize "STR_Civ_LicenseRemove_2";
+            _huan = localize "STR_Civ_LicenseRemove_2";
+			[_huan,"red","slow"] call life_fnc_notify;
         };
     };
 };

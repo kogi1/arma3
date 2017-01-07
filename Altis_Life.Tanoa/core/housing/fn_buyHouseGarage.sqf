@@ -10,8 +10,8 @@ private _house = param [0,objNull,[objNull]];
 private _uid = getPlayerUID player;
 
 if (isNull _house) exitWith {};
-if (_house getVariable ["garageBought",false]) exitWith {hint localize "STR_Garage_alreadyOwned";};
-if ((_house getVariable "house_owner") select 0 != getPlayerUID player) exitWith {hint localize "STR_Garage_NotOwner";};
+if (_house getVariable ["garageBought",false]) exitWith {_huan = localize "STR_Garage_alreadyOwned"; [_huan,"red","slow"] call life_fnc_notify;};
+if ((_house getVariable "house_owner") select 0 != getPlayerUID player) exitWith {_huan = localize "STR_Garage_NotOwner"; [_huan,"red","slow"] call life_fnc_notify;};
 if (_house getVariable ["blacklistedGarage",false]) exitWith {};
 closeDialog 0;
 
@@ -26,7 +26,7 @@ _action = [
 
 if (_action) then {
 
-    if (BANK < _price) exitWith {hint format [localize "STR_House_NotEnough"]};
+    if (BANK < _price) exitWith {_huan = format [localize "STR_House_NotEnough"]; [_huan,"red","slow"] call life_fnc_notify;};
     BANK = BANK - _price;
     [1] call SOCK_fnc_updatePartial;
 

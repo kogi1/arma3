@@ -4,7 +4,6 @@ disableSerialization;
  player allowDamage false;
  disableUserInput true;
  showChat false;
- hint "";
  [LIFE_ID_PlayerTags,"onEachFrame"] spawn BIS_fnc_removeStackedEventHandler;
  1 fadeSound 0;
  1 fadeSpeech 0;

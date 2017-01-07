@@ -6,9 +6,9 @@
     Description:
 
 */
-if !(playerSide isEqualTo west) exitWith {hint localize "STR_Cop_wantedList_notCop";};
-if ((lbCurSel 2406) isEqualTo -1) exitWith {hint localize "STR_Cop_wantedList_noPlayerSelected";};
-if ((lbCurSel 2407) isEqualTo -1) exitWith {hint localize "STR_Cop_wantedList_noCrimeSelected";};
+if !(playerSide isEqualTo west) exitWith {_huan = localize "STR_Cop_wantedList_notCop"; [_huan,"red","slow"] call life_fnc_notify;};
+if ((lbCurSel 2406) isEqualTo -1) exitWith {_huan = localize "STR_Cop_wantedList_noPlayerSelected"; [_huan,"red","slow"] call life_fnc_notify;};
+if ((lbCurSel 2407) isEqualTo -1) exitWith {_huan = localize "STR_Cop_wantedList_noCrimeSelected"; [_huan,"red","slow"] call life_fnc_notify;};
 private _unit = lbData [2406,lbCurSel 2406];
 _unit = call compile format ["%1",_unit];
 private _amount = lbData [2407,lbCurSel 2407];

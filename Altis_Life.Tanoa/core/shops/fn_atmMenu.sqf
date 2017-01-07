@@ -9,7 +9,8 @@
 private ["_units","_type"];
 
 if (!life_use_atm) exitWith {
-    hint format [localize "STR_Shop_ATMRobbed",(LIFE_SETTINGS(getNumber,"noatm_timer"))];
+    _huan = format [localize "STR_Shop_ATMRobbed",(LIFE_SETTINGS(getNumber,"noatm_timer"))];
+	[_huan,"red","slow"] call life_fnc_notify;
 };
 
 if (!dialog) then {

@@ -15,7 +15,7 @@ _tInv = (findDisplay 3500) displayCtrl 3502;
 lbClear _tInv;
 
 _safeInfo = _safe getVariable ["safe",-1];
-if (_safeInfo < 1) exitWith {closeDialog 0; hint localize "STR_Civ_VaultEmpty";};
+if (_safeInfo < 1) exitWith {closeDialog 0; _huan = localize "STR_Civ_VaultEmpty"; [_huan,"red","slow"] call life_fnc_notify;};
 
 _str = M_CONFIG(getText,"VirtualItems","goldbar","displayName");
 _shrt = M_CONFIG(getText,"VirtualItems","goldbar","variable");

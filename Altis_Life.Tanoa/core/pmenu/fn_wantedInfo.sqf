@@ -12,9 +12,9 @@ private _display = findDisplay 2400;
 private _list = _display displayCtrl 2402;
 private _mylist = [];
 
-if (isNil "_data") exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
-if !(_data isEqualType []) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
-if (_data isEqualTo []) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
+if (isNil "_data") exitWith {_huan = localize "STR_Cop_wantedList_FailedToFetch";[_huan,"red","slow"] call life_fnc_notify;};
+if !(_data isEqualType []) exitWith {_huan = localize "STR_Cop_wantedList_FailedToFetch";[_huan,"red","slow"] call life_fnc_notify;};
+if (_data isEqualTo []) exitWith {_huan = localize "STR_Cop_wantedList_FailedToFetch";[_huan,"red","slow"] call life_fnc_notify;};
 
 lbClear _list;
 

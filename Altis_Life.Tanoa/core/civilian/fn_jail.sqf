@@ -19,7 +19,8 @@ player setVariable ["restrained",false,true];
 player setVariable ["Escorting",false,true];
 player setVariable ["transporting",false,true];
 titleText[localize "STR_Jail_Warn","PLAIN"];
-hint localize "STR_Jail_LicenseNOTF";
+_huan = localize "STR_Jail_LicenseNOTF";
+[_huan,"green","slow"] call life_fnc_notify;
 player setPos (getMarkerPos "jail_marker");
 if (_bad) then {
  waitUntil {alive player};

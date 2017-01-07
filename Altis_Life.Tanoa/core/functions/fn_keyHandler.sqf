@@ -209,9 +209,10 @@ switch (_code) do {
                 [cursorObject] spawn life_fnc_knockoutAction;
 			if("ItemRadio" in assignedItems cursorTarget) then {
 			  cursorTarget removeweapon "ItemRadio";
-			  hint "Die Perosn hat ihr Telefon fallen gelassen!";
+			  _huan = "Die Perosn hat ihr Telefon fallen gelassen!";
+			  [_huan,"green","slow"] call life_fnc_notify;
 			  _defenceplace1 = "Item_ItemRadio" createVehicle (player modelToWorld[0,0,0]);}
-			 else { hint "Diese Person besitzt kein Telefon mehr!"};
+			 else { _huan = "Diese Person besitzt kein Telefon mehr!"; [_huan,"red","slow"] call life_fnc_notify;};
             };
         };
     };
@@ -229,7 +230,8 @@ switch (_code) do {
                 if (!(isNil "_list")) then {
                     _house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
                     if (_house getVariable ["locked", false]) then {
-                        hint localize "STR_House_ContainerDeny";
+                        _huan = localize "STR_House_ContainerDeny";
+						[_huan,"red","slow"] call life_fnc_notify;
                     } else {
                         [_list] spawn life_fnc_openInventory;
                     };
@@ -335,7 +337,7 @@ switch (_code) do {
             if (_veh isKindOf "House_F" && {playerSide isEqualTo civilian}) then {
                 if (_veh in life_vehicles && {player distance _veh < 20}) then {
                     _door = [_veh] call life_fnc_nearestDoor;
-                    if (_door isEqualTo 0) exitWith {hint localize "STR_House_Door_NotNear"};
+                    if (_door isEqualTo 0) exitWith {_huan = localize "STR_House_Door_NotNear"; [_huan,"red","slow"] call life_fnc_notify;};
                     _locked = _veh getVariable [format ["bis_disabled_Door_%1",_door],0];
 
                     if (_locked isEqualTo 0) then {

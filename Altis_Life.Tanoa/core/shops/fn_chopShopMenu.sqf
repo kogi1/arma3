@@ -7,18 +7,18 @@
     Opens & initializes the chop shop menu.
 */
 private ["_control","_price","_nearVehicles","_chopMultiplier","_chopable","_nearUnits"];
-if (life_action_inUse) exitWith {hint localize "STR_NOTF_ActionInProc"};
-if (playerSide != civilian) exitWith {hint localize "STR_NOTF_notAllowed"};
+if (life_action_inUse) exitWith {_huan = localize "STR_NOTF_ActionInProc"; [_huan,"red","slow"] call life_fnc_notify;};
+if (playerSide != civilian) exitWith {_huan = localize "STR_NOTF_notAllowed"; [_huan,"red","slow"] call life_fnc_notify;};
 disableSerialization;
 _chopable = LIFE_SETTINGS(getArray,"chopShop_vehicles");
 _nearVehicles = nearestObjects [getMarkerPos (_this select 3),_chopable,25];
 _nearUnits = (nearestObjects[player,["Man"],5]) arrayIntersect playableUnits;
-if (count _nearUnits > 1) exitWith {hint localize "STR_NOTF_PlayerNear"};
+if (count _nearUnits > 1) exitWith {_huan = localize "STR_NOTF_PlayerNear"; [_huan,"red","slow"] call life_fnc_notify;};
 
 life_chopShop = _this select 3;
 //Error check
 if (count _nearVehicles isEqualTo 0) exitWith {titleText[localize "STR_Shop_NoVehNear","PLAIN"];};
-if (!(createDialog "Chop_Shop")) exitWith {hint localize "STR_Shop_ChopShopError"};
+if (!(createDialog "Chop_Shop")) exitWith {_huan = localize "STR_Shop_ChopShopError"; [_huan,"red","slow"] call life_fnc_notify;};
 
 _control = CONTROL(39400,39402);
 {

@@ -10,5 +10,6 @@ if (vehicle player isEqualTo player) then // Makes sure it's a player
  } forEach nearestObjects [getpos player,["WeaponHolder","GroundWeaponHolder","WeaponHolderSimulated"],3];
 };
 [] spawn {
- hint "Beschlagnahme alle Waffen und Magazine im Radius von 3 Metern...";
+ _huan = "Beschlagnahme alle Waffen und Magazine im Radius von 3 Metern...";
+ [_huan,"green","slow"] call life_fnc_notify;
 };

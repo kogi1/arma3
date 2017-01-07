@@ -8,7 +8,7 @@
 */
 disableSerialization;
 private ["_price","_item","_itemInfo","_bad"];
-if ((lbCurSel 38403) isEqualTo -1) exitWith {hint localize "STR_Shop_Weapon_NoSelect"};
+if ((lbCurSel 38403) isEqualTo -1) exitWith {_huan = localize "STR_Shop_Weapon_NoSelect"; [_huan,"red","slow"] call life_fnc_notify;};
 _price = lbValue[38403,(lbCurSel 38403)]; if (isNil "_price") then {_price = 0;};
 _item = lbData[38403,(lbCurSel 38403)];
 _itemInfo = [_item] call life_fnc_fetchCfgDetails;
@@ -21,12 +21,13 @@ if ((_itemInfo select 6) != "CfgVehicles") then {
     };
 };
 
-if (_bad != "") exitWith {hint _bad};
+if (_bad != "") exitWith {_huan = _bad; [_huan,"red","slow"] call life_fnc_notify;};
 
 if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
     CASH = CASH + _price;
     [_item,false] call life_fnc_handleItem;
-    hint parseText format [localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText];
+    _huan = parseText format [localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText];
+	[_huan,"green","slow"] call life_fnc_notify;
     [nil,(uiNamespace getVariable ["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.
 } else {
     private _altisArray = ["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"];
@@ -44,7 +45,8 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
             localize "STR_Shop_Virt_UI_YourCash"
         ] call BIS_fnc_guiMessage;
         if (_action) then {
-            hint parseText format [localize "STR_Shop_Weapon_BoughtGang",_itemInfo select 1,[_price] call life_fnc_numberText];
+            _huan = parseText format [localize "STR_Shop_Weapon_BoughtGang",_itemInfo select 1,[_price] call life_fnc_numberText];
+			[_huan,"green","slow"] call life_fnc_notify;
             _funds = group player getVariable "gang_bank";
             _funds = _funds - _price;
             group player setVariable ["gang_bank",_funds,true];
@@ -58,14 +60,16 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
 
 
         } else {
-            if (_price > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
-            hint parseText format [localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
+            if (_price > CASH) exitWith {_huan = localize "STR_NOTF_NotEnoughMoney"; [_huan,"red","slow"] call life_fnc_notify;};
+            _huan = parseText format [localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
+			[_huan,"green","slow"] call life_fnc_notify;
             CASH = CASH - _price;
             [_item,true] spawn life_fnc_handleItem;
         };
     } else {
-        if (_price > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
-        hint parseText format [localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
+        if (_price > CASH) exitWith {_huan = localize "STR_NOTF_NotEnoughMoney"; [_huan,"red","slow"] call life_fnc_notify;};
+        _huan = parseText format [localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
+		[_huan,"green","slow"] call life_fnc_notify;
         CASH = CASH - _price;
         [_item,true] spawn life_fnc_handleItem;
     };

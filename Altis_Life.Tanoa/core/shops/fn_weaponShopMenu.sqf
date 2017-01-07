@@ -25,7 +25,7 @@ if (_exit) exitWith {};
 
 if (!(_license isEqualTo "")) then {
     _flag = M_CONFIG(getText,"Licenses",_license,"side");
-    if (!(LICENSE_VALUE(_license,_flag))) exitWith {hint localize "STR_Shop_Veh_NoLicense"; _exit = true;};
+    if (!(LICENSE_VALUE(_license,_flag))) exitWith {_huan = localize "STR_Shop_Veh_NoLicense"; [_huan,"red","slow"] call life_fnc_notify; _exit = true;};
 };
 if (_exit) exitWith {};
 
@@ -50,7 +50,7 @@ if (!(_levelValue isEqualTo -1)) then {
         };
     };
 };
-if (_exit) exitWith {hint _levelMsg;};
+if (_exit) exitWith {_huan = _levelMsg; [_huan,"red","slow"] call life_fnc_notify;};
 
 uiNamespace setVariable ["Weapon_Shop",(_this select 3)];
 uiNamespace setVariable ["Weapon_Magazine",0];
